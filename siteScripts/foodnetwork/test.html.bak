@@ -1,0 +1,1146 @@
+
+<!DOCTYPE HTML>
+<html>
+<head prefix="og: http://ogp.me/ns# video: http://ogp.me/ns/video#">
+<meta http-equiv=content-type content="text/html; charset=UTF-8">
+<title>Turkey Noodle Casserole Recipe : Rachael Ray : Food Network</title>
+<meta name=description content="Get this all-star, easy-to-follow Turkey Noodle Casserole recipe from Rachael Ray.">
+<meta name=apple-itunes-app content="app-id=399072152"/>
+<meta property=fb:admins content=7207947 />
+<meta property=fb:admins content=16504712 />
+<meta property=fb:app_id content=283495858517689 />
+<meta property=og:type content=article />
+<meta property=og:title content="Turkey Noodle Casserole : Rachael Ray : Food Network"/>
+<meta property=og:description content="Get this all-star, easy-to-follow Turkey Noodle Casserole recipe from Rachael Ray"/>
+<meta property=og:url content="http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html"/>
+<meta property=og:image content="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/4/23/0/TM1021_Turkey-Noodle-Casserole_s4x3.jpg"/>
+<meta name=pinterest:text content="Turkey Noodle Casserole recipe from Rachael Ray via Food Network"/>
+<meta name=sailthru.tags content="bacon,main-dish,dinner,noodles,for-a-family,dairy,boiling,cheese,american,gruyere,turkey,casserole,recipes"/>
+<meta name=twitter:description content="Get the recipe for Turkey Noodle Casserole via @FoodNetwork:"/>
+<script type="text/psajs" orig_index=0>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+<link rel=canonical href="http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html"/>
+<script type="text/psajs" orig_index=1>if(typeof AUT==="undefined"){AUT={};AUT.jserrors=[];}
+window.onerror=function(message,url,linenumber){AUT.jserrors.push({'message':message,'url':url,'linenumber':linenumber});};</script>
+<meta name=tp:PreferredRuntimes content="Flash,HTML5"/>
+<link rel=stylesheet type="text/css" href="http://fn-static.sndimg.com/prod/community/css/fn-community.css">
+<script type="text/psajs" orig_index=2>var crtg_nid='3261';var crtg_cookiename='crtg_scripps';var crtg_varname='crtg_content';function crtg_getCookie(c_name){var i,x,y,ARRCookies=document.cookie.split(";");for(i=0;i<ARRCookies.length;i++){x=ARRCookies[i].substr(0,ARRCookies[i].indexOf("="));y=ARRCookies[i].substr(ARRCookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x==c_name){return unescape(y);}}return'';}
+var crtg_content=crtg_getCookie(crtg_cookiename);var crtg_rnd=Math.floor(Math.random()*99999999999);(function(){var crtg_url=location.protocol+'//rtax.criteo.com/delivery/rta/rta.js?netId='+escape(crtg_nid);crtg_url+='&cookieName='+escape(crtg_cookiename);crtg_url+='&rnd='+crtg_rnd;crtg_url+='&varName='+escape(crtg_varname);var crtg_script=document.createElement('script');crtg_script.type='text/javascript';crtg_script.src=crtg_url;crtg_script.async=true;if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script);})();</script>
+<!--[if gt IE 8]><!-->
+<script pagespeed_no_defer>//<![CDATA[
+(function(){var d=function(b){var a=window;if(a.addEventListener)a.addEventListener("load",b,!1);else if(a.attachEvent)a.attachEvent("onload",b);else{var c=a.onload;a.onload=function(){b.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var p=window.pagespeed,q=function(){this.a=!0};q.prototype.c=function(b){b=parseInt(b.substring(0,b.indexOf(" ")),10);return!isNaN(b)&&b<=Date.now()};q.prototype.hasExpired=q.prototype.c;q.prototype.b=function(b){return b.substring(b.indexOf(" ",b.indexOf(" ")+1)+1)};q.prototype.getData=q.prototype.b;q.prototype.d=function(b){var a=document.getElementsByTagName("script"),a=a[a.length-1];a.parentNode.replaceChild(b,a)};q.prototype.replaceLastScript=q.prototype.d;
+q.prototype.e=function(b){var a=window.localStorage.getItem("pagespeed_lsc_url:"+b),c=document.createElement(a?"style":"link");a&&!this.c(a)?(c.type="text/css",c.appendChild(document.createTextNode(this.b(a)))):(c.rel="stylesheet",c.href=b,this.a=!0);this.d(c)};q.prototype.inlineCss=q.prototype.e;
+q.prototype.f=function(b,a){var c=window.localStorage.getItem("pagespeed_lsc_url:"+b+" pagespeed_lsc_hash:"+a),f=document.createElement("img");c&&!this.c(c)?f.src=this.b(c):(f.src=b,this.a=!0);for(var c=2,k=arguments.length;c<k;++c){var g=arguments[c].indexOf("=");f.setAttribute(arguments[c].substring(0,g),arguments[c].substring(g+1))}this.d(f)};q.prototype.inlineImg=q.prototype.f;
+var r=function(b,a,c,f){a=document.getElementsByTagName(a);for(var k=0,g=a.length;k<g;++k){var e=a[k],m=e.getAttribute("pagespeed_lsc_hash"),h=e.getAttribute("pagespeed_lsc_url");if(m&&h){h="pagespeed_lsc_url:"+h;c&&(h+=" pagespeed_lsc_hash:"+m);var l=e.getAttribute("pagespeed_lsc_expiry"),l=l?(new Date(l)).getTime():"",e=f(e);if(!e){var n=window.localStorage.getItem(h);n&&(e=b.b(n))}e&&(window.localStorage.setItem(h,l+" "+m+" "+e),b.a=!0)}}},s=function(b){r(b,"img",!0,function(a){return a.src});
+r(b,"style",!1,function(a){return a.firstChild?a.firstChild.nodeValue:null})};
+p.g=function(){if(window.localStorage){var b=new q;p.localStorageCache=b;d(function(){s(b)});d(function(){if(b.a){for(var a=[],c=[],f=0,k=Date.now(),g=0,e=window.localStorage.length;g<e;++g){var m=window.localStorage.key(g);if(!m.indexOf("pagespeed_lsc_url:")){var h=window.localStorage.getItem(m),l=h.indexOf(" "),n=parseInt(h.substring(0,l),10);if(!isNaN(n))if(n<=k){a.push(m);continue}else if(n<f||0==f)f=n;c.push(h.substring(l+1,h.indexOf(" ",l+1)))}}k="";f&&(k="; expires="+(new Date(f)).toUTCString());
+document.cookie="_GPSLSC="+c.join("!")+k;g=0;for(e=a.length;g<e;++g)window.localStorage.removeItem(a[g]);b.a=!1}})}};p.localStorageCacheInit=p.g;})();
+pagespeed.localStorageCacheInit();
+//]]></script><link rel=stylesheet href="/etc/designs/food/clientlib.min.css" type="text/css" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib.min.css">
+<!--<![endif]-->
+<script src="/etc/designs/food/config.js" type="text/psajs" orig_index=3></script>
+<!--[if lt IE 9]>
+            <link rel="stylesheet" href="/etc/designs/food/clientlib-ie8.min.css" type="text/css">
+
+            <script type="text/javascript" src="/etc/clientlibs/granite/jquery.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.min.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.min.js"></script>
+
+            <script type="text/javascript" src="/etc/designs/food/clientlib-ie8/ie8-js/html5shiv-printshiv.js"></script>
+            <script type="text/javascript" src="/etc/designs/food/clientlib-ie8.min.js"></script>
+
+        <![endif]-->
+<script src="/etc/designs/food/clientlib.min.js" type="text/psajs" orig_index=4></script>
+<meta name=fragment content="!">
+<link rel=stylesheet href="/etc/designs/food/clientlib/recipe.min.css" type="text/css" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib/recipe.min.css">
+<script src="/etc/designs/food/clientlib/recipe.min.js" type="text/psajs" orig_index=5></script>
+<link rel=stylesheet href="/etc/designs/food/clientlib/recipe-next.min.css" type="text/css" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib/recipe-next.min.css">
+<script src="/etc/designs/food/clientlib/recipe-next.min.js" type="text/psajs" orig_index=6></script>
+<script type="text/psajs" orig_index=7>SNI.Food.printTarget="&#x2f;content&#x2f;food&#x2f;recipes&#x2f;rachael-ray&#x2f;t&#x2f;tu&#x2f;tur&#x2f;turk&#x2f;turkey-noodle-casserole-recipe.print.html";</script>
+<script type="text/psajs" orig_index=8>window._taboola=window._taboola||[];_taboola.push({article:'auto',tracking:'ic1=tbla'});!function(e,f,u){e.async=1;e.src=u;f.parentNode.insertBefore(e,f);}(document.createElement('script'),document.getElementsByTagName('script')[0],'http://cdn.taboola.com/libtrc/foodnetwork/loader.js');</script>
+<script src="http://dje7rr2pnbe7f.cloudfront.net/public/j/food-network/box-loader.js" type="text/psajs" orig_index=9></script>
+<script id=fn-community-init src="http://fn-static.sndimg.com/prod/community/js/fn-community-init.js" inclmustache=false webloginui=true communityapikey=3_ClDcX23A7tU8pcydnKyENXSYP5kxCbwH4ZO741ZOujPRY8Ksj2UBnj8Zopb0OX0K moderateuserprofileurl="https://api.food.com/external/web/fn/moderateUserProfile" inclsocialupload=false moderatecommenturl="https://api.food.com/external/web/fn/moderateComment" socialuploadurl="http://statics.scrippsnetworks.com/wrapper/js/socialupload_widget.min.js" socialuploadapikey=AsMMFcUZiTt2VBZByq8htz type="text/psajs" orig_index=10></script>
+<link rel=icon type="image/vnd.microsoft.icon" href="/etc/designs/food/clientlib/img/favicon.ico" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib/img/favicon.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/food/clientlib/img/favicon.ico" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib/img/favicon.ico">
+<script src="http://code.adsales.snidigital.com/conf/ads-config.min.js" type="text/psajs" orig_index=11></script>
+<script src="http://code.adsales.snidigital.com/lib/1/sni-ads.min.js" type="text/psajs" orig_index=12></script>
+<script src="http://code.adsales.snidigital.com/migration/food-cq.min.js" type="text/psajs" orig_index=13></script>
+<link href="https://plus.google.com/100091697767366769792" rel=publisher />
+<script type="text/psajs" orig_index=14>if(typeof MetaDataManager!="undefined"){var mdManager=new MetaDataManager();var mdProps={"HubPath":"/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe","PrepTime":"10","Classification":"recipes, food","PackageName":"back-to-school made easy","HubType":"recipe","MainIngredient":"al dente;deglaze;drippings;casserole dish;bread crumbs;garnish;egg noodles;extra-virgin olive oil;white mushrooms;poultry;chicken stock;heavy cream;parsley leaves;","Cuisine":"al dente;deglaze;drippings;casserole dish;bread crumbs;garnish;egg noodles;extra-virgin olive oil;white mushrooms;poultry;chicken stock;heavy cream;parsley leaves;","Restricted":"false","Sponsorship":"FN_FAMILYBACKTOSCHOOL","talentName":"rachael ray","Delivery_Channel":"web","AdKey1":"comfort-food","MealPart":"main-dish","AdKey2":"casserole","Difficulty":"easy","FastFwdID":"30680","Technique":"boiling","CanonicalUrl":"http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html","ImgURL":"http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/4/23/0/TM1021_Turkey-Noodle-Casserole_s4x3.jpg","Section":"recipes","Type":"recipe","Ingredients":"al dente;deglaze;drippings;casserole dish;bread crumbs;garnish;egg noodles;extra-virgin olive oil;white mushrooms;poultry;chicken stock;heavy cream;parsley leaves;","PageNumber":"1","CrosslinkTerms":";al dente,;deglaze,;drippings,;casserole dish,;bread crumbs,;garnish,;egg noodles,;extra-virgin olive oil,;white mushrooms,;poultry,;chicken stock,;heavy cream,;parsley leaves","ContentTag1":"turkey","MealType":"dinner","Source":"manual","Site":"food","HubID":"bfae2861-b69e-4f51-97f2-3bb000bae95f","AllTags":"bacon,main-dish,dinner,noodles,for-a-family,dairy,boiling,cheese,american,gruyere,turkey,casserole","CategoryDspName":"recipes &amp; how-tos","HubSponsor":"fn_familybacktoschool","Title":"turkey noodle casserole","ContentTag2":"casserole","Dish":"al dente;deglaze;drippings;casserole dish;bread crumbs;garnish;egg noodles;extra-virgin olive oil;white mushrooms;poultry;chicken stock;heavy cream;parsley leaves;","UniqueID":"food|recipe|bfae2861-b69e-4f51-97f2-3bb000bae95f|1","SctnDspName":"recipes &amp; how-tos","Url":"/recipes/rachael-ray/turkey-noodle-casserole-recipe.html","DetailId":"bfae2861-b69e-4f51-97f2-3bb000bae95f"};for(var key in mdProps){mdManager.addAttribute(key,mdProps[key]);}}</script>
+<script type="text/psajs" orig_index=15>if(typeof mdManager!="undefined"){mdManager.addParameter('UserId',typeof userIdCookieUserId!="undefined"?userIdCookieUserId:'');mdManager.addParameter('UserIdEmail',typeof userIdEmail!="undefined"?userIdEmail:'');mdManager.addParameter('UserIdCreateDt',typeof userIdCookieCreateDt!="undefined"?userIdCookieCreateDt:'');mdManager.addParameter('UserIdVersion',typeof userIdCookieVersion!="undefined"?userIdCookieVersion:'');}</script>
+<script type="text/psajs" orig_index=16>if(typeof AdManager!="undefined"){var adManager=new AdManager();initAdManager(adManager,mdManager);}</script>
+<script src="//assets.adobedtm.com/076e416a6caa07234c15d9bd371ee9e19eef88d3/satelliteLib-f3e832010ee4310999f4994bb5fbbfed8344301d.js" type="text/psajs" orig_index=17></script>
+</head>
+<body><noscript><meta HTTP-EQUIV="refresh" content="0;url='http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html?PageSpeed=noscript'" /><style><!--table,div,span,font,p{display:none} --></style><div style="display:block">Please click <a href="http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html?PageSpeed=noscript">here</a> if you are not redirected within a few seconds.</div></noscript>
+<div class="parbase clientcontext"><script src="/etc/clientlibs/foundation/shared.min.js" type="text/psajs" orig_index=18></script>
+<script src="/etc/clientlibs/granite/underscore.min.js" type="text/psajs" orig_index=19></script>
+<script src="/etc/clientlibs/foundation/personalization/kernel.min.js" type="text/psajs" orig_index=20></script>
+<script type="text/psajs" orig_index=21>if(CQ_Analytics&&CQ_Analytics.PageDataMgr){CQ_Analytics.PageDataMgr.loadInitProperties({"hits":0,"title":"Turkey Noodle Casserole","path":"/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe","navTitle":"Turkey Noodle Casserole","tags":"","description":"","sitesection":"recipes","subsection":"rachael-ray","random":"0.66"},true);}
+if(CQ_Analytics&&CQ_Analytics.PageDataMgr&&mdManager){var mapping=[{"p":"url","m":"Url"},{"p":"title","m":"Title"},{"p":"siteName","m":"Site"},{"p":"sectionDisplayName","m":"SctnDspName"},{"p":"categoryDisplayName","m":"CategoryDspName"},{"p":"classification","m":"Classification"},{"p":"detailId","m":"DetailId"},{"p":"uniqueId","m":"UniqueId"},{"p":"pageNumber","m":"PageNumber"},{"p":"type","m":"Type"},{"p":"hubId","m":"HubId"},{"p":"hubPath","m":"hubPath"},{"p":"hubType","m":"HubType"},{"p":"hubSponsor","m":"HubSponsor"},{"p":"adkey1","m":"AdKey1"},{"p":"adkey2","m":"AdKey2"},{"p":"contentTag1","m":"ContentTag1"},{"p":"contentTag2","m":"ContentTag2"},{"p":"sponsorship","m":"Sponsorship"},{"p":"deliveryFormat","m":"DelvFrmt"},{"p":"showAbbreviation","m":"Show_Abbr"},{"p":"talentName","m":"TalentName"},{"p":"userId","m":"UserID"},{"p":"source","m":"Source"},{"p":"deliveryChannel","m":"Delivery_Channel"},{"p":"packageName","m":"PackageName"},{"p":"searchFilter","m":"Filter"},{"p":"searchKeywords","m":"Keywords"},{"p":"searchTerms","m":"SearchTerms"},{"p":"keyterm","m":"keyterm"},{"p":"dimensions","m":"dimensions"},{"p":"dimensionValues","m":"dimensionValues"},{"p":"searchSort","m":"Sort"},{"p":"noSearchResults","m":"NoSearchResults"},{"p":"didYouMeanTerm","m":"dymterm"},{"p":"spotlight1","m":"Spotlight_1"},{"p":"spotlight2","m":"Spotlight_2"},{"p":"dish","m":"Dish"},{"p":"mealType","m":"MealType"},{"p":"nutrition","m":"Nutrition"},{"p":"difficulty","m":"Difficulty"},{"p":"cuisine","m":"Cuisine"},{"p":"mainIngredeient","m":"MainIngredient"},{"p":"occasions","m":"Occasions"},{"p":"courses","m":"Courses"},{"p":"technique","m":"Technique"},{"p":"taste","m":"Taste"},{"p":"internalSearchType","m":"internalSearchType"},{"p":"restricted ","m":"Restricted"},{"p":"origPubDate","m":"OrigPubDate"},{"p":"ingredients","m":"Ingredients"}];$CQ.each(mapping,function(index,value){CQ_Analytics.PageDataMgr.setProperty(value.p,mdManager.getParameterString(value.m));});}
+if(typeof localStorage!=="undefined"){if(localStorage.getItem('clicktracking.originalUrl')!=null){if(typeof CQ_Analytics!=="undefined"&&CQ_Analytics.EventDataMgr){CQ_Analytics.EventDataMgr.setProperty('componentName',localStorage.getItem('clicktracking.moduleName'));CQ_Analytics.EventDataMgr.setProperty('linkTitle',localStorage.getItem('clicktracking.linkTitle'));CQ_Analytics.EventDataMgr.setProperty('linkPosition',localStorage.getItem('clicktracking.linkPosition'));CQ_Analytics.EventDataMgr.setProperty('targetUrl',localStorage.getItem('clicktracking.targetUrl'));CQ_Analytics.EventDataMgr.setProperty('originUrl',localStorage.getItem('clicktracking.originalUrl'));localStorage.removeItem('clicktracking.moduleName');localStorage.removeItem('clicktracking.linkTitle');localStorage.removeItem('clicktracking.linkPosition');localStorage.removeItem('clicktracking.targetUrl');localStorage.removeItem('clicktracking.originalUrl');}}}
+$CQ(function(){CQ_Analytics.SegmentMgr.loadSegments("/etc/segmentation");CQ_Analytics.ClientContextUtils.init("/etc/clientcontext/default","/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe");});</script>
+</div>
+<div class=servicecomponents><div class="sitecatalyst cloudservice"><script src="/etc/clientlibs/foundation/sitecatalyst/sitecatalyst.min.js" type="text/psajs" orig_index=22></script>
+<script src="/etc/clientlibs/foundation/sitecatalyst/util.min.js" type="text/psajs" orig_index=23></script>
+<script src="/content/food/_jcr_content/analytics.sitecatalyst.js" type="text/psajs" orig_index=24></script>
+<script src="/etc/clientlibs/foundation/sitecatalyst/plugins.min.js" type="text/psajs" orig_index=25></script>
+<span data-tracking="{event:'pageView', values:{}, componentPath:'foundation/components/page'}"></span>
+<script type="text/psajs" orig_index=26>CQ_Analytics.Sitecatalyst.frameworkComponents=['sni-core/components/modules/secondary-2-image-plus-link-list-full','sni-food/components/pagetypes/recipe/components/save-recipe','sni-core/components/modules/banner-custom','sni-core/components/modules/a-to-z/otr-hosts-a-z','sni-food/components/pagetypes/video-center/components/stacked-module','sni-core/components/modules/carousel-photo-gallery-promo','sni-core/components/modules/restaurant-browse','sni-food/components/pagetypes/video-center/components/lead-carousel-module','sni-food/components/pagetypes/topic/components/more-topics','sni-core/components/modules/secondary-3-image-across','sni-food/components/modules/recirculation-module','sni-core/components/modules/list-recipe-enhanced','sni-core/components/modules/list-recipe-text','sni-core/components/modules/talent-about','sni-core/components/modules/list-selected-shows','sni-food/components/pagetypes/search-results/components/search-upcoming-episodes','sni-food/components/util/header/shows-mega-dropdown','sni-core/components/modules/free-form-text','sni-food/components/pagetypes/recipe/components/categories-popover','sni-food/components/util/header/videos-mega-dropdown','sni-core/components/modules/generic-1-image','sni-food/components/util/mobile-header','sni-food/components/pagetypes/recipe/components/fixed-promo','sni-core/components/modules/carousel-circle-display','sni-food/components/pagetypes/video-center/components/big-thumb-two-row-module','sni-food/components/modules/map','sni-core/components/modules/lead-enhanced','sni-core/components/modules/lead-3-image','sni-core/components/modules/schedule-full-width','sni-core/components/modules/show-host-about','sni-core/components/modules/newsletter-dropdown','sni-core/components/modules/newsletter-content-well-top','sni-core/components/modules/breadcrumb','sni-core/components/modules/carousel-video-promo','sni-core/components/modules/a-to-z/otr-shows-a-z','sni-core/components/modules/secondary-grid-hover','sni-core/components/modules/carousel-cross-content','sni-core/components/util/sub-navigation','sni-food/components/util/header/recipes-mega-dropdown','sni-core/components/modules/secondary-grid','sni-food/components/modules/calendar','sni-core/components/modules/nav-jump-dropdown','sni-core/components/modules/a-to-z/shows-a-z','sni-core/components/modules/lead-3-image-recipe','sni-food/components/util/header/restaurants-mega-dropdown','sni-core/components/modules/secondary-bottom-promo','sni-core/components/util/hub-navigation','sni-core/components/modules/a-to-z/restaurants-a-z','sni-food/components/pagetypes/recipe/components/recipe-direction-carousel','sni-core/components/modules/right-rail-2-image-side-by-side','sni-core/components/modules/global-toolbar','sni-core/components/modules/lead-1-image-scroll-with-stack','sni-core/components/modules/right-rail-schedule','sni-food/components/util/mobile-footer/mobile-food-footer-links','sni-core/components/util/page','sni-food/components/modules/pagination-simple','sni-food/components/pagetypes/recipe/components/photo-video','sni-core/components/modules/spotlight-1-image-1-list','sni-food/components/util/mobile-footer/mobile-food-footer-sociallinks','sni-core/components/modules/secondary-grid-hover-row','sni-core/components/modules/right-rail-store','sni-core/components/modules/carousel-superlead','sni-core/components/modules/right-rail-blog-feed','sni-core/components/modules/right-rail-list-selected-shows','sni-core/components/modules/spotlight-2-images-2-lists','sni-core/components/modules/carousel-mixed-content-promo','sni-core/components/modules/list-text','sni-core/components/modules/a-to-z/chefs-hosts-a-z','sni-core/components/modules/right-rail-restaurants-nearby','sni-core/components/modules/carousel-generic-promo','sni-core/components/modules/video-player','sni-core/components/modules/right-rail-store-feed','sni-core/components/modules/banner-simple','sni-food/components/util/footer/more-from-food-network','sni-core/components/modules/schedule','sni-food/components/pagetypes/recipe/components/next-recipe','sni-food/components/util/skinny-header','sni-core/components/modules/a-to-z/recipes-a-z','sni-core/components/modules/spotlight-1-image-2-lists','sni-food/components/pagetypes/video-center/components/two-across-module','sni-food/components/util/footer','sni-core/components/modules/a-to-z/topics-a-z','sni-core/components/modules/right-rail-1-or-2-image','sni-food/components/util/header','sni-food/components/util/header/chefs-mega-dropdown','sni-food/components/pagetypes/recipe/components/categories','sni-core/components/modules/generic-1-image-plus-link-list','sni-core/components/modules/feed-blog','sni-food/components/util/footer/food-network-family','sni-core/components/modules/more-recipe-ideas','sni-core/components/modules/feed-episodes','sni-food/components/pagetypes/recipe/components/single-photo-recipe','sni-food/components/modules/header-stack','sni-core/components/modules/restaurant-search','sni-core/components/modules/a-to-z/cities-a-z','sni-core/components/modules/video-grid'];CQ_Analytics.Sitecatalyst.updateEvars=function(options){this.frameworkMappings=[];this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/secondary-2-image-plus-link-list-full"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/secondary-2-image-plus-link-list-full"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/secondary-2-image-plus-link-list-full"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/secondary-2-image-plus-link-list-full"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/secondary-2-image-plus-link-list-full"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/save-recipe"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/save-recipe"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/save-recipe"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/save-recipe"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/save-recipe"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/banner-custom"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/banner-custom"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/banner-custom"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/banner-custom"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/banner-custom"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/otr-hosts-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/otr-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/otr-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/otr-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/otr-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/video-center/components/stacked-module"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/video-center/components/stacked-module"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/video-center/components/stacked-module"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/video-center/components/stacked-module"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/video-center/components/stacked-module"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-photo-gallery-promo"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-photo-gallery-promo"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-photo-gallery-promo"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-photo-gallery-promo"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-photo-gallery-promo"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/restaurant-browse"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/restaurant-browse"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/restaurant-browse"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/restaurant-browse"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/restaurant-browse"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/video-center/components/lead-carousel-module"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/video-center/components/lead-carousel-module"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/video-center/components/lead-carousel-module"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/video-center/components/lead-carousel-module"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/video-center/components/lead-carousel-module"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/topic/components/more-topics"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/topic/components/more-topics"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/topic/components/more-topics"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/topic/components/more-topics"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/topic/components/more-topics"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/secondary-3-image-across"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/secondary-3-image-across"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/secondary-3-image-across"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/secondary-3-image-across"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/secondary-3-image-across"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/modules/recirculation-module"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/modules/recirculation-module"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/modules/recirculation-module"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/modules/recirculation-module"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/modules/recirculation-module"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/list-recipe-enhanced"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/list-recipe-enhanced"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/list-recipe-enhanced"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/list-recipe-enhanced"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/list-recipe-enhanced"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/list-recipe-text"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/list-recipe-text"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/list-recipe-text"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/list-recipe-text"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/list-recipe-text"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/talent-about"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/talent-about"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/talent-about"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/talent-about"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/talent-about"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/list-selected-shows"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/list-selected-shows"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/list-selected-shows"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/list-selected-shows"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/list-selected-shows"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/search-results/components/search-upcoming-episodes"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/search-results/components/search-upcoming-episodes"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/search-results/components/search-upcoming-episodes"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/search-results/components/search-upcoming-episodes"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/search-results/components/search-upcoming-episodes"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/header/shows-mega-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/header/shows-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/header/shows-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/header/shows-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/header/shows-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/free-form-text"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/free-form-text"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/free-form-text"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/free-form-text"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/free-form-text"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/categories-popover"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/categories-popover"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/categories-popover"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/categories-popover"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/categories-popover"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/header/videos-mega-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/header/videos-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/header/videos-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/header/videos-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/header/videos-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/generic-1-image"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/generic-1-image"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/generic-1-image"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/generic-1-image"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/generic-1-image"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/mobile-header"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/mobile-header"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/mobile-header"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/mobile-header"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/mobile-header"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/fixed-promo"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/fixed-promo"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/fixed-promo"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/fixed-promo"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/fixed-promo"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-circle-display"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-circle-display"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-circle-display"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-circle-display"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-circle-display"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/video-center/components/big-thumb-two-row-module"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/video-center/components/big-thumb-two-row-module"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/video-center/components/big-thumb-two-row-module"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/video-center/components/big-thumb-two-row-module"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/video-center/components/big-thumb-two-row-module"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/modules/map"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/modules/map"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/modules/map"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/modules/map"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/modules/map"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/lead-enhanced"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/lead-enhanced"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/lead-enhanced"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/lead-enhanced"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/lead-enhanced"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/lead-3-image"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/lead-3-image"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/lead-3-image"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/lead-3-image"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/lead-3-image"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/schedule-full-width"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/schedule-full-width"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/schedule-full-width"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/schedule-full-width"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/schedule-full-width"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/show-host-about"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/show-host-about"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/show-host-about"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/show-host-about"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/show-host-about"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/newsletter-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/newsletter-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/newsletter-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/newsletter-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/newsletter-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/newsletter-content-well-top"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/newsletter-content-well-top"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/newsletter-content-well-top"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/newsletter-content-well-top"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/newsletter-content-well-top"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/breadcrumb"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/breadcrumb"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/breadcrumb"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/breadcrumb"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/breadcrumb"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-video-promo"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-video-promo"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-video-promo"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-video-promo"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-video-promo"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/otr-shows-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/otr-shows-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/otr-shows-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/otr-shows-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/otr-shows-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/secondary-grid-hover"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/secondary-grid-hover"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/secondary-grid-hover"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/secondary-grid-hover"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-cross-content"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-cross-content"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-cross-content"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-cross-content"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-cross-content"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/util/sub-navigation"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/util/sub-navigation"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/util/sub-navigation"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/util/sub-navigation"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/util/sub-navigation"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/header/recipes-mega-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/header/recipes-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/header/recipes-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/header/recipes-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/header/recipes-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/secondary-grid"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/secondary-grid"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/secondary-grid"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/secondary-grid"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/secondary-grid"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/modules/calendar"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/modules/calendar"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/modules/calendar"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/modules/calendar"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/modules/calendar"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/nav-jump-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/nav-jump-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/nav-jump-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/nav-jump-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/nav-jump-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/shows-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/shows-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/shows-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/shows-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/shows-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/lead-3-image-recipe"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/lead-3-image-recipe"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/lead-3-image-recipe"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/lead-3-image-recipe"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/lead-3-image-recipe"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/header/restaurants-mega-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/header/restaurants-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/header/restaurants-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/header/restaurants-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/header/restaurants-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/secondary-bottom-promo"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/secondary-bottom-promo"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/secondary-bottom-promo"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/secondary-bottom-promo"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/secondary-bottom-promo"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/util/hub-navigation"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/util/hub-navigation"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/util/hub-navigation"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/util/hub-navigation"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/util/hub-navigation"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/restaurants-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/restaurants-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/restaurants-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/restaurants-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/restaurants-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/recipe-direction-carousel"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/recipe-direction-carousel"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/recipe-direction-carousel"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/recipe-direction-carousel"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/recipe-direction-carousel"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-2-image-side-by-side"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-2-image-side-by-side"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-2-image-side-by-side"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-2-image-side-by-side"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-2-image-side-by-side"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/global-toolbar"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/global-toolbar"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/global-toolbar"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/global-toolbar"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/global-toolbar"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/lead-1-image-scroll-with-stack"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/lead-1-image-scroll-with-stack"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/lead-1-image-scroll-with-stack"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/lead-1-image-scroll-with-stack"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/lead-1-image-scroll-with-stack"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-schedule"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-schedule"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-schedule"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-schedule"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-schedule"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-links"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-links"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-links"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-links"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-links"});this.frameworkMappings.push({scVar:"eVar4",cqVar:"pagedata.searchTerms",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar5",cqVar:"pagedata.dimensions",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"event14",cqVar:"pagedata.searchTerms",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar9",cqVar:"pagedata.searchSort",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar6",cqVar:"pagedata.dimensionValues",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar7",cqVar:"pagedata.noSearchResults",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop60",cqVar:"pagedata.deliveryChannel",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop12",cqVar:"pagedata.talentName",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop10",cqVar:"pagedata.type",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop53",cqVar:"pagedata.siteName",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"event1",cqVar:"eventdata.events.pageView",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop27",cqVar:"pagedata.noSearchResults",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop23",cqVar:"pagedata.dimensions",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop24",cqVar:"pagedata.dimensionValues",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop25",cqVar:"pagedata.searchFilter",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop21",cqVar:"pagedata.searchTerms",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop22",cqVar:"pagedata.keyterm",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop65",cqVar:"pagedata.internalSearchType",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop5",cqVar:"pagedata.sectionDisplayName",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop6",cqVar:"pagedata.title",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop9",cqVar:"pagedata.uniqueId",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop7",cqVar:"pagedata.sponsorship",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop8",cqVar:"pagedata.classification",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop40",cqVar:"pagedata.adkey1",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop32",cqVar:"pagedata.userId",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop74",cqVar:"pagedata.searchSort",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop39",cqVar:"pagedata.deliveryFormat",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"pageName",cqVar:"pagedata.url",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar10",cqVar:"pagedata.userId",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop44",cqVar:"pagedata.showAbbreviation",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop43",cqVar:"pagedata.adkey2",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop42",cqVar:"pagedata.contentTag2",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop41",cqVar:"pagedata.contentTag1",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"prop46",cqVar:"pagedata.source",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"channel",cqVar:"pagedata.categoryDisplayName",resourceType:"sni-core/components/util/page"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/modules/pagination-simple"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/modules/pagination-simple"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/modules/pagination-simple"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/modules/pagination-simple"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/modules/pagination-simple"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/photo-video"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/photo-video"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/photo-video"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/photo-video"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/photo-video"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/spotlight-1-image-1-list"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/spotlight-1-image-1-list"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/spotlight-1-image-1-list"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/spotlight-1-image-1-list"});this.frameworkMappings.push({scVar:"eVar41",cqVar:"eventdata.spotlightName",resourceType:"sni-core/components/modules/spotlight-1-image-1-list"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/spotlight-1-image-1-list"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-sociallinks"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-sociallinks"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-sociallinks"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-sociallinks"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/mobile-footer/mobile-food-footer-sociallinks"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/secondary-grid-hover-row"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/secondary-grid-hover-row"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/secondary-grid-hover-row"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/secondary-grid-hover-row"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/secondary-grid-hover-row"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-store"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-store"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-store"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-store"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-store"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-superlead"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-superlead"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-superlead"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-superlead"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-superlead"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-blog-feed"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-blog-feed"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-blog-feed"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-blog-feed"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-blog-feed"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-list-selected-shows"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-list-selected-shows"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-list-selected-shows"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-list-selected-shows"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-list-selected-shows"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/spotlight-2-images-2-lists"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/spotlight-2-images-2-lists"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/spotlight-2-images-2-lists"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/spotlight-2-images-2-lists"});this.frameworkMappings.push({scVar:"eVar41",cqVar:"eventdata.spotlightName",resourceType:"sni-core/components/modules/spotlight-2-images-2-lists"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/spotlight-2-images-2-lists"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-mixed-content-promo"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-mixed-content-promo"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-mixed-content-promo"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-mixed-content-promo"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-mixed-content-promo"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/list-text"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/list-text"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/list-text"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/list-text"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/list-text"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/chefs-hosts-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/chefs-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/chefs-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/chefs-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/chefs-hosts-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-restaurants-nearby"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-restaurants-nearby"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-restaurants-nearby"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-restaurants-nearby"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-restaurants-nearby"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/carousel-generic-promo"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/carousel-generic-promo"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/carousel-generic-promo"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/carousel-generic-promo"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/carousel-generic-promo"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/video-player"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/video-player"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/video-player"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/video-player"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/video-player"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-store-feed"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-store-feed"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-store-feed"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-store-feed"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-store-feed"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/banner-simple"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/banner-simple"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/banner-simple"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/banner-simple"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/banner-simple"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/footer/more-from-food-network"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/footer/more-from-food-network"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/footer/more-from-food-network"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/footer/more-from-food-network"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/footer/more-from-food-network"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/schedule"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/schedule"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/schedule"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/schedule"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/schedule"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/next-recipe"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/next-recipe"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/next-recipe"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/next-recipe"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/next-recipe"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/skinny-header"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/skinny-header"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/skinny-header"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/skinny-header"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/skinny-header"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/recipes-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/recipes-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/recipes-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/recipes-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/recipes-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/spotlight-1-image-2-lists"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/spotlight-1-image-2-lists"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/spotlight-1-image-2-lists"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/spotlight-1-image-2-lists"});this.frameworkMappings.push({scVar:"eVar41",cqVar:"eventdata.spotlightName",resourceType:"sni-core/components/modules/spotlight-1-image-2-lists"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/spotlight-1-image-2-lists"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/video-center/components/two-across-module"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/video-center/components/two-across-module"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/video-center/components/two-across-module"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/video-center/components/two-across-module"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/video-center/components/two-across-module"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/footer"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/footer"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/footer"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/footer"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/footer"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/topics-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/topics-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/topics-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/topics-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/topics-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/right-rail-1-or-2-image"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/right-rail-1-or-2-image"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/right-rail-1-or-2-image"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/right-rail-1-or-2-image"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/right-rail-1-or-2-image"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/header"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/header"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/header"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/header"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/header"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/header/chefs-mega-dropdown"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/header/chefs-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/header/chefs-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/header/chefs-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/header/chefs-mega-dropdown"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/categories"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/categories"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/categories"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/categories"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/categories"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/generic-1-image-plus-link-list"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/generic-1-image-plus-link-list"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/generic-1-image-plus-link-list"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/generic-1-image-plus-link-list"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/generic-1-image-plus-link-list"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/feed-blog"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/feed-blog"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/feed-blog"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/feed-blog"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/feed-blog"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/util/footer/food-network-family"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/util/footer/food-network-family"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/util/footer/food-network-family"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/util/footer/food-network-family"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/util/footer/food-network-family"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/more-recipe-ideas"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/more-recipe-ideas"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/more-recipe-ideas"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/more-recipe-ideas"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/more-recipe-ideas"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/feed-episodes"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/feed-episodes"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/feed-episodes"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/feed-episodes"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/feed-episodes"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/pagetypes/recipe/components/single-photo-recipe"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/pagetypes/recipe/components/single-photo-recipe"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/pagetypes/recipe/components/single-photo-recipe"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/pagetypes/recipe/components/single-photo-recipe"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/pagetypes/recipe/components/single-photo-recipe"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-food/components/modules/header-stack"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-food/components/modules/header-stack"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-food/components/modules/header-stack"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-food/components/modules/header-stack"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-food/components/modules/header-stack"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/restaurant-search"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/restaurant-search"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/restaurant-search"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/restaurant-search"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/restaurant-search"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/a-to-z/cities-a-z"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/a-to-z/cities-a-z"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/a-to-z/cities-a-z"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/a-to-z/cities-a-z"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/a-to-z/cities-a-z"});this.frameworkMappings.push({scVar:"eVar16",cqVar:"eventdata.componentName",resourceType:"sni-core/components/modules/video-grid"});this.frameworkMappings.push({scVar:"prop18",cqVar:"eventdata.originUrl",resourceType:"sni-core/components/modules/video-grid"});this.frameworkMappings.push({scVar:"eVar17",cqVar:"eventdata.linkPosition",resourceType:"sni-core/components/modules/video-grid"});this.frameworkMappings.push({scVar:"eVar18",cqVar:"eventdata.linkTitle",resourceType:"sni-core/components/modules/video-grid"});this.frameworkMappings.push({scVar:"eVar19",cqVar:"eventdata.targetUrl",resourceType:"sni-core/components/modules/video-grid"});for(var i=0;i<this.frameworkMappings.length;i++){var m=this.frameworkMappings[i];if(!options||options.compatibility||(options.componentPath==m.resourceType)){CQ_Analytics.Sitecatalyst.setEvar(m);}}}
+var collect=mdManager.getPageType()!=="iframe-module";var lte=s.linkTrackEvents;s.pageName="content:food:recipes:rachael-ray:t:tu:tur:turk:turkey-noodle-casserole-recipe";CQ_Analytics.Sitecatalyst.collect(collect);CQ_Analytics.Sitecatalyst.updateEvars();if(collect){var s_code=s.t();if(s_code)document.write(s_code);s.linkTrackEvents=lte;if(s.linkTrackVars.indexOf('events')==-1){delete s.events};$CQ(document).trigger("sitecatalystAfterCollect");}</script>
+<noscript><img src="http://sa.foodnetwork.com/b/ss/scrippsfoodnetnew/1/H.25--NS/1443037933708?cdp=2&amp;gn=content%3Afood%3Arecipes%3Arachael-ray%3At%3Atu%3Atur%3Aturk%3Aturkey-noodle-casserole-recipe" height=1 width=1 border=0 alt=""/></noscript>
+</div>
+</div>
+ <script src="http://images.foodnetwork.com/webfood/fn20/js/geoAdvisoryPopup.html" type="text/psajs" orig_index=27></script> 
+<div id=leaderboard>
+<script type="text/psajs" orig_index=28>LeaderboardAd(1);</script>
+</div>
+<div class="module header"><span style="display: none" class=clicktracking data-component-path="sni-food/components/util/header" data-resource-path="/content/food/regions/header/default/jcr:content/global-header" data-resource-type="sni-food/components/util/header"></span><header role=banner class=nav-wrap>
+<div>
+<div class=brand>
+<a href="/"><img height=105 width=105 src="http://foodnetwork.sndimg.com/etc/designs/food/clientlib/img/fn-logo.png"/></a></div>
+<nav role=navigation class=primary-nav>
+<ul>
+<li class=shows>
+<a data-toggle=dropdown data-url="/content/food/regions/header/shows-mega-dropdown/jcr:content/par/shows-mega-dropdown.exportable.html" href="/shows.html"><span>Shows</span></a>
+<ul class=dropdown-menu>
+</ul>
+</li>
+<li class=chefs>
+<a data-toggle=dropdown data-url="/content/food/regions/header/chefs-mega-dropdown/jcr:content/par/chefs-mega-dropdown.exportable.html" href="/chefs.html"><span>Chefs</span></a>
+<ul class=dropdown-menu>
+</ul>
+</li>
+<li class=recipes>
+<a data-toggle=dropdown data-url="/content/food/regions/header/recipes-mega-dropdown/jcr:content/par/recipes-mega-dropdown.exportable.html" href="/recipes.html"><span>Recipes</span></a>
+<ul class=dropdown-menu>
+</ul>
+</li>
+<li class=restaurants>
+<a data-toggle=dropdown data-url="/content/food/regions/header/restaurants-mega-dropdown/jcr:content/par/restaurants-mega-dropdown.exportable.html" href="/restaurants.html"><span>Restaurants</span></a>
+<ul class=dropdown-menu>
+</ul>
+</li>
+<li class=videos>
+<a data-toggle=dropdown data-url="/content/food/regions/header/videos-mega-dropdown/jcr:content/par/videos-mega-dropdown.exportable.html" href="/videos.html"><span>Videos</span></a>
+<ul class=dropdown-menu>
+</ul>
+</li>
+<li class=search-box>
+<div class=navigation-primary-search><form action="/search/search-results.html">
+<fieldset>
+<input type=text name=searchTerm placeholder="Find Recipes, Videos &amp; More" class=autosuggest autocomplete=off />
+<input type=hidden name=form value=global />
+<input type=hidden name=_charset_ value=UTF-8 />
+<button type=submit>Search</button>
+<b class=hide><i class=ss-delete></i></b>
+</fieldset>
+</form>
+</div>
+</li>
+</ul>
+</nav>
+<nav class=utility-nav>
+<div class=pull-left>
+<ul class=social>
+<li>
+<a href="https://www.facebook.com/FoodNetwork">
+<b class="caret fb">
+<i class=sss-facebook></i>
+</b>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/foodnetwork">
+<b class="caret tw">
+<i class=sss-twitter></i>
+</b>
+</a>
+</li>
+<li>
+<a href="http://www.pinterest.com/foodnetwork/">
+<b class="caret pt">
+<i class=sss-pinterest></i>
+</b>
+</a>
+</li>
+<li class=dropdown>
+<a class=dropdown-toggle data-toggle=dropdown data-target="#" href="#">
+<b class=caret><i class=ss-navigatedown></i></b>
+</a>
+<ul class=dropdown-menu>
+<li>
+<a href="https://plus.google.com/+FoodNetwork">
+<i class=sss-googleplus></i>
+<b>Google+</b>
+</a>
+</li>
+<li>
+<a href="http://instagram.com/foodnetwork#">
+<i class=sss-instagram></i>
+<b>Instagram</b>
+</a>
+</li>
+<li>
+<a href="http://foodnetwork.tumblr.com/">
+<i class=sss-tumblr></i>
+<b>Tumblr</b>
+</a>
+</li>
+<li><a href="http://blog.foodnetwork.com/fn-dish/">FN Dish Blog</a></li>
+<li><a href="http://blog.foodnetwork.com/healthyeats/">Healthy Eats Blog</a></li>
+<li><a target=_blank href="http://mynewsletters.scrippsnetworks.com/?mode=subscribe&amp;nlbrand=foodnet">Newsletter Sign-Up</a></li>
+</ul>
+</li>
+</ul>
+<ul class=apps>
+<li><a href="http://blog.foodnetwork.com"><span>Blog</span></a></li>
+</ul>
+<ul class=magazine>
+<li class=dropdown>
+<a href="/magazine.html" class=dropdown-toggle data-toggle=dropdown data-target="#"><span>Magazine</span><b class="caret sm"><i class=ss-navigatedown></i></b></a>
+<ul class=dropdown-menu>
+<li><a target=_blank href="https://subscribe.hearstmags.com/subscribe/splits/foodnetmag/fnm_sub_nav">Subscribe Now</a></li>
+<li><a href="/magazine.html">This Month's Issue</a></li>
+</ul>
+</li>
+</ul>
+<ul class=apps>
+<li><a href="/site/apps.html"><span>Apps</span></a></li>
+</ul>
+<ul class=shop>
+<li class=dropdown>
+<a href="http://www.foodnetworkstore.com/?CCAID=FNPTONPR1FNPV" class=dropdown-toggle data-toggle=dropdown data-target="#"><span>Shop</span><b class="caret sm"><i class=ss-navigatedown></i></b></a>
+<div class=dropdown-menu>
+<div class=row>
+<div class="col5 offset">
+<div class="set big">
+<h6>Bakeware Sale</h6>
+<a href="http://www.foodnetworkstore.com/index.php?v=sale-fall-bakeware&ecid=PRF-FOOD-100565&pa=PRF-FOOD-100565" class=ico-wrap target=_blank><img height=121 width=161 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2015/9/4/0/FNStore_fall_bakeware_sales_event.jpg.rend.sni5col.landscape.jpeg"/></a></div>
+<p><a href="http://www.foodnetworkstore.com/index.php?v=sale-fall-bakeware&ecid=PRF-FOOD-100565&pa=PRF-FOOD-100565" target=_blank>Save up to 50% during our Fall Bakeware Sales Event &amp; get baking!</a></p>
+<b><a href="http://www.foodnetworkstore.com/index.php?v=sale-fall-bakeware&ecid=PRF-FOOD-100565&pa=PRF-FOOD-100565" target=_blank>Shop Now &gt;&gt;</a></b>
+</div>
+<div class="col5 offset">
+<h6><a href="http://www.foodnetworkstore.com/departments/index.php?v=department&amp;ecid=PRF-FOOD-100292&amp;pa=PRF-FOOD-100292" target=_blank>Shop Departments <span class="btn radial tiny"><i class=ss-navigateright></i></span></a></h6>
+<a href="http://www.foodnetworkstore.com/departments/index.php?v=department&ecid=PRF-FOOD-100292&pa=PRF-FOOD-100292" class=ico-wrap><img height=95 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/unsized/2015/9/14/0/FNStore_Logo_126x95_fncomFlyout_sept2015.jpg.rend.sni4col.landscape.jpeg"/></a><ul class=list>
+<li><a href="http://shop.foodnetworkstore.com/nav/department/cookware/0?ecid=PRF-FOOD-100293&amp;pa=PRF-FOOD-100293" target=_blank>Cookware</a></li>
+<li><a href="http://shop.foodnetworkstore.com/nav/department/cookbooks/0?ecid=PRF-FOOD-100294&amp;pa=PRF-FOOD-100294" target=_blank>Cookbooks</a></li>
+<li><a href="http://shop.foodnetworkstore.com/nav/department/appliances/0?ecid=PRF-FOOD-100295&amp;pa=PRF-FOOD-100295" target=_blank>Appliances</a></li>
+<li><a href="http://shop.foodnetworkstore.com/nav/department/cutlery/0?ecid=PRF-FOOD-100296&amp;pa=PRF-FOOD-100296" target=_blank>Knives</a></li>
+<li><a href="http://www.foodnetworkstore.com/best-sellers/index.php?v=best-sellers&amp;ecid=PRF-FOOD-100384&amp;pa=PRF-FOOD-100384" target=_blank>Best-Sellers</a></li>
+</ul>
+<h6><a href="http://www.foodnetworkstore.com/departments/index.php?v=department&amp;ecid=PRF-FOOD-100298&amp;pa=PRF-FOOD-100298" target=_blank>Shop All <span class="btn radial tiny"><i class=ss-navigateright></i></span></a></h6>
+</div>
+<div class="col5 offset">
+<h6><a href="http://www.foodnetworkstore.com/gift-guides/index.php?v=gifts&amp;ecid=PRF-FOOD-100299&amp;pa=PRF-FOOD-100299" target=_blank>Shop Gift Guides <span class="btn radial tiny"><i class=ss-navigateright></i></span></a></h6>
+<a href="http://www.foodnetworkstore.com/gift-guides/index.php?v=gifts&ecid=PRF-FOOD-100299&pa=PRF-FOOD-100299" class=ico-wrap><img height=95 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/11/12/1/FN_161x121_Holiday.jpg.rend.sni4col.landscape.jpeg"/></a><ul class=list>
+<li><a href="http://www.foodnetworkstore.com/for-her/index.php?v=gifts-recipient-her&amp;ecid=PRF-FOOD-100300&amp;pa=PRF-FOOD-100300" target=_blank>For Her</a></li>
+<li><a href="http://www.foodnetworkstore.com/for-him/index.php?v=gifts-recipient-him&amp;ecid=PRF-FOOD-100301&amp;pa=PRF-FOOD-100301" target=_blank>For Him</a></li>
+<li><a href="http://www.foodnetworkstore.com/under-50/index.php?v=gifts-price-50&amp;ecid=PRF-FOOD-100302&amp;pa=PRF-FOOD-100302" target=_blank>Under $50</a></li>
+<li><a href="http://www.foodnetworkstore.com/under-100/index.php?v=gifts-price-100&amp;ecid=PRF-FOOD-100303&amp;pa=PRF-FOOD-100303" target=_blank>Under $100</a></li>
+<li><a href="http://www.foodnetworkstore.com/for-the-food-network-fan/index.php?v=gifts-for-the-food-network-fan&amp;ecid=PRF-FOOD-100304&amp;pa=PRF-FOOD-100304" target=_blank>For the FN Fan</a></li>
+</ul>
+<h6><a href="http://www.foodnetworkstore.com/gift-guides/index.php?v=gifts&amp;ecid=PRF-FOOD-100305&amp;pa=PRF-FOOD-100305" target=_blank>Shop All Gift Guides <span class="btn radial tiny"><i class=ss-navigateright></i></span></a></h6>
+</div>
+<div class="col5 offset">
+<h6><a href="http://shop.foodnetworkstore.com/nav/department/fangear/0?ecid=PRF-FOOD-100168&amp;pa=PRF-FOOD-100168" target=_blank>Exclusively FN <span class="btn radial tiny"><i class=ss-navigateright></i></span></a></h6>
+<a href="http://www.entwine-wines.com/" class=ico-wrap><img height=95 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/11/8/0/entwine.jpg.rend.sni4col.landscape.jpeg"/></a><ul class=list>
+<li><a target=_blank href="http://www.entwine-wines.com/">entwine wine by FN</a></li>
+<li><a href="http://www.foodnetworkeats.com/" target=_blank>FN at the Airport</a></li>
+<li><a target=_blank href="http://www.kohls.com/foodnetwork">FN Housewares</a></li>
+<li><a href="http://www.foodnetworkstore.com/candles/index.php?v=candles&amp;ecid=PRF-FOOD-100044&amp;pa=PRF-FOOD-100044" target=_blank>FN Candles</a></li>
+</ul>
+</div>
+<div class=col4>
+<div class=set>
+<h6><a href="http://www.foodnetworkstore.com/detail.php?p=552772&amp;ecid=PRF-FOOD-100115&amp;pa=PRF-FOOD-100115" target=_blank>FN Magazine <span class="btn radial tiny"><i class=ss-navigateright></i></span></a></h6>
+<a href="http://www.foodnetworkstore.com/detail.php?p=552772&ecid=PRF-FOOD-100115&pa=PRF-FOOD-100115" class=ico-wrap><img height=95 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/12/3/1/FNStore_FNM_toteGWP.jpg.rend.sni4col.landscape.jpeg"/></a></div>
+<p>Subscribe to Food Network Magazine and get a FREE tote!</p>
+<ul class=list>
+<li><a href="http://www.foodnetworkstore.com/detail.php?p=552772&amp;ecid=PRF-FOOD-100115&amp;pa=PRF-FOOD-100115" target=_blank>Subscribe Now</a></li>
+</ul>
+</div>
+</div>
+<div class=bottom>
+<h6><p><b><i>SAVE UP TO 50%</i></b></p></h6>
+<ul class=inline>
+<li class=last>
+<a href="http://www.foodnetworkstore.com/index.php?v=sale-fall-bakeware&amp;ecid=PRF-FOOD-100566&amp;pa=PRF-FOOD-100566" target=_blank>DURING OUR FALL BAKEWARE SALES EVENT!</a></li>
+</ul>
+<a href="http://www.foodnetworkstore.com/?ecid=PRF-FOOD-100010&pa=PRF-FOOD-100010" class="btn vip last"><b>SHOP FOOD NETWORK STORE</b></a></div>
+</div>
+</li>
+</ul>
+</div>
+<div class=pull-right>
+<ul class=social-login></ul>
+<script id=header-loggedIn type=x-tmpl-mustache>
+    <li class="dropdown user">
+      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+        {{#thumbnailURL}}<img src="{{thumbnailURL}}" width="20" height="20" alt="" class="user-avatar">{{/thumbnailURL}}
+        {{#nicknameDisplay}}<span rel="ellipsis" data-max="15">{{nicknameDisplay}}</span>{{/nicknameDisplay}}
+        <b class="caret sm"><i class="ss-navigatedown"></i></b>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="http://www.foodnetwork.com/user/profile.html">Account Settings</a></li>
+        <li>
+          <a href="#" class="fn-sign-out">Log Out</a>
+        </li>
+      </ul>
+    </li>
+  </script>
+<script id=header-loggedOut type=x-tmpl-mustache>
+    <li>
+      <button href="#" class="fn-sign-in community btn vip">Log In</button>
+    </li>
+  </script>
+<ul class=mybox>
+<li class=dropdown>
+<a class=dropdown-toggle data-toggle=dropdown data-target="#" href="#"><span>Recipe Box</span><b class="caret sm"><i class=ss-navigatedown></i></b></a>
+<ul class=dropdown-menu>
+<li><a href="http://recipes.foodnetwork.com">Recipes</a></li>
+<li><a href="http://recipes.foodnetwork.com/shopping-list">Grocery List</a></li>
+</ul>
+</li>
+</ul>
+</div></nav>
+</div>
+</header>
+<script type="text/psajs" orig_index=29>SNI.Food.NavCtrl.setServerDomain("www.foodnetwork.com");SNI.Food.NavCtrl.setDDLoad();</script></div>
+<div class=iax_outer id=pushdown_adtag>
+<div class=iax_inner>
+<script type="text/psajs" orig_index=30>PushdownAd(1);</script>
+</div>
+<div id=brandscape></div>
+<span id=900x650slot class=_fwph>
+<form id=_fw_form_900x650slot class=hide>
+<input type=hidden name=_fw_input_900x650slot id=_fw_input_900x650slot value="w=900&amp;h=650&amp; cd=900,650&amp;envp=g_js&amp;sflg=-nrpl&amp;prct=text/html_doc_lit_mobile,text/html_doc_ref,text/html_lit_nowrapper;">
+</form>
+<span id=_fw_container_900x650slot class=_fwac>
+<span class=hide></span>
+</span>
+</span>
+</div>
+<div class=unlimited_container>
+</div>
+<div class=container role=main>
+<div class=row>
+<div class=parsys><div class="parbase section reference"><div style="display:inline;" class=cq-dd-paragraph><div class=carousel-cross-content-static><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/carousel-cross-content" data-resource-path="/content/modules/food/carousel-cross-content/default/jcr:content/par/carousel_cross_content" data-resource-type="sni-food/components/modules/carousel-cross-content"></span>
+<div class=cross-content>
+<h6>New on FoodNetwork.com</h6>
+<div class="crsl-static vert carousel-show" data-scale=false>
+<div class=item>
+<div class=group>
+<figure class="overlay wrap">
+<a href="/recipes/photos/fall-harvest-foods.page-9.html" class=ico-wrap>
+<img height=95 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/2/10/0/TM1010_Warm-Apples-and-Ice-Cream_s4x3.jpg.rend.snigallerythumb.jpeg"/>
+</a>
+<figcaption>
+<span class=slug>Find Out What's In Season</span>
+<a href="/recipes/photos/fall-harvest-foods.page-9.html">
+<h4><a href="/recipes/photos/fall-harvest-foods.page-9.html" adhocenable=false>Fresh Recipes for Fall</a></h4>
+</a>
+</figcaption>
+</figure>
+</div>
+<div class=group>
+<figure class="overlay wrap">
+<a href="/chefs/trisha-yearwood/trisha-yearwoods-top-recipes.page-2.html" class=ico-wrap>
+<img title=TrishaYearwood_BlueberryPancakes_H height=95 alt=TrishaYearwood_BlueberryPancakes_H width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/1/11/0/YW0206H_blueberry-pancakes-recipe_s4x3.jpg.rend.snigallerythumb.jpeg"/>
+</a>
+<figcaption>
+<span class=slug>Best of the Best</span>
+<a href="/chefs/trisha-yearwood/trisha-yearwoods-top-recipes.page-2.html">
+<h4><a adhocenable=false href="/chefs/trisha-yearwood/trisha-yearwoods-top-recipes.page-2.html">Trisha's Top Recipes<br>
+</a></h4>
+</a>
+</figcaption>
+</figure>
+</div>
+<div class=group>
+<figure class="overlay wrap">
+<a href="/healthy/packages/healthy-every-week/healthy-makeovers/healthy-meal-makeovers.page-35.html" class=ico-wrap>
+<img height=95 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/9/1/0/FNK_Sweet-Potato-Nachos_s4x3.jpg.rend.snigallerythumb.jpeg"/>
+</a>
+<figcaption>
+<span class=slug>Comfort Foods, Remade</span>
+<a href="/healthy/packages/healthy-every-week/healthy-makeovers/healthy-meal-makeovers.page-35.html">
+<h4><a adhocenable=false href="/healthy/packages/healthy-every-week/healthy-makeovers/healthy-meal-makeovers.page-35.html">46 Healthy Meal Makeovers</a></h4>
+</a>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row split">
+<article itemscope itemtype="http://schema.org/Recipe">
+<section class=next-recipe-link><span style="display: none" class=clicktracking data-component-path="sni-food/components/pagetypes/recipe/components/next-recipe" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/next-recipe" data-resource-type="sni-food/components/pagetypes/recipe/components/next-recipe"></span>
+<aside class=prev-next-wrapper>
+<div class=recipe-prev>
+<a href="/recipes/giada-de-laurentiis/greek-noodle-casserole-pastitsio-recipe.html">Prev Recipe</a>
+</div>
+<div class=recipe-next>
+<a href="/recipes/food-network-kitchens/sopa-seca-mexican-noodle-casserole-recipe.html">Next Recipe</a>
+</div>
+</aside>
+</section>
+<link itemprop=url href="http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html"/>
+<meta itemprop=mainEntityOfPage content=True />
+<div class=parsys><section class="section breadcrumb"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/breadcrumb" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/breadcrumb" data-resource-type="sni-food/components/modules/breadcrumb"></span>
+<div class=crumb-wrap>
+<div class=ad-sponsored>
+<script type="text/psajs" orig_index=31>MultiLogoAd('LOGO',4);</script>
+</div>
+<div class=crumb><ul>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/" itemprop=url>
+<span itemprop=title>Home</span></a>
+</li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="/recipes.html" itemprop=url>
+<span itemprop=title>Recipes &amp; How-Tos</span></a>
+</li>
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop=title>Turkey Noodle Casserole</span>
+</li>
+</ul></div>
+</div>
+</section>
+<section class="title section">
+<div class="tier-3 title">
+<h1 itemprop=name>Turkey Noodle Casserole</h1>
+<meta itemprop=description content="Get this all-star, easy-to-follow Turkey Noodle Casserole recipe from Rachael Ray"/>
+</div>
+</section>
+<section class="lead-overview section">
+<div class=bd>
+<div class=lead-overview>
+<div class=col18>
+<section class="review-rating section">
+<a class=community-rating-stars data-rating='{}' href="#communityReviews"></a>
+</section>
+<div class="avatar group" itemprop=author itemscope itemtype="http://schema.org/Person">
+<div class=media>
+<a href="/chefs/rachael-ray.html" itemprop=url>
+<img itemprop=image height=56 width=56 class=pull-left src="http://foodnetwork.sndimg.com/content/dam/images/food/unsized/Rachel_Ray.jpg.rend.sni2col.jpeg"/>
+</a>
+<h6>Recipe courtesy of <a href="/chefs/rachael-ray.html" itemprop=url><span itemprop=name>Rachael Ray</span></a></h6>
+<div class=show itemscope itemtype="http://schema.org/TVSeries">
+<dl>
+<dt>SHOW:</dt>
+<dd>
+<a href="/shows/30-minute-meals.html" itemprop=url>
+<span itemprop=name>30 Minute Meals</span>
+</a>
+</dd>
+<dt>EPISODE:</dt>
+<dd>
+<div class=episode itemprop=episode itemscope itemtype="http://schema.org/TVEpisode">
+<a href="/shows/30-minute-meals/10-series/a-classic-reunion.html" itemprop=url>
+<span itemprop=name>A Classic Reunion</span>
+</a>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<section class="global-toolbar-placeholder section"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/global-toolbar" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/lead-overview/global-toolbar" data-resource-type="sni-core/components/modules/global-toolbar"></span>
+<div id=socialToolbar class="global-toolbar section" data-st='{"pgtitle":"Turkey Noodle Casserole : Rachael Ray : Food Network","emailUrl":"http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.emailsend.html"}'>
+<div class=st-left>
+<div class="st-item saverecipe"></div>
+<div class="st-item print"><a class="btn fig" title="Print the page: Turkey Noodle Casserole : Rachael Ray : Food Network" target=_blank href="http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.print.html" data-popup-width=1100 data-popup-height=700><i class=ss-print></i>Print</a></div>
+<div class="st-item email"><a data-toggle=modal data-target="#email-modal" title='Share on e-mail' class="btn fig" href="mailto:?subject=Food%20Network:%20Turkey%20Noodle%20Casserole%20%3A%20Rachael%20Ray%20%3A%20Food%20Network&body=http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html%0A%0AGet%20this%20all-star%2C%20easy-to-follow%20Turkey%20Noodle%20Casserole%20recipe%20from%20Rachael%20Ray"><i class=ss-mail></i>Email</a></div>
+</div>
+<div class=st-right>
+<div class="st-item fblike"><a class=icon title=Facebook target=_blank href="https://www.facebook.com/sharer/sharer.php?u=http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html%3Fsoc%3Dsocialsharingfb" data-popup-width=600 data-popup-height=354><i class=sss-facebook></i></a></div><div class="st-item pinit"><a class=icon title=Pinterest target=_blank href="https://pinterest.com/pin/create%2Fbutton/?url=http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html%3Fsoc%3Dsocialsharingpinterest&amp;media=http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/4/23/0/TM1021_Turkey-Noodle-Casserole_s4x3.jpg&amp;description=Turkey%20Noodle%20Casserole%20recipe%20from%20Rachael%20Ray%20via%20Food%20Network" data-popup-width=750 data-popup-height=565><i class=sss-pinterest></i></a></div><div class="st-item tweet"><a class=icon title=Twitter target=_blank href='https://twitter.com/share?url=http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html%3Fsoc%3Dsocialsharingtw&amp;text=Get%20the%20recipe%20for%20Turkey%20Noodle%20Casserole%20via%20%40FoodNetwork%3A%20' data-popup-width=440 data-popup-height=260><i class=sss-twitter></i></a></div><div class="st-item gplus"><a class=icon title=GooglePlus target=_blank href='https://plus.google.com/share?url=http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html%3Fsoc%3Dsocialsharinggplus' data-popup-width=585 data-popup-height=450><i class=sss-googleplus></i></a></div></div>
+</div>
+</section>
+<div class=recipe>
+<meta itemprop=totalTime content=PT0H30M>
+<meta itemprop=prepTime content=PT0H10M>
+<meta itemprop=cookTime content=PT0H20M>
+<meta itemprop=recipeYield content="4 servings">
+<div class="col12 pic collapsed">
+<div class=photo-video><span style="display: none" class=clicktracking data-component-path="sni-food/components/pagetypes/recipe/components/photo-video" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/lead-overview/photo-video" data-resource-type="sni-food/components/pagetypes/recipe/components/photo-video"></span>
+<figure>
+<div class="tab-pane fade in active" id=video>
+<a href="#lightbox-recipe-video" data-pos=top class=lightbox-recipe-video>
+<div class=ico-wrap>
+<img title="Turkey Noodle Casserole" itemprop=image height=305 alt="Turkey Noodle Casserole" width=406 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/4/23/0/TM1021_Turkey-Noodle-Casserole_s4x3.jpg.rend.sni12col.landscape.jpeg"/>
+<span class=ico><i class=ss-play></i></span>
+</div>
+<figcaption>1 video | Turkey Noodle Casserole Update (04:30)</figcaption>
+</a>
+</div>
+</figure>
+</div>
+</div>
+<div class="col6 info collapsed">
+<div class=cooking-times>
+<dl>
+<dt class=total>Total Time:</dt><dd class=total>30 min</dd>
+<dt>Prep:</dt><dd>10 min</dd>
+<dt>Cook:</dt><dd>20 min</dd>
+</dl>
+</div>
+<hr>
+<div class=difficulty>
+<dl>
+<dt>Yield:</dt>
+<dd>4 servings</dd>
+</dl>
+<dl>
+<dt>Level:</dt>
+<dd>Easy</dd>
+</dl>
+</div>
+<hr>
+</div>
+<div class="col18 hide enlarged">
+<div class=info>
+<div class=cooking-times>
+<dl>
+<dt class=total>Total Time:</dt><dd class=total>30 min</dd>
+<dt>Prep:</dt><dd>10 min</dd>
+<dt>Cook:</dt><dd>20 min</dd>
+</dl>
+</div>
+</div>
+<hr class=vrt />
+<div class=info>
+<div class=difficulty>
+<dl>
+<dt>Yield:</dt>
+<dd>4 servings</dd>
+</dl>
+<dl>
+<dt>Level:</dt>
+<dd>Easy</dd>
+</dl>
+</div>
+</div>
+<hr class=vrt />
+<div class=info>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-lightbox=lightbox-recipe-image class="modal hide fade overlay limitless" type="overlay/template">
+    <figure>
+        <img title="Turkey Noodle Casserole" itemprop="image" height="462" alt="Turkey Noodle Casserole" width="616" src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/4/23/0/TM1021_Turkey-Noodle-Casserole_s4x3.jpg.rend.sni18col.jpeg" />
+        <figcaption>
+            <small>Turkey Noodle Casserole</small>
+        </figcaption>
+    </figure>  
+</script>
+<script type="text/psajs" orig_index=32>$("head").append('<meta name="tp:initialize" content="false" />');</script>
+<script src="//secure-us.imrworldwide.com/novms/js/2/ggcmb400.js" type="text/psajs" orig_index=33></script>
+<script src="http://www.player.video.snidigital.com/vpc/1/4/9/js/sni-video.min.js" type="text/psajs" orig_index=34></script>
+<link rel=stylesheet type="text/css" href="http://www.player.video.snidigital.com/vpc/1/4/9/css/sni-video.min.css">
+<link rel=stylesheet href="/etc/designs/food/clientlib/video.min.css" type="text/css" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib/video.min.css">
+<script src="/etc/designs/food/clientlib/video.min.js" type="text/psajs" orig_index=35></script>
+<div id=lightbox-recipe-video class="modal overlay limitless closed no-channel">
+<div class=modal-header>
+<a href="#" class="btn direct med" data-dismiss=modal aria-hidden=true><i class=ss-delete></i></a>
+</div>
+<div class=modal-body>
+<figure class=channel-component>
+<div id=player-channel class=fnPlayer></div>
+<div id=nextEndframe-player-channel style="display:none;"></div>
+<div class=channel-sellectedVideo>
+<div class=title-wrap>
+<h5 class=match-h1>Turkey Noodle Casserole Update</h5>
+<cite>(04:30)</cite>
+</div>
+<p rel=ellipsis data-max=100 class=expandable style=width:616px>Rachael's throwback classic meal includes updated Turkey Noodle Casserole.</p>
+</div>
+</figure>
+</div>
+</div>
+<script type="text/psajs" orig_index=36>if((!CQ)||(CQ&&!CQ.WCM)||(CQ&&CQ.WCM&&(!(CQ.WCM.isEditMode())))){var pdkRecipeInline;pdkRecipeInline=SNI.Food.Video.RecipeInlinePlayer($.extend(true,{},{player:{autoplay:false,containerId:'player-channel'}},{endframe:{enabled:false}},{freewheel:{adContainerId:"obtwHQXTODWC"}},{"channels":[{"title":"Turkey Noodle Casserole Update Channel","start":0,"end":0,"total":1,"videos":[{"releaseUrl":"http://link.theplatform.com/s/ip77QC/i6_CZolwUAsv?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/315667011609","title":"Turkey Noodle Casserole Update","description":"Rachael's throwback classic meal includes updated Turkey Noodle Casserole.","length_hhmmss":"04:30","length":270,"length_sss":270,"nlvid":"0208116","scrid":"2079551","cmsid":"a1df47fd-9619-45ba-a3ad-54c847129f99","relatedText":"Get the recipe","relatedUrl":"/recipes/rachael-ray/turkey-noodle-casserole-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/1012/535/0208116_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/1012/535/0208116_126x71.jpg","videoFormat":"SD","showName":"30 Minute Meals","showUrl":"/content/food/shows/3/30-minute-meals.html","hostName":"Rachael Ray","hostUrl":"/content/food/chefs/rachael-ray.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/turkey-noodle-casserole-update-0208116.embed.html"}]}]},{"extras":{"selectedId":"","isModule":true,"crslContainer":".channel-component","crslPromo":"#hub-video-crsl","initCrsl":true}}));}</script>
+</section>
+<section class="ingredients-instructions recipe-instructions section">
+<div class=bd>
+<div class="col8 ingredients responsive">
+<h6>Ingredients</h6>
+<ul>
+<li itemprop=ingredients>1/2 pound extra wide <a href="http://www.foodterms.com/encyclopedia/noodles/index.html" class=crosslink debug="21 32">egg noodles</a></li>
+<li itemprop=ingredients> Salt</li>
+<li itemprop=ingredients>1 tablespoon <a href="http://www.foodterms.com/encyclopedia/olive-oil/index.html" class=crosslink debug="59 81">extra-virgin olive oil</a>, 1 turn of the pan</li>
+<li itemprop=ingredients>3 slices bacon or turkey bacon, chopped</li>
+<li itemprop=ingredients>1 1/3 pound, the average weight of 1 package, ground turkey breast</li>
+<li itemprop=ingredients>1 pound <a href="http://www.foodterms.com/encyclopedia/mushroom/index.html" class=crosslink debug="229 244">white mushrooms</a>, wiped, trimmed and sliced</li>
+<li itemprop=ingredients>1 medium onion, chopped</li>
+<li itemprop=ingredients> Black pepper</li>
+<li itemprop=ingredients>2 teaspoons dried thyme or <a href="http://www.foodterms.com/encyclopedia/poultry/index.html" class=crosslink debug="349 356">poultry</a> seasoning</li>
+<li itemprop=ingredients>1/2 cup dry white wine</li>
+<li itemprop=ingredients>1 cup <a href="http://www.foodterms.com/encyclopedia/stock/index.html" class=crosslink debug="405 418">chicken stock</a>, available on soup aisle, eyeball it</li>
+<li itemprop=ingredients>1/2 cup <a href="http://www.foodterms.com/encyclopedia/cream/index.html" class=crosslink debug="469 480">heavy cream</a>, 3 turns of the pan</li>
+<li itemprop=ingredients>1/4 teaspoon freshly grated nutmeg</li>
+<li itemprop=ingredients>2 tablespoons softened butter</li>
+<li itemprop=ingredients>2 cups grated Gruyere, about an 8-ounce brick</li>
+<li itemprop=ingredients>1 cup plain bread crumbs</li>
+<li itemprop=ingredients>2 to 3 tablespoons chopped <a href="http://www.foodterms.com/encyclopedia/parsley/index.html" class=crosslink debug="686 700">parsley leaves</a></li>
+</ul>
+<div id=dfp_native_ingredient></div>
+</div>
+<div class="col10 directions" itemprop=recipeInstructions>
+<h6>Directions</h6>
+<a href="#lightbox-recipe-video" data-pos=top class=watchHow>Watch how to make this recipe<span id=watchIcon><i class=ss-video></i></span></a>
+<p>Bring a large pot of water to a boilfor your egg noodles. When it boils, salt the water and cook noodles to <a href="http://www.foodterms.com/encyclopedia/al-dente/index.html" class=crosslink debug="108 116">al dente</a>.</p><p>Preheat a large, deep skillet over medium high heat. Add extra-virgin olive oil, 1 turn of the pan, and bacon or turkey bacon. Render the bacon fat 2 to 3 minutes, until bacon begins to brown at edges. Add meat and brown it, crumbling it with a wooden spoon. Move the meat over to 1 side of the pan and add mushrooms and onions to the opposite side. Cook mushrooms and onions 3 to 5 minutes, then combine the meat with veggies and season the mixture liberally with salt and pepper, then sprinkle in the ground thyme or poultry seasoning. Cook another 5 minutes then add wine. <a href="http://www.foodterms.com/encyclopedia/deglaze/index.html" class=crosslink debug="698 705">Deglaze</a> the pan, lifting up pan <a href="http://www.foodterms.com/encyclopedia/drippings/index.html" class=crosslink debug="730 739">drippings</a> and bits. Stir in stock and bring to a bubble, then stir in cream and reduce the heat to low. Add nutmeg to sauce and stir. Taste to adjust seasonings. </p><p>Preheat broiler to high. Combine noodles with turkey and sauce. Grease a <a href="http://www.foodterms.com/encyclopedia/casserole/index.html" class=crosslink debug="970 984">casserole dish</a> with a little softened butter nested in a piece of paper towel then transfer the turkey noodle mixture to the dish. Top the casserole with Gruyere then <a href="http://www.foodterms.com/encyclopedia/breadcrumbs/index.html" class=crosslink debug="1137 1149">bread crumbs</a>. Place the casserole 8 to 10 inches from the broiler and brown 2 to 3 minutes until cheese is melted and the crumbs are brown. Remove from oven and <a href="http://www.foodterms.com/encyclopedia/garnish/index.html" class=crosslink debug="1298 1305">garnish</a> the casserole with parsley.</p>
+<p class=copyright>Recipe courtesy of Rachael Ray</p>
+<hr>
+<div class=categories>
+<h6><b>CATEGORIES:</b> </h6>
+<ul class=categories><span style="display: none" class=clicktracking data-component-path="sni-food/components/pagetypes/recipe/components/categories" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/ingredients-instructions/categories" data-resource-type="sni-food/components/pagetypes/recipe/components/categories"></span>
+<li itemprop=recipeCategory><a href="/topics/brined-turkey-recipes.html">Turkey</a></li>
+<li itemprop=recipeCategory><a href="/topics/dinner.html">Dinner</a></li>
+<li class=last itemprop=recipeCategory><a href="/topics/casserole.html">Casserole</a></li>
+</ul>
+<span data-popover=categories data-pos=left>View All<a href="#" class="btn radial tiny"> <i class=ss-upright></i></a></span>
+<div class=categories-popover><span style="display: none" class=clicktracking data-component-path="sni-food/components/pagetypes/recipe/components/categories-popover" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/ingredients-instructions/categories-popover" data-resource-type="sni-food/components/pagetypes/recipe/components/categories-popover"></span>
+<script data-popover=categories type="popover/template">
+	<div class="popover-content categories">
+	        
+                <ul>
+                    <li>Main Ingredient</li>
+                    
+                        
+                            
+                            
+                                
+                                
+									
+								
+							
+                            
+                                
+                                    <li ><a href="/content/food/topics/b/brined-turkey-recipes.html">Turkey</a></li> 
+								
+                                
+							
+						
+                        
+                            
+                            
+                                
+                                
+									
+								
+							
+                            
+                                
+                                    <li ><a href="/content/food/topics/b/bacon.html">Bacon</a></li> 
+								
+                                
+							
+						
+                        
+                            
+                            
+                                
+									
+								
+                                
+							
+                            
+                                
+                                    <li class="last"><a href="/content/food/topics/n/noodles.html">Noodles</a></li> 
+								
+                                
+							
+						
+				</ul>
+			
+                <ul>
+                    <li>Course</li>
+                    
+                        
+                            
+                            
+                                
+                                
+									
+								
+							
+                            
+                                
+                                    <li ><a href="/content/food/topics/d/dinner.html">Dinner</a></li> 
+								
+                                
+							
+						
+                        
+                            
+                            
+                                
+									
+								
+                                
+							
+                            
+                                
+                                    <li class="last"><a href="/content/food/topics/m/main-dish.html">Main Dish</a></li> 
+								
+                                
+							
+						
+				</ul>
+			
+                <ul>
+                    <li>Dish</li>
+                    
+                        
+                            
+                            
+                                
+									
+								
+                                
+							
+                            
+                                
+                                    <li class="last"><a href="/content/food/topics/c/casserole.html">Casserole</a></li> 
+								
+                                
+							
+						
+				</ul>
+			
+                <ul>
+                    <li>Cuisine</li>
+                    
+                        
+                            
+                            
+                                
+									
+								
+                                
+							
+                            
+                                
+                                    <li class="last"><a href="/content/food/topics/a/american.html">American</a></li> 
+								
+                                
+							
+						
+				</ul>
+			
+	</div>
+</script></div>
+</div>
+<hr>
+<section class=recipe-direction-carousel><span style="display: none" class=clicktracking data-component-path="sni-food/components/pagetypes/recipe/components/recipe-direction-carousel" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/ingredients-instructions/recipe-direction-carousel" data-resource-type="sni-food/components/pagetypes/recipe/components/recipe-direction-carousel"></span>
+</section>
+</div>
+</div>
+<a rel=package-overlay-top></a>
+</section>
+<div class="parbase section reference"><div style="display:inline;" class=cq-dd-paragraph><section class=secondary-inline-video>
+<section class=secondary-inline-video>
+<header class=hr>
+<h5>Cooking Tips</h5>
+<nav class=cta><a href="/videos/channels/fall-entertaining-guide.html">More Cooking Tips<i class=ss-navigateright></i></a></nav>
+</header>
+<div class="bd group">
+<div class="vid-wrap col12">
+<div id=playerSecInlIframe class=fnPlayer></div>
+<div id=nextEndframe-playerSecInlIframe style="display:none;"></div>
+</div>
+<div class="vid-list col6"></div>
+</div>
+<script type="text/psajs" orig_index=37>var pdkplayerSecInlIframe=SNI.Food.Video.SecondaryInline($.extend(true,{},{player:{autoplay:false,containerId:"playerSecInlIframe"}},{alternateEndframe:{frameId:"nextEndframe-playerSecInlIframe"}},{freewheel:{adContainerId:"obtwHQXTODWC"}},{"channels":[{"title":"Fall Entertaining Guide","start":0,"end":17,"total":18,"videos":[{"releaseUrl":"http://link.theplatform.com/s/ip77QC/jSyCaMDi6KZI?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/276561475769","title":"Giada's Penne with Butternut Squash","description":"Toasted walnuts add crunch to this creamy pasta dish.","length_hhmmss":"03:37","length":217,"length_sss":217,"nlvid":"0137914","scrid":"867858","cmsid":"f52db75a-ecb2-4bd5-a1cd-95a909c168a4","relatedText":"Get the recipe","relatedUrl":"/recipes/giada-de-laurentiis/penne-with-butternut-squash-and-goat-cheese-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/582/591/0137914_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/582/591/0137914_126x71.jpg","videoFormat":"SD","showName":"Giada at Home","showUrl":"/content/food/shows/g/giada-at-home.html","hostName":"Giada De Laurentiis","hostUrl":"/content/food/chefs/giada-de-laurentiis.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/penne-with-butternut-squash-0137914.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/jcMZ_7T1_zLS?format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/315316803770","title":"Pork Chops, Apples & Pancetta","description":"Giada smothers her Pork Chops, Apples and Pancetta in a brandy-laced gravy.","length_hhmmss":"03:36","length":216,"length_sss":216,"nlvid":"0190134","scrid":"1669628","cmsid":"436e7822-8028-45cc-a4ba-1f6a0a08a021","relatedText":"Get the recipe","relatedUrl":"/recipes/giada-de-laurentiis/pork-chops-with-apples-and-pancetta-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/678/551/0190134_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/678/551/0190134_126x71.jpg","videoFormat":"HD","showName":"Giada at Home","showUrl":"/content/food/shows/g/giada-at-home.html","hostName":"Giada De Laurentiis","hostUrl":"/content/food/chefs/giada-de-laurentiis.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/pork-chops-apples-and-pancetta-0190134.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/UWy164KkOa4k?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/276770883658","title":"Apple Walnut Torta","description":"For a different Thanksgiving Day dessert try Giada's apple walnut torta.","length_hhmmss":"03:34","length":214,"length_sss":214,"nlvid":"0122851","scrid":"579336","cmsid":"ea3ad0f4-e838-46ad-ae47-675dbf1d528a","relatedText":"Get the recipe","relatedUrl":"/recipes/giada-de-laurentiis/apple-and-walnut-torta-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/782/291/0122851_92x69.jpg","videoFormat":"SD","showName":"Everyday Italian","showUrl":"/content/food/shows/e/everyday-italian.html","hostName":"Giada De Laurentiis","hostUrl":"/content/food/chefs/giada-de-laurentiis.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/apple-walnut-torta-0122851.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/U65QI1Y_oDgG?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/314456131653","title":"Tyler's Baked Apples & Bacon","description":"Tyler makes a side dish with two of his favorite flavors: apples and bacon.","length_hhmmss":"02:36","length":156,"length_sss":156,"nlvid":"0146126","scrid":"919846","cmsid":"f16eda01-542d-494c-965e-57aa258d9a33","relatedText":"Get the recipe","relatedUrl":"/recipes/tyler-florence/baked-apples-and-bacon-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/881/755/0146126_92x69.jpg","videoFormat":"SD LB","showName":"Tyler's Ultimate","showUrl":"/content/food/shows/t/tylers-ultimate.html","hostName":"Tyler Florence","hostUrl":"/content/food/chefs/tyler-florence.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/ultimate-baked-apples-and-bacon-0146126.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/Ru84DnBV9_7W?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/314871363941","title":"Parsnip Apple Puree","description":"Side dish it may be, but this delectable concoction deserves to be a star.","length_hhmmss":"02:04","length":124,"length_sss":124,"nlvid":"0150448","scrid":"1079081","cmsid":"67e9706b-a45e-4941-af83-32920e1fda30","relatedText":"Get the recipe","relatedUrl":"/recipes/claire-robinson/parsnip-and-apple-puree-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/253/751/0150448_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/253/751/0150448_126x71.jpg","videoFormat":"HD","showName":"5 Ingredient Fix","showUrl":"/content/food/shows/5/5-ingredient-fix.html","hostName":"Claire Robinson","hostUrl":"/content/food/chefs/claire-robinson.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/parsnip-apple-puree-0150448.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/ZJouYTAmcqu0","mpxId":"http://data.media.theplatform.com/media/data/Media/276761155621","title":"Pot Roast With Vegetables","description":"Tyler shows how to make the best-ever pot roast with vegetables.","length_hhmmss":"03:45","length":225,"length_sss":225,"nlvid":"0125715","scrid":"598059","cmsid":"726f9e22-4906-411f-8de4-24942626c467","relatedText":"Get the recipe","relatedUrl":"/recipes/tyler-florence/pot-roast-with-vegetables-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/773/7/0125715_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/773/7/0125715_126x71.jpg","videoFormat":"SD","showName":"Tyler's Ultimate","showUrl":"/content/food/shows/t/tylers-ultimate.html","hostName":"Tyler Florence","hostUrl":"/content/food/chefs/tyler-florence.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/pot-roast-with-vegetables-0125715.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/AGA7TLoeOHX_?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/315224131658","title":"Best Thing Ever","description":"Super chefs at the NYC Food & Wine Festival on their favorite fall foods.","length_hhmmss":"02:18","length":138,"length_sss":138,"nlvid":"0172844","scrid":"1366026","cmsid":"f9ae9685-c58c-4e52-9b6a-b7a29350c6c0","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/590/163/0172844_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/590/163/0172844_126x71.jpg","videoFormat":"HD","showName":"","showUrl":"","hostName":"","hostUrl":"","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/best-thing-ever-0172844.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/6jpUMgUhEMni?MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/276717635806","title":"Pear Clafouti","description":"Pear clafouti served warm with cream makes an elegant but simple dessert.","length_hhmmss":"04:38","length":278,"length_sss":278,"nlvid":"0133058","scrid":"679799","cmsid":"33bc5231-27b0-4159-98b9-1bb9e45aa0a9","relatedText":"Get the recipe","relatedUrl":"/recipes/ina-garten/pear-clafouti-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/731/515/0133058_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/731/515/0133058_126x71.jpg","videoFormat":"SD","showName":"Barefoot Contessa","showUrl":"/content/food/shows/b/barefoot-contessa.html","hostName":"Ina Garten","hostUrl":"/content/food/chefs/ina-garten.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/pear-clafouti-0133058.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/WUFrp7S14Gaq","mpxId":"http://data.media.theplatform.com/media/data/Media/319854659542","title":"Cranberry-Streusel Baked Pears","description":"Tyler uses fresh pears to make a baked cranberry-streusel-topped cobbler.","length_hhmmss":"02:46","length":166,"length_sss":166,"nlvid":"0222680","scrid":"2400714","cmsid":"73c0f887-ebdf-40b9-aeba-36c767aa168c","relatedText":"Get the recipe","relatedUrl":"/recipes/tyler-florence/pear-cobbler-with-cranberry-streusel-recipe.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/910/178/0222680_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/910/178/0222680_126x71.jpg","videoFormat":"HD","showName":"Tyler's Ultimate","showUrl":"/content/food/shows/t/tylers-ultimate.html","hostName":"Tyler Florence","hostUrl":"/content/food/chefs/tyler-florence.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/cranberry-streusel-baked-pears-0222680.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/l5k5bPhPyt_Z?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/279778371933","title":"Ree's Quick-n-Easy Apple Tart","description":"Ree's aptly named Quick-n-Easy Apple Tart looks like it took hours to make.","length_hhmmss":"02:34","length":154,"length_sss":154,"nlvid":"0214783","scrid":"2228148","cmsid":"ea249314-bdd0-4b7c-9c8f-ae9ac107264b","relatedText":"Get the recipe","relatedUrl":"/recipes/ree-drummond/quick-and-easy-apple-tart-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/578/459/0214783_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/578/459/0214783_126x71.jpg","videoFormat":"HD","showName":"The Pioneer Woman","showUrl":"/content/food/shows/t/the-pioneer-woman.html","hostName":"Ree Drummond","hostUrl":"/content/food/chefs/ree-drummond.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/rees-quick-n-easy-apple-tart-0214783.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/0B4GyXr475o5?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/319854147835","title":"Anne's Apple Brown Butter Tart","description":"Anne makes filling for two apple brown butter tarts to both eat and freeze.","length_hhmmss":"03:51","length":231,"length_sss":231,"nlvid":"0222681","scrid":"2400715","cmsid":"ff4bbc89-13f4-4117-86d0-e0321d3f226f","relatedText":"Get the recipe","relatedUrl":"/recipes/anne-burrell/apple-brown-butter-tart-recipe.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/909/703/0222681_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/909/703/0222681_126x71.jpg","videoFormat":"HD","showName":"Secrets of a Restaurant Chef","showUrl":"/content/food/shows/s/secrets-of-a-restaurant-chef.html","hostName":"Anne Burrell","hostUrl":"/content/food/chefs/anne-burrell.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/annes-apple-brown-butter-tart-0222681.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/XIhg71g1geG9?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/279796291793","title":"Hearty Drip Beef Sandwiches","description":"Ree prepares make-ahead Drip Beef Sandwiches for her hungry ranch crew.","length_hhmmss":"04:31","length":271,"length_sss":271,"nlvid":"0214793","scrid":"2228158","cmsid":"75c3c49a-671a-467f-85d3-40c5c5d4ac08","relatedText":"Get the recipe","relatedUrl":"/recipes/ree-drummond/drip-beef-sandwiches-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/595/551/0214793_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/595/551/0214793_126x71.jpg","videoFormat":"HD","showName":"The Pioneer Woman","showUrl":"/content/food/shows/t/the-pioneer-woman.html","hostName":"Ree Drummond","hostUrl":"/content/food/chefs/ree-drummond.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/recipes/ree-drummond/drip-beef-sandwiches/hearty-drip-beef-sandwiches-0214793.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/Du5_8Upsuvzs?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/322807875800","title":"Ree's Make-Ahead Meat Sauce","description":"Ree keeps plenty of her Make-Ahead Meat Sauce on hand for quick meals.","length_hhmmss":"03:52","length":232,"length_sss":232,"nlvid":"0219847","scrid":"2328018","cmsid":"d7ed76bb-64af-42c2-9102-a4db910729da","relatedText":"Get the recipe","relatedUrl":"/recipes/ree-drummond/meat-sauce.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/654/595/0219847_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/654/595/0219847_126x71.jpg","videoFormat":"HD","showName":"The Pioneer Woman","showUrl":"/content/food/shows/t/the-pioneer-woman.html","hostName":"Ree Drummond","hostUrl":"/content/food/chefs/ree-drummond.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/rees-make-ahead-meat-sauce-0219847.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/dsIFF1BDwi9G?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/292508739540","title":"Savory Squash Soup","description":"Make a batch of this wonderfully hearty winter squash soup for warmth.","length_hhmmss":"04:52","length":292,"length_sss":292,"nlvid":"94918","scrid":"266073","cmsid":"611dbc21-34a0-4976-8baa-8e79146718aa","relatedText":"Get the Recipe","relatedUrl":"/food/recipes/recipe/0,,FOOD_9936_17866,00.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/431/74/94918_92x69.jpg","videoFormat":"SD","showName":"Good Eats","showUrl":"/content/food/shows/g/good-eats.html","hostName":"Alton Brown","hostUrl":"/content/food/chefs/alton-brown.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/savory-squash-soup-94918.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/pZey3y6qBM_9?format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/275811907816","title":"Sweet & Spicy Short Rib Tacos","description":"No ground beef? Put this on the taco bar and make guests feel special!","length_hhmmss":"03:42","length":222,"length_sss":222,"nlvid":"0164565","scrid":"1233422","cmsid":"29f60181-cfbd-4b1c-aeb3-a9055bd3c743","relatedText":"Get the recipe","relatedUrl":"/recipes/marcela-valladolid/sweet-and-spicy-short-rib-tacos-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/891/751/0164565_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/891/751/0164565_126x71.jpg","videoFormat":"HD","showName":"Mexican Made Easy","showUrl":"/content/food/shows/m/mexican-made-easy.html","hostName":"Marcela Valladolid","hostUrl":"/content/food/chefs/marcela-valladolid.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/sweet-and-spicy-short-rib-tacos-0164565.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/1biMF5UKEGGC","mpxId":"http://data.media.theplatform.com/media/data/Media/330265155730","title":"Alton's Apple Spice Bundt Cake","description":"Alton shares his sweet-and-savory apple spice bundt cake with rum glaze.","length_hhmmss":"03:39","length":219,"length_sss":219,"nlvid":"0200326","scrid":"1882844","cmsid":"a4c68726-22eb-46dd-a957-bff9a1ab8e48","relatedText":"Get the recipe","relatedUrl":"/recipes/alton-brown/apple-spice-bundt-cake-with-rum-glaze-recipe/index.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/598/407/0200326_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/598/407/0200326_126x71.jpg","videoFormat":"HD","showName":"The Best Thing I Ever Made","showUrl":"/content/food/shows/t/the-best-thing-i-ever-made.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/altons-apple-spice-bundt-cake-0200326.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/Bd7HtbcPuulf?MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/330265155702","title":"Damaris' Bananas Foster Bread","description":"Damaris' Bananas Foster Bread: all the rum-soaked goodness of its namesake.","length_hhmmss":"05:12","length":312,"length_sss":312,"nlvid":"0222484","scrid":"2396816","cmsid":"6afb3691-2665-4bdf-b0b9-7750910f53fe","relatedText":"Get the recipe","relatedUrl":"/recipes/damaris-phillips/bananas-foster-bread.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/598/407/0222484_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/598/407/0222484_126x71.jpg","videoFormat":"HD","showName":"Southern at Heart","showUrl":"/content/food/shows/s/southern-at-heart.html","hostName":"Damaris Phillips","hostUrl":"/content/food/chefs/damaris-phillips.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/damaris-bananas-foster-bread-0222484.embed.html"},{"releaseUrl":"http://link.theplatform.com/s/ip77QC/L4hO0AGH2dRY?&format=SMIL&MBR=true","mpxId":"http://data.media.theplatform.com/media/data/Media/330266179609","title":"Spiked Rustic Beef Stew","description":"Horseradish-spiked cream is a surprise element to Amy's rustic beef stew.","length_hhmmss":"04:57","length":297,"length_sss":297,"nlvid":"0221705","scrid":"2379477","cmsid":"b3c34368-037f-4569-b97e-618515f4a866","relatedText":"Get the recipe","relatedUrl":"/recipes/amy-thielen/beef-stew-with-red-wine-mushrooms-and-horseradish-cream.html","thumbnailUrl":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/599/383/0221705_92x69.jpg","thumbnailUrl16x9":"http://images.scrippsnetworks.com/up/tp/Scripps_-_Food_Category_Prod/599/383/0221705_126x71.jpg","videoFormat":"HD","showName":"Heartland Table","showUrl":"/content/food/shows/h/heartland-table.html","hostName":"Amy Thielen","hostUrl":"/content/food/chefs/amy-thielen.html","hasSponsorship":false,"embedUrl":"http://www.foodnetwork.com/videos/spiked-rustic-beef-stew-0221705.embed.html"}]}]}));</script>
+</section>
+</section>
+</div>
+</div>
+<div class="parbase section reference">
+</div>
+<section class="module more-recipe-ideas section"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/more-recipe-ideas" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/content-well/more-recipe-ideas" data-resource-type="sni-food/components/modules/more-recipe-ideas"></span><header class=hr>
+<h5>More Recipes and Ideas</h5>
+</header>
+<div class="bd more-ideas">
+<div class="col10 recipes">
+<div class=group>
+<h6><a href="/recipes/giada-de-laurentiis/greek-noodle-casserole-pastitsio-recipe.html"><span>Greek Noodle Casserole (Pastitsio)</span></a></h6>
+<p>Recipe courtesy of <a href="/chefs/giada-de-laurentiis.html" rel=author>Giada De Laurentiis</a></p>
+</div>
+<div class=group>
+<h6><a href="/recipes/rachael-ray/turkey-and-stuffing-casserole.html"><span>Turkey and Stuffing Casserole</span></a></h6>
+<p>Recipe courtesy of <a href="/chefs/rachael-ray.html" rel=author>Rachael Ray</a></p>
+</div>
+<div class=group>
+<h6><a href="/recipes/rachael-ray/chicken-divan-egg-noodle-casserole-recipe.html"><span>Chicken Divan Egg Noodle Casserole</span></a></h6>
+<p>Recipe courtesy of <a href="/chefs/rachael-ray.html" rel=author>Rachael Ray</a></p>
+</div>
+</div>
+<div class="col8 group topics">
+<h6>Also Try:</h6>
+<ul class=list>
+<li><a href="/topics/vegetable-casserole.html"><span>Vegetable Casserole</span></a></li>
+<li><a href="/topics/spinach-casserole-recipes.html"><span>Spinach Casserole Recipes</span></a></li>
+<li><a href="/topics/sausage-casserole-recipes.html"><span>Sausage Casserole Recipes</span></a></li>
+<li><a href="/topics/squash-casserole-recipes.html"><span>Squash Casserole Recipes</span></a></li>
+<li><a href="/topics/casserole.html"><span>Casserole Recipes</span></a></li>
+<li><a href="/topics/green-bean-casserole-recipes.html"><span>Green Bean Casserole Recipes</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outbrain-recipes section">
+<header class=hr>
+<h5>YOU MIGHT ALSO LIKE</h5>
+</header>
+<div>
+<div class=OUTBRAIN data-src="http://www.foodnetwork.com/recipes/rachael-ray/turkey-noodle-casserole-recipe.html" data-widget-id=AR_3 data-ob-template=foodnetwork></div>
+</div>
+</section>
+<section class="ad-fn-magazine module section">
+</section>
+<div class="reviews section">
+<section>
+<div class=reviews-filter data-review-filters=bfae2861-b69e-4f51-97f2-3bb000bae95f id=review-filter-bfae2861-b69e-4f51-97f2-3bb000bae95f>
+<div class=loading>
+<div class=absolute-centering>
+<img alt="Loading review filters..." src="/etc/designs/food/clientlib/img/spinner.gif" pagespeed_lsc_url="http://www.foodnetwork.com/etc/designs/food/clientlib/img/spinner.gif">
+</div>
+</div>
+<div class=filters>
+<header class=hr>
+<h5>BROWSE REVIEWS BY KEYWORD</h5>
+</header>
+<ul class=stack></ul>
+</div>
+<div class=content></div>
+</div>
+</section>
+<script id=global_filter_template type="text/review-template">
+            <li><i></i><a rel="ellipsis" id="filter_{{id}}" data-index="{{index}}" data-max="38" href="#">{{name}} <cite>{{count}}</cite></a></li>
+        </script>
+<script id=global_review_template type="text/review-template">
+            <div class="media">
+                <div class="ratings">
+                    {{rating}}
+                </div>
+                <p>By {{displayName}} {{location}}</p>
+                <time datetime="2013-11-02">{{reviewDate}}</time>
+            </div>
+            <div class="review">
+                <div class="wrapper">
+                    {{body}}
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="count">
+                    <p class="pull-left">
+                        <span class="current">{{current}}</span> of <span class="total">{{total}}</span> reviews for "<b>{{name}}</b>"
+                    </p>
+                    <div class="pull-right">
+                        <a href="#" class="btn fig inverse prev"><i class="ss-left"></i><span>Previous</span></a>
+                        <a href="#" class="btn fig inverse next"><span>Next</span><i class="ss-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </script>
+<script id=global_tryout_template type="text/review-template">
+            <p id="intro">Filter reviews by keyword by clicking on the keywords above,<br>or try these popular keywords: <br></p>
+            <div id="try-now-links">
+                <div class="try-wrap">
+                    <ul class="tryouts"></ul>
+                </div>
+            </div>
+        </script>
+<section class="communityReviews section">
+<header class=hr>
+<h5>Reviews</h5>
+<section class="review-rating section">
+<a class=community-rating-stars data-rating='{"id":"bfae2861-b69e-4f51-97f2-3bb000bae95f"}' href="#communityReviews"></a>
+</section>
+</header>
+<div class=community-comments id=communityReviews data-comments='{}'></div>
+</section>
+</div>
+</div>
+</article>
+<aside role=complementary>
+<div class=parsys><section class="module free-form-text section"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/free-form-text" data-resource-path="/content/food/regions/recipe/right-rail/default/jcr:content/right-rail/free_form_text_0" data-resource-type="sni-food/components/modules/free-form-text"></span>
+<section class="ad section" style="width: auto;">
+<div id=bigbox_recipe>
+<script type="text/psajs" orig_index=38>if(typeof mdManager!="undefined"){BigboxAd(5,mdManager.getParameterString("keyterm"));}else{BigboxAd(5);}</script>
+</div>
+<span>Advertisement</span>
+</section>
+</section>
+<section class="ad-fn-magazine module section">
+</section>
+<div class="parbase section reference"><div style="display:inline;" class=cq-dd-paragraph><section class="module right_rail_schedule right-rail-schedule"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/right-rail-schedule" data-resource-path="/content/modules/on-tv-module/jcr:content/par/right_rail_schedule" data-resource-type="sni-food/components/modules/right-rail-schedule"></span>
+<header class=hr>
+<h5>On TV</h5>
+<span class=cta><a href="/shows/tv-schedule.html">Full TV Schedule</a><i class=ss-navigateright></i></span>
+</header>
+<div class=schedule>
+<dl class=onnow>
+<dt>
+<h5>On Air</h5>
+<b class=caret></b>
+</dt>
+<dd>
+<div class=l-line>
+<div class=l-line-cell><h6><a href="#"></a><time></time></h6></div>
+<div class="l-line-cell cell-liveTV">
+<a href="http://watch.foodnetwork.com/live.html?ic1=TVE_FN_OnTV_RightRail" class=liveTV target=_self>Watch Live TV</a>
+</div>
+</div>
+</dd>
+</dl>
+<dl class=alt>
+<dt>
+<h5>On Tonight</h5>
+</dt>
+<dd>
+<h6><a href="#"></a><time></time></h6>
+</dd>
+</dl>
+<div class="extra group">
+<h5>What's Hot</h5>
+<a href="/shows/worst-cooks-in-america.html">
+<img title="Worst Cooks in America" height=51 alt="Worst Cooks in America" width=91 class=pull-left src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2015/9/4/0/FN-ShowLogo_Worst-Cooks-in-America-Celebrity-Edition-final_1920x1080.jpg.rend.sni3col.jpeg"/>
+</a>
+<h6><a href="/shows/worst-cooks-in-america.html">Worst Cooks in America</a></h6>
+<p>From Tinseltown to Boot Camp
+<span>Premieres Wednesday 9|8c</span>
+</p>
+</div>
+</div>
+<script type="text/psajs" orig_index=39>SNI.ProgramGuide.getOnTvNow();</script></section>
+</div>
+</div>
+<section class="module free-form-text section"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/free-form-text" data-resource-path="/content/food/regions/recipe/right-rail/default/jcr:content/right-rail/free_form_text" data-resource-type="sni-food/components/modules/free-form-text"></span>
+<div id=taboola-right-rail-3r></div>
+<script type="text/psajs" orig_index=40>if((!CQ)||(CQ&&!CQ.WCM)||(CQ&&CQ.WCM&&(!(CQ.WCM.isEditMode()||CQ.WCM.isPreviewMode())))){window._taboola=window._taboola||[];_taboola.push({mode:'top-big-thumbs-2r',container:'taboola-right-rail-3r',placement:'right rail recipes',target_type:'video'});}</script>
+</section>
+<div class="taboola module section">
+<script type="text/psajs" orig_index=41>window._taboola=window._taboola||[];_taboola.push({flush:true});</script></div>
+<div class="parbase section reference"><div style="display:inline;" class=cq-dd-paragraph><section class=right-rail-blog-feed><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/right-rail-blog-feed" data-resource-path="/content/modules/right-rail/fn-feed-right-rail--all-posts/jcr:content/par/right_rail_blog_feed" data-resource-type="sni-food/components/modules/right-rail-blog-feed"></span>
+<script id=template-right-rail-feed-blog-success type="text/template">
+            <header class="hr">
+                
+                    
+                        <h5><a href="{{main-blog-link}}">Newest Blog Posts</a></h5>
+                    
+                    
+                
+                
+                    <span class="cta"><a href="http://blog.foodnetwork.com">Go to Blog</a><i class="ss-navigateright"></i></span>
+                
+            </header>
+            
+            
+                
+                    
+                    <ul class="slat left">
+                        {{#items}}
+                            <li class="group">
+                                {{#image-path}}
+                                    <a href="{{blog-link}}" class="ico-wrap" >
+                                        <img src="{{image-path}}" width="126" height="95" alt="{{title}}">
+                                    </a>
+                                {{/image-path}}
+                                {{^image-path}}
+                                    <a href="{{blog-link}}" class="ico-wrap" >
+                                        <img height="95" width="126" src="http://foodnetwork.sndimg.com/content/dam/images/food/unsized/2013/6/28/0/FN-Default-Logo.png.rend.sni4col.landscape.png" />
+                                    </a>
+                                {{/image-path}}
+                                <h6><a href="{{blog-link}}">{{title}}</a></h6>
+                                <date>{{published-date}}</date>
+                            </li>
+                        {{/items}}
+                    </ul>
+                
+                
+                
+                
+            
+        </script>
+<div id=right-rail-feed-blog></div>
+<script type="text/psajs" orig_index=42>var rightRailBlogType=''.slice(1).replace(/\//g,"$");$(function(){var feedUrl='/services/fnrblogs/rightRailRssfeed/data'+'.2.'+rightRailBlogType+'.prod.blogfeed.json';SNI.Food.FeedBlogs({feedUrl:feedUrl,templateId:'template-right-rail-feed-blog-success',divId:'right-rail-feed-blog',divFailId:'right-rail-feed-blog-fail'});});</script>
+</section>
+</div>
+</div>
+<div class="parbase teaser section">
+<script type="text/psajs" orig_index=43>$CQ(function(){initializeTeaserLoader([{"path":"/content/campaigns/food/sponsored-pod-topregion/master-your-kitchen","name":"master-your-kitchen","title":"Master Your Kitchen","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/master-your-kitchen.thumb.png","id":"sponsored-pod-topregion_master-your-kitchen","segments":["/etc/segmentation/fn_everythingspring"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/FC_CC_2015BigGame","name":"FC_CC_2015BigGame","title":"FC/CC 2015 Big Game","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/FC_CC_2015BigGame.thumb.png","id":"sponsored-pod-topregion_FC_CC_2015BigGame","segments":["/etc/segmentation/fn_sb_mainlanding","/etc/segmentation/fn_sb_apps","/etc/segmentation/fn_sb_parties","/etc/segmentation/fn_sb_sweets","/etc/segmentation/fn_sb_cocktails","/etc/segmentation/fn_sb_mains","/etc/segmentation/fn_sb_menuslanding-","/etc/segmentation/fn_sb_ontheroad"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/fn-grilling","name":"fn-grilling","title":"FN Grilling","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/fn-grilling.thumb.png","id":"sponsored-pod-topregion_fn-grilling","segments":["/etc/segmentation/search-right-rail-","/etc/segmentation/fn_star_fanfeed","/etc/segmentation/fn_star_fanvote","/etc/segmentation/fn_star_finalefanvote","/etc/segmentation/bundle-bobby-flay","/etc/segmentation/fn_foodtrucks","/etc/segmentation/pioneer-woman-sponsorship-code","/etc/segmentation/bundle_trisha","/etc/segmentation/eating-america-with-anthony-anderson","/etc/segmentation/bundle_ina"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/cc-fc-easter","name":"cc-fc-easter","title":"CC/FC Easter","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/cc-fc-easter.thumb.png","id":"sponsored-pod-topregion_cc-fc-easter","segments":["/etc/segmentation/fn_easter"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/ctk-fan-gear","name":"ctk-fan-gear","title":"CTK Fan Gear","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/ctk-fan-gear.thumb.png","id":"sponsored-pod-topregion_ctk-fan-gear","segments":["/etc/segmentation/fn_cutthroat","/etc/segmentation/alton-talent--show--recipe-pages"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/newsletter-sign-up","name":"newsletter-sign-up","title":"Newsletter Sign Up","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/newsletter-sign-up.thumb.png","id":"sponsored-pod-topregion_newsletter-sign-up","segments":["/etc/segmentation/shows-hub","/etc/segmentation/chefs-hub","/etc/segmentation/recipes-hub","/etc/segmentation/all-recipe-pages","/etc/segmentation/videos"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/bake-a-difference","name":"bake-a-difference","title":"Bake a difference","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/bake-a-difference.thumb.png","id":"sponsored-pod-topregion_bake-a-difference","segments":["/etc/segmentation/bundle_duff","/etc/segmentation/FN_FAMILYMAINLANDING","/etc/segmentation/fn_hc_baking"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/FNStoreChopped0","name":"FNStoreChopped0","title":"FN Store Chopped","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/FNStoreChopped0.thumb.png","id":"sponsored-pod-topregion_FNStoreChopped0","segments":["/etc/segmentation/fn-chopped","/etc/segmentation/fn_chopped_allstars"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/HGTVPartyPlanner","name":"HGTVPartyPlanner","title":"HGTVPartyPlanner","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/HGTVPartyPlanner.thumb.png","id":"sponsored-pod-topregion_HGTVPartyPlanner","segments":["/etc/segmentation/fn_hc_entertaining"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/HGTVKitchenGallery","name":"HGTVKitchenGallery","title":"HGTV Kitchen Gallery","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/HGTVKitchenGallery.thumb.png","id":"sponsored-pod-topregion_HGTVKitchenGallery","segments":["/etc/segmentation/fn11_helparoundthekitchen"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/HGTVBathMakeover","name":"HGTVBathMakeover","title":"HGTV BathMakeover","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/HGTVBathMakeover.thumb.png","id":"sponsored-pod-topregion_HGTVBathMakeover","segments":["/etc/segmentation/healthyeveryweekmain","/etc/segmentation/fn11_helparoundthekitchen"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/FNStoreRachaelBaking","name":"FNStoreRachaelBaking","title":"FNStoreRachaelBaking","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/FNStoreRachaelBaking.thumb.png","id":"sponsored-pod-topregion_FNStoreRachaelBaking","segments":["/etc/segmentation/fn_hc_baking","/etc/segmentation/bundle_rachaelray"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/WhattoCookNow","name":"WhattoCookNow","title":"WhattoCookNow","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/WhattoCookNow.thumb.png","id":"sponsored-pod-topregion_WhattoCookNow","segments":["/etc/segmentation/fn_5weeknightdinnerssummer","/etc/segmentation/fn_familyweeknights","/etc/segmentation/bundle_trisha","/etc/segmentation/bundle_ina"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/WhattoCookToday","name":"WhattoCookToday","title":"WhattoCookToday","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/WhattoCookToday.thumb.png","id":"sponsored-pod-topregion_WhattoCookToday","segments":["/etc/segmentation/fn_familybacktoschool","/etc/segmentation/fn_familyweeknights","/etc/segmentation/fn_familyweekends"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/50states50pizzas","name":"50states50pizzas","title":"50States50Pizzas","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/50states50pizzas.thumb.png","id":"sponsored-pod-topregion_50states50pizzas","segments":["/etc/segmentation/fn_familycookingwithkids","/etc/segmentation/fn_rvgkids","/etc/segmentation/fn_sb_ontheroad","/etc/segmentation/fn_gr_ontheroad","/etc/segmentation/fn_sb_parties"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/HealthyMustHaves","name":"HealthyMustHaves","title":"Healthy Must Haves","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/HealthyMustHaves.thumb.png","id":"sponsored-pod-topregion_HealthyMustHaves","segments":["/etc/segmentation/healthyeveryweekmain","/etc/segmentation/healthyeveryweekappetizers","/etc/segmentation/healthyeveryweekmains","/etc/segmentation/healthyeveryweektips","/etc/segmentation/healthyeveryweekquickandsimple","/etc/segmentation/healthyeveryweekmakeovers","/etc/segmentation/healthyeveryweeksides","/etc/segmentation/healthyeveryweekmenus","/etc/segmentation/healthyeveryweekinternational-"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/EasyAppetizers0","name":"EasyAppetizers0","title":"Easy Appetizers","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/EasyAppetizers0.thumb.png","id":"sponsored-pod-topregion_EasyAppetizers0","segments":["/etc/segmentation/fn12_everydaycelebrations","/etc/segmentation/fn12_everydaycelebrationsfamily","/etc/segmentation/fn12_everydaycelebrationsoccasions","/etc/segmentation/restaurants-hub","/etc/segmentation/recipes-hub","/etc/segmentation/shows-hub","/etc/segmentation/chefs-hub"],"tags":[]},{"path":"/content/campaigns/food/sponsored-pod-topregion/NYCWFFAugust","name":"NYCWFFAugust","title":"NYCWFFAugust","campainName":"sponsored-pod-topregion","thumbnail":"/content/campaigns/food/sponsored-pod-topregion/NYCWFFAugust.thumb.png","id":"sponsored-pod-topregion_NYCWFFAugust","segments":["/etc/segmentation/fn-chopped","/etc/segmentation/fn_chopped_afterhours","/etc/segmentation/fn_chopped_allstars","/etc/segmentation/fn_thekitchen","/etc/segmentation/giada-show-and-talent-pages","/etc/segmentation/fn-star--additional-placements","/etc/segmentation/fn_star","/etc/segmentation/fn_star_hosts","/etc/segmentation/fn_star_sweeps","/etc/segmentation/fn_star_salvation","/etc/segmentation/bundle_anneburrell","/etc/segmentation/shows-hub","/etc/segmentation/chefs-hub","/etc/segmentation/restaurants-hub"],"tags":[]}],"first","_content_food_regions_recipe_right-rail_default_jcr_content_right-rail_teaser","true","http://localhost:4502/libs/wcm/stats/tracker","/content/food/regions/recipe/right-rail/default/jcr:content/right-rail/teaser");});</script>
+<div id=_content_food_regions_recipe_right-rail_default_jcr_content_right-rail_teaser class="campaign campaign-sponsored-pod-topregion">
+</div>
+</div>
+<section class="module free-form-text section"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/free-form-text" data-resource-path="/content/food/regions/recipe/right-rail/default/jcr:content/right-rail/free_form_text_1" data-resource-type="sni-food/components/modules/free-form-text"></span>
+<div id=pubexchange_rail_grid_1></div>
+<script type="text/psajs" orig_index=44>(function(d,s,id){var js,pjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.async=true;js.src="//cdn.pubexchange.com/modules/partner/food_network";pjs.parentNode.insertBefore(js,pjs);}(document,"script","pubexchange-jssdk"));</script>
+<div style="text-align:right;margin-right:5px;color:#333;font:10px/14px Helvetica,Arial,sans-serif;">powered by <a style="text-decoration:none;color:#08c;" href="https://welcome.pubexchange.com/promo/pub/food_network" rel=nofollow target=_blank>PubExchange</a></div>
+</section>
+<div class="parbase section reference"><div style="display:inline;" class=cq-dd-paragraph><section class="module right-rail-store right_rail_store"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/right-rail-store" data-resource-path="/content/modules/fn-store/store-generic-1/jcr:content/par/right_rail_store" data-resource-type="sni-food/components/modules/right-rail-store"></span>
+<header class=hr>
+<h5>Shop by Chefs &amp; Hosts</h5>
+<span class=cta><a title="FN store" href="http://www.foodnetworkstore.com/chefs-hosts/index.php?v=chef&amp;ecid=PRF-FOOD-100092&amp;pa=PRF-FOOD-100092" target=_blank>Shop Now</a><i class=ss-navigateright></i></span>
+</header>
+<ul class="slat left">
+<li class=group>
+<a href="http://www.foodnetworkstore.com/chefs-hosts/index.php?v=chef&ecid=PRF-FOOD-100092&pa=PRF-FOOD-100092">
+<img height=126 width=126 src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014_FNSTORE_LOGO_NEW.png.rend.sni4col.png"/>
+</a>
+<h6><a title="FN store" href="http://www.foodnetworkstore.com/chefs-hosts/index.php?v=chef&amp;ecid=PRF-FOOD-100092&amp;pa=PRF-FOOD-100092" target=_blank>Shop products from your favorite Food Network chefs &amp; hosts!</a></h6>
+</li>
+</ul></section>
+</div>
+</div>
+<section class="module ad-exchange section">
+<script type="text/psajs" orig_index=45>ExchangeAd(1);</script>
+</section>
+<section class="ad section">
+<script type="text/psajs" orig_index=46>$(window).load(function(){StickyBigboxAd();});</script>
+<div class="sticky_ad hidden">
+<div id=bigbox_sticky>
+</div>
+</div>
+<span>Advertisement</span>
+</section>
+</div>
+</aside>
+</div>
+<div class=fixed-promo><span style="display: none" class=clicktracking data-component-path="sni-food/components/pagetypes/recipe/components/fixed-promo" data-resource-path="/content/food/recipes/rachael-ray/t/tu/tur/turk/turkey-noodle-casserole-recipe/jcr:content/fixed-bottom-panel" data-resource-type="sni-food/components/pagetypes/recipe/components/fixed-promo"></span>
+<a rel=package-overlay-bottom></a>
+<div class=package-overlay>
+<div class=group>
+<div class=media>
+<a href="/recipes/packages/recipes-for-kids/back-to-school.html">
+<img title=Opener_NewSchoolCookieJar_H height=68 alt=Opener_NewSchoolCookieJar_H width=91 class=pull-left src="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2014/6/13/0/FN_Opener-New-School-Cookie-Jar_s4x3.jpg.rend.sni3col.landscape.jpeg"/>
+</a>
+<p>This recipe is featured in:</p>
+<h6><a href="/recipes/packages/recipes-for-kids/back-to-school.html">Back-to-School Made Easy</a></h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=container role=footer>
+<footer class=row role=contentinfo>
+<nav role=navigation>
+<div class="col6 more-from-food-network extras"><span style="display: none" class=clicktracking data-component-path="sni-food/components/util/footer/more-from-food-network" data-resource-path="/content/food/regions/footer/default/jcr:content/footer/more-from-food-network" data-resource-type="sni-food/components/util/footer/more-from-food-network"></span>
+<h5>More From FN</h5>
+<ul class=list>
+<li><a href="http://mynewsletters.scrippsnetworks.com/?mode=subscribe&amp;nlbrand=foodnet&amp;source=FN_SiteFooter">Newsletters</a></li>
+<li><a title="Sweepstakes and Contests" href="/features/articles/sweepstakes-and-contests.html">Sweepstakes and Contests</a></li>
+<li><a target=_blank href="http://www.amazon.com/b?ie=UTF8&amp;node=6593921011" title=Amazon>Amazon</a>, <a target=_blank href="https://itunes.apple.com/us/artist/television-food-network-g.p./id332170285" title=iTunes>iTunes</a> and <a href="/site/apps.html" title=Apps>Apps</a></li>
+<li><a title="Share Our Strength" href="/site/share-our-strength.html">No Kid Hungry</a></li>
+<li><a title="Recipes A-Z" href="/recipes/a-z.html">Recipes A-Z</a></li>
+<li><a href="/topics/a-z.html">Topics A-Z</a></li>
+<li><a href="http://www.foodnetworkstore.com/?ecid=PRF-FOOD-100152&amp;pa=PRF-FOOD-100152">Shop Food Network Store</a></li>
+<li><a href="http://whereismyscrippsnetworks.com/" target=_blank>Get FN: Provider Finder</a></li>
+</ul></div>
+<div class="food-network-family col22"><span style="display: none" class=clicktracking data-component-path="sni-food/components/util/footer/food-network-family" data-resource-path="/content/food/regions/footer/default/jcr:content/footer/food-network-family" data-resource-type="sni-food/components/util/footer/food-network-family"></span>
+<div class=col22>
+<h5>Food Network Family</h5>
+<div class=group>
+<h6><a title=Food.com href="http://www.food.com/?xp=fn_footer" target=_blank>Food.com</a></h6>
+<div class=media>
+<a href="http://www.food.com/slideshow/37-amazing-recipes-395?xp=fn_footer" class="ico-wrap pull-left">
+<img title="37 Recipes We're Crushing On Right Now" height=68 alt="37 Recipes We're Crushing On Right Now" width=91 src="http://foodnetwork.sndimg.com/content/dam/images/food/unsized/2015/8/17/0/guac_crush_92x69.jpg.rend.sni3col.jpeg"/>
+</a>
+<p><a href="http://www.food.com/slideshow/37-amazing-recipes-395?xp=fn_footer" target=_blank>37 Recipes We're Crushing On Right Now</a></p>
+</div>
+</div>
+<div class=group>
+<h6><a href="http://www.travelchannel.com?xp=food_footer" target=_blank title="Travel Channel">Travel Channel</a><a href="http://www.cookingchanneltv.com?xp=food_footer" target=_blank></a></h6>
+<ul class=list>
+<li><a href="http://www.travelchannel.com/interests/travels-best/photos/travels-best-cruises-2015-pictures?xp=fn_footer" target=_blank>Best Cruises For 2015</a></li>
+<li><a href="http://www.travelchannel.com/interests/outdoors-and-adventure/photos/mind-blowing-trips-of-a-lifetime?xp=fn_footer" target=_blank>21 Trips Of A Lifetime</a></li>
+<li><a href="http://www.travelchannel.com/interests/beaches/photos/top-10-florida-beaches?xp=fn_footer" target=_blank>Top 10 Florida Beaches</a></li>
+</ul>
+</div>
+<div class=group>
+<h6><a href="http://www.cookingchanneltv.com/?xp=food_footer" target=_blank title="Cooking Channel">Cooking Channel</a></h6>
+<ul class=list>
+<li><a href="http://www.cookingchanneltv.com/shows/chucks-eat-the-street/the-best-recipes-from-chuck-s-eat-the-street.html?xp=fn_footer" target=_blank>Secret Restaurant Recipes</a></li>
+<li><a href="http://www.cookingchanneltv.com/shows/chucks-eat-the-street/chuck-s-eat-the-street-location-map.html?xp=fn_footer" target=_blank>Find Great Food Near You</a></li>
+<li><a href="http://www.cookingchanneltv.com/recipes/fresh-guacamole-and-salsa-recipes.html?xp=fn_footer" target=_blank>The Greatest Guacamole</a></li>
+</ul>
+</div>
+<div class=group>
+<h6><a target=_blank href="http://www.hgtv.com/?xp=food_footer" title=HGTV>HGTV</a></h6>
+<ul class=list>
+<li><a href="http://www.hgtv.com/design/make-and-celebrate/entertaining/ultimate-outdoor-entertaining-space-for-fall-pictures?xp=fn_footer" target=_blank>Ultimate Outdoor Entertaining This Fall</a></li>
+<li><a href="http://www.hgtv.com/design/decorating/furniture-and-accessories/hot-textiles-to-buy-or-diy-pictures?xp=fn_footer" target=_blank>Hot Textiles to Buy or DIY</a></li>
+<li><a href="http://www.hgtv.com/design/decorating/design-101/new-ways-to-use-falls-trending-colors-pictures?xp=fn_footer" target=_blank>New Ways to Use Fall Hues</a></li>
+</ul>
+</div>
+</div></div>
+</nav>
+<section class="module free-form-text utility-links"><span style="display: none" class=clicktracking data-component-path="sni-core/components/modules/free-form-text" data-resource-path="/content/food/regions/footer/default/jcr:content/footer/utility-links" data-resource-type="sni-food/components/modules/free-form-text"></span>
+<div class=col28 test>
+<p><a data-popover=international href="#" data-event=mouseover data-close=top-right data-hoffset=215 data-width=auto data-square=true>International Editions <b class="btn radial tiny"><i class=ss-upright></i></b></a></p>
+<p><a data-popover=scripps href="#" data-event=mouseover data-close=top-right data-hoffset=285 data-width=auto data-square=true>See All Scripps Networks Digital <b class="btn radial tiny"><i class=ss-upright></i></b></a></p>
+<ul class="last-menu inline">
+<li><a href="/site/site-map.html">Site Map</a></li>
+<li><a href="http://www.scrippsnetworks.com/terms.aspx">Terms of Use</a></li>
+<li><a href="http://www.scrippsnetworks.com/privacy.aspx">Privacy Policy</a></li>
+<li class=adchoices><a id=_bapw-link href="#" target=_blank><span>AdChoices</span><img id=_bapw-icon /></a></li>
+<li><a href="/site/dmca--digital-millennium-copyright-act-notice-and-policy.html">Infringements</a></li>
+<li><a href="/site/about-foodnetwork-com.html">About</a></li>
+<li><a href="http://www.scrippsnetworksdigital.com/foodcat/default.aspx">Advertise With Us</a></li>
+<li><a href="http://foodnetwork.custhelp.com">Help</a></li>
+<li><a href="http://foodnetwork.custhelp.com">Contact Us</a></li>
+</ul>
+<p>&copy; 2015 Television Food Network G.P. All Rights Reserved.</p>
+<p>Food Network Sites</p>
+</div>
+<script type="text/psajs" orig_index=47>(function(){var ev=document.createElement('script');ev.type='text/javascript';ev.async=true;ev.setAttribute('data-ev-tag-pid',1212);ev.setAttribute('data-ev-tag-ocid',814);ev.src=('https:'==document.location.protocol?'https://':'http://')+'c.betrad.com/pub/tag.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ev,s);})();</script>
+<script data-popover=international type="popover/template">
+	<div class="popover-content footer international">
+			<h6>International Editions</h6>
+	  		<ul>
+	  			<li><a href="http://www.foodnetwork.com">United States</a></li>
+	  			<li><a href="http://www.foodnetworkasia.com">Asia</a></li>
+                                <li><a href="http://www.foodnetwork.com.br">Brazil</a></li>
+                                <li><a href="http://www.foodnetwork.ca">Canada</a></li>
+	  			<li><a href="http://www.foodnetworktv.com">Europe, Middle East & Africa</a></li>
+	  			<li><a href="http://www.foodnetwork.co.uk">United Kingdom</a></li>
+	  		</ul>
+	</div>
+</script>
+<script data-popover=scripps type="popover/template">
+	<div class="popover-content footer scripps">
+			<h6>Scripps Networks Digital</h6>
+	  		<ul>
+	  		<li><a href="http://www.cookingchanneltv.com">Cooking Channel</a></li>
+		       	<li><a href="http://www.food.com">Food.com</a></li>
+		       	<li><a href="http://www.hgtv.com">HGTV</a></li> 
+		       	<li><a href="http://www.diynetwork.com">DIY Network</a></li> 
+		       	<li><a href="http://www.hgtvremodels.com">HGTVRemodels.com</a></li> 
+		       	<li><a href="http://www.hgtvgardens.com">HGTVGardens.com</a></li> 
+		       	<li><a href="http://www.travelchannel.com">Travel Channel</a></li> 
+		       	<li><a href="http://www.gactv.com/">GAC</a></li> 
+		       	<li><a href="http://www.ulive.com/">uLive.com</a></li>
+	  		</ul>
+	</div>
+</script>
+<style>.teaser .cq-texthint-placeholder { display: none; }</style>
+</section>
+</footer>
+</div>
+<div style=display:none class=ab-test>
+<script type="text/psajs" orig_index=48>$.getScript("http://images.foodnetwork.com/webfood/images/footer/emailCollection.js");</script>
+</div>
+<script type="text/psajs" orig_index=49>SuperstitialAd(2);SuperstitialAd(3);</script>
+<script type="text/psajs" orig_index=50>window.NREUM||(NREUM={});NREUM.info={"applicationID":"4176188","applicationTime":737,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"ca450cca9d","transactionName":"ZAYGMhNQDUQCAEILWl1MNgMQRAZEFyJCFkdaARESBB4QWQpOUA1aV0wHCQxBDFkGDUIRGkMCAwMVSBNSEExEB1ZaEwE=","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script>
+<script src="/etc/designs/food/clientlib-body.min.js" type="text/psajs" orig_index=51></script>
+<script type="text/psajs" orig_index=52>if(typeof _satellite!=="undefined"){_satellite.pageBottom();}</script>
+<script type="text/javascript" src="/pagespeed_static/js_defer.pbrP1whUgE.js"></script></body>
+</html>
