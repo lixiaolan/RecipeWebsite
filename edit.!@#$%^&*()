@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <center>
+      <form action="!@#$%^&*(ACTION)" method="POST" enctype="multipart/form-data">
+        <textarea name="textarea" enctype="multipart/form-data" cols="80" rows="50">!@#$%^&*(RECIPE)</textarea>
+        <input type="submit" value="done">
+      </form>
+    </center>
+  </body>
+</html>

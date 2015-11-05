@@ -45,3 +45,6 @@
   (save-excursion
     (replace-regexp "[[:space:]]+" " " nil (point) (mark))))
 
+;; This defines a structure to hold a single recipe. name should be a
+;; string, ingredients and directions should be lists of strings.
+;; (cl-defstruct recipe name ingredients directions)

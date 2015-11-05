@@ -7,9 +7,114 @@
 using namespace std;
 using namespace boost::filesystem;
 
+// Function to handle the fork exec process for a sytem command
+// specified by single string.
+void SystemCall(string command) {
+  vector<string> commandPieces;
+  istringstream iss(command);
+  string commandPiece;
+
+  // Parse out the command string
+  while (iss >> commandPiece) {
+    commandPieces.push_back(commandPiece);
+  }
+
+  // Create command to run
+  char* arg_list[commandPieces.size()+1];
+  for (unsigned i = 0; i < commandPieces.size(); i++) {
+    arg_list[i] = const_cast<char*>(commandPieces[i].c_str());
+  }
+  arg_list[commandPieces.size()] = NULL;
+  
+  // char* arg_list[] = {"sh", "writeDirToFile.sh", dirPath, "dir", NULL};
+  char* program = arg_list[0];
+    
+  // Run code to create new file with specified name
+  pid_t child_pid;
+  int child_status;
+    
+  // Fork
+  child_pid = fork();
+
+  if (child_pid != 0) {
+    // Wait for child (if parrent)
+    wait(&child_status);
+
+    // Handle errors if any:
+    if (WIFEXITED (child_status))
+      printf ("the child process exited normally, with exit code %d\n",
+              WEXITSTATUS (child_status));
+    else
+      printf ("the child process exited abnormally\n");
+  }
+  else {
+    // Exec (if child)
+    execvp(program, arg_list);
+    // Only get here if execvp fails
+    fprintf(stderr, "an error orccured in execvp\n");
+    abort();
+  }
+}
+
+class DirectoryGetHandler : public HTTP_Handler {
+  string requiredUIRPrefix;
+  
+  string MakePage(string dirPathStr) {
+
+    SystemCall("sh writeDirToFile.sh " + dirPathStr + " dir");
+        
+    ifstream myfile("dir");
+    string recipes = "";
+    string line;
+    
+    if (myfile.is_open()) {
+      while (getline(myfile,line)) {
+        recipes += "<a href=\"" + line + "\">" + line + "</a><br>";
+      }
+      myfile.close();
+    }
+
+    // Load index page file
+    // Insert GetCard xml
+    string cssStatic =  "<link rel=\"stylesheet\" href=\"main.css\">";
+
+    string body;
+    body = body +
+      "<!DOCTYPE html> <html> <head> " +
+      cssStatic +
+      " </head> <body> " +
+      " <div> " +
+      recipes +
+      " </div> " + 
+      " </body> </html> ";
+
+    return body;
+  }
+
+public:
+  DirectoryGetHandler(string prefix) : requiredUIRPrefix{prefix} {};
+  
+  bool Process(HTTP_Request* request, HTTP_Response* response) override {
+
+    string uri = request->requestURI;
+    
+    if (request->method != "GET") return false;
+    if (!(uri[uri.size()-1] == '/')) return false;
+    if (request->requestURI.find(requiredUIRPrefix) != 0) return false;
+    uri = "." + uri;
+    
+    response->httpVersion = request->httpVersion;
+    response->statusCode = "200";
+    response->reasonPhrase = "OK";
+    response->body = MakePage(uri);
+
+    return true;
+  }
+};
+
 class IndexGetHandler : public HTTP_Handler {
   string MakePage() {
-    string dir_path = "./recipes/";
+    string dir_path = "recipes/";
 
     vector<string> fileNames;
     
@@ -29,7 +134,7 @@ class IndexGetHandler : public HTTP_Handler {
 
     string recipes = "";
     for (string file : fileNames) {
-      recipes += "<a href=\"" + dir_path + file + "\">" + file + "</a><br>";
+      recipes += "<a href=\"" + file + "\">" + file + "</a><br>";
     }
 
     string body;
@@ -50,7 +155,7 @@ public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override {
         
     if (request->method != "GET") return false;
-    if (!( (request->requestURI == "/recipes") || (request->requestURI == "/recipes/") )) return false;
+    if (!(request->requestURI == "/recipes/")) return false;
 
     response->httpVersion = request->httpVersion;
     response->statusCode = "200";
@@ -122,7 +227,9 @@ public:
   }
 };
 
-class URLPostHandler : public HTTP_Handler {
+// Handler to manage the post request sent upon adding a recipe from
+// the add.html form.
+class AddHandler : public HTTP_Handler {
 
   map<string, string> ParseForm(string body) {
 
@@ -145,44 +252,13 @@ public:
     if (request->method != "POST") return false;
     if (request->requestURI.find("add") == string::npos) return false;
 
-    // Parse the form
+    // Get the recipe from source and parse it
     map<string, string> form = ParseForm(request->body);
-    char* url = const_cast<char*>(form["url"].c_str());
-    char* fileName = const_cast<char*>(form["fileName"].c_str());
-    
-    // Create command to run
-    char* arg_list[] = {"sh", "get.sh", url, fileName, NULL};
-    char* program = "sh";
-    
-    // Run code to create new file with specified name
-    pid_t child_pid;
-    int child_status;
-    
-    // Fork
-    child_pid = fork();
-
-    if (child_pid != 0) {
-      // Wait for child (if parrent)
-      wait(&child_status);
-
-      // Handle errors if any:
-      // if (WIFEXITED (child_status))
-      //   printf ("the child process exited normally, with exit code %d\n",
-      //           WEXITSTATUS (child_status));
-      // else
-      //   printf ("the child process exited abnormally\n");
-    }
-    else {
-      // Exec (if child)
-      execvp(program, arg_list);
-      // Only get here if execvp fails
-      fprintf(stderr, "an error orccured in execvp\n");
-      abort();
-    }
+    SystemCall("sh get.sh " + form["url"] + " " + form["fileName"]);
     
     // Change request to be GET with specified file
     request->method = "GET";
-    request->requestURI = "/recipes/" + form["fileName"];
+    request->requestURI = "/recipes/all/" + form["fileName"];
 
     // Return false because we have not fully handled the request
     return false;
@@ -193,7 +269,7 @@ class RemoveHandler : public HTTP_Handler {
 
 public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override {
-    string searchTokin = "remove%20";
+    string searchTokin = "?remove=";
 
     // Determine if this handler is a match
     if (request->requestURI.find(searchTokin) == string::npos) return false;
@@ -204,35 +280,12 @@ public:
     size_t pos = file.find(searchTokin);
     file.erase(0,pos + searchTokin.size());
     
-    // Use boost fs to remove the file
-    file = "./recipes/" + CleanFilePath(file);
+    // Use fork and exec to remove the file
+    file = CleanFilePath(file);
 
-    char* fileName = const_cast<char*>(file.c_str());
+    SystemCall("find ./recipes/ -name \"" + file + "\" -delete");
     
-    // Create command to run
-    char* arg_list[] = {"rm", fileName, NULL};
-    char* program = "rm";
-    
-    // Run code to create new file with specified name
-    pid_t child_pid;
-    int child_status;
-    
-    // Fork
-    child_pid = fork();
-
-    if (child_pid != 0) {
-      // Wait for child (if parrent)
-      wait(&child_status);
-
-    }
-    else {
-      // Exec (if child)
-      execvp(program, arg_list);
-      // Only get here if execvp fails
-      fprintf(stderr, "an error orccured in execvp\n");
-      abort();
-    }
-    // Change request to "get index"x
+    // Change request to "get index"
     request->requestURI = "/";
     
     // Return false
@@ -240,36 +293,225 @@ public:
   }
 };
 
-// class EditWindowHandler : public HTTP_Handler {
+enum class StrikeValueType {STRING, FILE_PATH};
 
-// public:
-//   bool Process(HTTP_Request* request, HTTP_Response* response) override {
-    
-//   }
+class StrikeValue {
+public:
+  StrikeValue() {type = StrikeValueType::STRING;}
+  StrikeValue(string s) : str(s) {
+    type = StrikeValueType::STRING;
+  }
+  StrikeValue(string s, StrikeValueType svt) : str(s), type(svt) {}  
+  string str;
+  StrikeValueType type;
+};
 
-//   void GetRecipe() {
-    
-//   }
-
-//   void SaveRecipe() {
-
-//   }
+// The purpose of this function is to replace any string of the form:
+// !@#$%^&*(<arg>) with the contents of the file indicated by
+// <arg>. The map takes <arg> to a file path where the replacement
+// resource can be found. Currently, this function provides NO safety
+// at all. It can get stuck in an infinite loop if the file inserted
+// always contains another !@#$%^&*(<arg>) tokin.
+string StrikeProcess (string filePath, map<string, StrikeValue> argToStrikeValueMap)
+{
+  string line;
+  ifstream myfile(filePath);
+  string result = "";
+  string tokinStart = "!@#$%^&*(";
+  string tokinEnd = ")";
   
-// }
+  if (myfile.is_open()) {
+    while (getline(myfile,line)) {
+      result += line + "\n";
+    }
+    myfile.close();
+  }
+
+  size_t posTokinStart;
+  size_t posArgumentEnd;
+  string resultFirstHalf;
+  string resultSecondHalf;
+  string innerString;
+  string argument;
   
+  while (1) {
+    posTokinStart = result.find(tokinStart);
+    if (posTokinStart == string::npos) break;
+    posArgumentEnd = result.find(tokinEnd, posTokinStart);
+    if (posArgumentEnd == string::npos) break;
+    argument = result.substr(posTokinStart + tokinStart.size(),(int)posArgumentEnd - ((int)posTokinStart + (int)tokinStart.size()));
+
+    // Check if argument is in the map. If not, set inserter string to
+    // "". Otherwise, get the file path from the map and extract its
+    // contents into innerString.
+    auto it = argToStrikeValueMap.find(argument);
+    if (it != argToStrikeValueMap.end()) {
+      StrikeValue strikeValue = argToStrikeValueMap[argument];
+      innerString = "";
+
+      switch (strikeValue.type) {
+
+        // String case
+      case StrikeValueType::STRING:
+        innerString = strikeValue.str;
+        break;
+        
+        // File path case
+      case StrikeValueType::FILE_PATH:
+        ifstream innerFile(strikeValue.str);
+        if (innerFile.is_open()) {
+          while (getline(innerFile,line)) {
+            innerString += line + "\n";
+          }
+          innerFile.close();
+        }
+        else {
+          innerString = "";
+        }
+        break;
+
+      }
+    }
+
+    // Get the result string before and after the !@#$%^&*(<arg>)
+    // construct. Then inject the innerString into the result.
+    resultFirstHalf = result.substr(0,posTokinStart);
+    resultSecondHalf = result.substr(posArgumentEnd + 1);
+    result = resultFirstHalf + innerString + resultSecondHalf;
+    }
+
+  // Return the result
+  return result;
+};
+
+class EditHandler : public HTTP_Handler {
+
+public:
+  bool Process(HTTP_Request* request, HTTP_Response* response) override {
+    string searchTokin = "?edit=";
+
+    // Determine if this handler is a match
+    if (request->requestURI.find(searchTokin) == string::npos) return false;
+
+    // Strip the filename from the URI body. The format will be:
+    // /remove/name of file
+    string file = request->requestURI;
+    size_t pos = file.find(searchTokin);
+    file.erase(0,pos + searchTokin.size());
+    
+    map<string, StrikeValue> strikeMap;
+
+    strikeMap["RECIPE"] = StrikeValue("./recipes/all/" + CleanFilePath(file),StrikeValueType::FILE_PATH);
+    strikeMap["ACTION"] = StrikeValue("/recipes/all/?save=" + file,StrikeValueType::STRING);
+    
+    response->httpVersion = request->httpVersion;
+    response->statusCode = "200";
+    response->reasonPhrase = "OK";
+    response->body = StrikeProcess("edit.!@#$%^&*()",strikeMap);
+
+    return true;
+  }
+};
+
+// Function that takes the name of a recipe and udpates the tag
+// information based on tagLine
+void UpdateTagInfo(string recipe, string tagLine){
+  // Check if tagLine is empty:
+  if (tagLine == "") return;
+
+  // Remove all tags currently associated with recipe
+  SystemCall("find ./recipes/ -type l -name \"" + recipe + "\" -delete");
+  
+  istringstream iss(tagLine);
+  string line;
+
+  // In a loop:
+  //   1. Parse the tagLine
+  //   2. Add symbolic link for each tag specified
+  while (1) {
+    getline(iss,line,',');
+    if (!iss) break;
+    cout << "UpdateTagInfo: " << line << endl;
+    SystemCall("sh addSymbolicLinks.sh " + recipe + " " + line);
+  }
+}
+
+class SaveHandler : public HTTP_Handler {
+
+public:
+  bool Process(HTTP_Request* request, HTTP_Response* response) override {
+    string searchTokin = "?save=";
+
+    // Determine if this handler is a match
+    if (request->requestURI.find(searchTokin) == string::npos) return false;
+
+    // Strip the filename from the URI body. The format will be:
+    // /remove/name of file
+    string file = request->requestURI;
+    size_t pos = file.find(searchTokin);
+    file.erase(0,pos + searchTokin.size());
+
+    istringstream iss(request->body);
+    string line1;
+    string line2;
+    string oldFile = CleanFilePath(file);
+    string newFile;             // Not currently used. Eventually will be used to determine new file name
+    string titleLine;
+    string tagLine;
+    // string filePath = "recipes/all/" + CleanFilePath(file);
+    // ofstream ofs(filePath);
+  
+    // Toss out first 3 lines
+    getline(iss,line2);
+    getline(iss,line2);
+    getline(iss,line2);
+
+    // Starting at 4th line, get all lines exept the last one
+    getline(iss,titleLine);
+    line2 = titleLine;
+    getline(iss,tagLine);
+    line1 = tagLine;
+
+    // TODO: Eventually, the title line should determine the name of
+    // the acutal recipe file (so that the user can modify it
+    // easily). For now, we don't have that functaionality.
+
+    // Write to the file specified by the request
+    string filePath = "recipes/all/" + oldFile;
+    ofstream ofs(filePath);
+    while (iss) {
+      ofs << line2 << "\n";
+      line2 = line1;
+      getline(iss,line1);
+    }
+
+    // Update all the symbolic links based on tagLine:
+    // UpdateTagInfo(oldFile, tagLine);
+    UpdateTagInfo(oldFile, "favorites,trash");
+    
+    return true;
+  }
+};
+
 int main(int argc, char *argv[]) {
-
+   
   HTTP_Server server;
-  URLPostHandler UPH;
+  PrintInfoHandler PIH;
+  EditHandler EH;
+  SaveHandler SH;
+  AddHandler UPH;
   RemoveHandler RH;
+  DirectoryGetHandler DGH("/recipes/");
   RecipeGetHandler RGH;
-  IndexGetHandler IGH;
   HTTP_File_Handler FH;
 
+  server.handlers.push_back(&PIH);
   server.handlers.push_back(&UPH);
+  server.handlers.push_back(&EH);
+  server.handlers.push_back(&SH);
   server.handlers.push_back(&RH);
+  server.handlers.push_back(&DGH);
   server.handlers.push_back(&RGH);
-  server.handlers.push_back(&IGH);
   server.handlers.push_back(&FH);
 
   server.Run();
