@@ -7,6 +7,12 @@
 using namespace std;
 using namespace boost::filesystem;
 
+class ServerConstants
+{
+public:
+  static const string RecipesFile = "recpies.json";
+};
+
 // Function to handle the fork exec process for a sytem command
 // specified by single string.
 void SystemCall(string command) {
@@ -378,7 +384,7 @@ string StrikeProcess (string filePath, map<string, StrikeValue> argToStrikeValue
     resultFirstHalf = result.substr(0,posTokinStart);
     resultSecondHalf = result.substr(posArgumentEnd + 1);
     result = resultFirstHalf + innerString + resultSecondHalf;
-    }
+  }
 
   // Return the result
   return result;
@@ -493,27 +499,44 @@ public:
   }
 };
 
+class GetRecipes : public HTTP_Handler {
+
+public:
+  bool Process(HTTP_Request* request, HTTP_Response* response) override {
+    
+    if (request->method != "GET") return false;
+    if (request->requestURI.find(ServerConstants::RecipesFile) == string::npos) return false;
+
+    response->httpVersion = request->httpVersion;
+    response->statusCode = "200";
+    response->reasonPhrase = "OK";
+    response->body = MakePage(request->requestURI);
+    response->body = "";
+
+    // Load contents of file
+    ifstream myfile("./" + ServerConstants::RecipesFile);
+    string line;
+    if (myfile.is_open()) {
+      while (getline(myfile,line)) {
+        response->body += line + "\n";
+      }
+      myfile.close();
+    }
+      
+    return true;
+  }
+};
+
 int main(int argc, char *argv[]) {
    
+  // Create handlers:
+  GetRecipes GR;
+    
+  // Create server
   HTTP_Server server;
-  PrintInfoHandler PIH;
-  EditHandler EH;
-  SaveHandler SH;
-  AddHandler UPH;
-  RemoveHandler RH;
-  DirectoryGetHandler DGH("/recipes/");
-  RecipeGetHandler RGH;
-  HTTP_File_Handler FH;
-
-  server.handlers.push_back(&PIH);
-  server.handlers.push_back(&UPH);
-  server.handlers.push_back(&EH);
-  server.handlers.push_back(&SH);
-  server.handlers.push_back(&RH);
-  server.handlers.push_back(&DGH);
-  server.handlers.push_back(&RGH);
-  server.handlers.push_back(&FH);
-
+  // Hadd handlers
+  server.handlers.push_back(&GR);
+    
   server.Run();
   
   return 1;
