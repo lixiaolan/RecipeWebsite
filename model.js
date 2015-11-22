@@ -1,3 +1,5 @@
+
+// Database class:
 var cookBook = function(doneLoadingDelegate)
 {
     // Return object
@@ -7,15 +9,18 @@ var cookBook = function(doneLoadingDelegate)
     var recipes = {};
 
     // Load the data from the server.
-    var loadRecipes = $.ajax("recpies.json")
-        .done(function ()
-              {
-                  $.parseJSON(loadRecipes.responseText);
-                  doneLoadingDelegate();
-                  return;
-              }
-             );    
-
+    $.ajax({
+        type: "GET",
+        url: "recipes.json",
+        success : function (data)
+        {
+            // console.log(jqxhr.responseText);
+            recipes = JSON.parse(data);
+            doneLoadingDelegate();
+            return;
+        },
+    });
+    
     // Public:
     that.getRecipes = function()
     {
@@ -97,36 +102,45 @@ var cookBook = function(doneLoadingDelegate)
     };
     
     return that;
-}
+};
 
-var recipes =
-    {
-        6 : {
-            "title" : "<title string>",
-            "tags" :
-            {
-                "a" : 1,
-                "r" : 1,
-                "d" : 1,
-            },
-        },
-        5 : {
-            "title" : "yabababab",
-            "tags" :
-            {
-                "c" : 1,
-                "d" : 1,
-            }
-        },
-    };
-
-
-var doneDelegate = function()
+// Model class for the overall page. Should contain a list of
+// submodels for each recipe being viewed.
+var pageModel = function ()
 {
-    console.log("stuff was loaded!!");
-}
+    // private:
+    var that = {};
 
-var test = cookBook(doneDelegate);
+    // List of tags to show
+    var selectedTags = {};
+
+    // The slected Recipe(s) to display
+    var recipeModels = {};
+
+    var dataLoadedDelegate = function()
+    {
+        console.log(book.getTags());
+    };
+    
+    // recipe data:
+    var book = cookBook(dataLoadedDelegate);
+    
+    // public:
+    
+
+    return that;
+};
+
+// Model class for each recipe being viewed
+var recipeModel = function ()
+{
+    var that = {};
+
+
+    return that;
+};
+
+var page = pageModel();
 
 // var title = "Recipe One";
 // var tags = {"d" : 1, "e" : 1};
