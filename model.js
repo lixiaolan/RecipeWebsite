@@ -7,7 +7,7 @@ var cookBook = function(doneLoadingDelegate)
     var recipes = {};
 
     // Load the data from the server.
-    var loadRecipes = $.ajax("")
+    var loadRecipes = $.ajax("recpies.json")
         .done(function ()
               {
                   $.parseJSON(loadRecipes.responseText);
@@ -121,16 +121,21 @@ var recipes =
     };
 
 
-var test = cookBook(recipes);
+var doneDelegate = function()
+{
+    console.log("stuff was loaded!!");
+}
 
-var title = "Recipe One";
-var tags = {"d" : 1, "e" : 1};
-var text = "this is the full text of the recipe";
+var test = cookBook(doneDelegate);
 
-test.modifyRecipe(test.newId(),title, tags, text);
+// var title = "Recipe One";
+// var tags = {"d" : 1, "e" : 1};
+// var text = "this is the full text of the recipe";
 
-console.log(test.getTags());
-console.log(test.getRecipes({"a" : 1, "d" : 1}));
+// test.modifyRecipe(test.newId(),title, tags, text);
+
+// console.log(test.getTags());
+// console.log(test.getRecipes({"a" : 1, "d" : 1}));
 
 
 // Not sure if I need this:

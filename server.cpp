@@ -7,11 +7,6 @@
 using namespace std;
 using namespace boost::filesystem;
 
-class ServerConstants
-{
-public:
-  static const string RecipesFile = "recpies.json";
-};
 
 // Function to handle the fork exec process for a sytem command
 // specified by single string.
@@ -499,44 +494,17 @@ public:
   }
 };
 
-class GetRecipes : public HTTP_Handler {
-
-public:
-  bool Process(HTTP_Request* request, HTTP_Response* response) override {
-    
-    if (request->method != "GET") return false;
-    if (request->requestURI.find(ServerConstants::RecipesFile) == string::npos) return false;
-
-    response->httpVersion = request->httpVersion;
-    response->statusCode = "200";
-    response->reasonPhrase = "OK";
-    response->body = MakePage(request->requestURI);
-    response->body = "";
-
-    // Load contents of file
-    ifstream myfile("./" + ServerConstants::RecipesFile);
-    string line;
-    if (myfile.is_open()) {
-      while (getline(myfile,line)) {
-        response->body += line + "\n";
-      }
-      myfile.close();
-    }
-      
-    return true;
-  }
-};
-
 int main(int argc, char *argv[]) {
    
   // Create handlers:
-  GetRecipes GR;
-    
+  HTTP_File_Handler FH;
+  
   // Create server
   HTTP_Server server;
-  // Hadd handlers
-  server.handlers.push_back(&GR);
-    
+
+  // add handlers
+  server.handlers.push_back(&FH);
+  
   server.Run();
   
   return 1;
