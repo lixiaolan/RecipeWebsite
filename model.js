@@ -1,6 +1,5 @@
-
 // Database class:
-var cookBook = function(doneLoadingDelegate)
+var CookBook = function(doneLoadingDelegate)
 {
     // Return object
     var that = {};
@@ -22,7 +21,7 @@ var cookBook = function(doneLoadingDelegate)
     });
     
     // Public:
-    that.getRecipes = function()
+    that.getAllRecipes = function()
     {
         return recipes;
     };
@@ -78,25 +77,32 @@ var cookBook = function(doneLoadingDelegate)
             }
         }
         
-        var array = [];
-        for (var key in set)
-        {
-            array.push(key);
-        }
-
-        return array.sort();
+        return set;
     };
 
-    that.getRecipes = function(inTags)
+    that.getTaggedRecipes = function(inTags)
     {
-        outRecipes = {};
+        var outRecipes = {};
         for (var recipeId in recipes)
         {
-            for (var tagKey in recipes[recipeId].tags)
+            outRecipes[recipeId] = recipes[recipeId];
+            for (var tagKey in inTags)
             {
-                if (inTags[tagKey])
-                    outRecipes[recipeId] = recipes[recipeId];
+                if (recipes[recipeId].tags[tagKey] !== 1)
+                {
+                    delete outRecipes[recipeId];
+                    break;
+                }
             }
+              
+            // for (var tagKey in recipes[recipeId].tags)
+            // {   
+            //     if (inTags[tagKey] !== 1)
+            //     {
+            //         delete outRecipes[recipeId];
+            //         break;
+            //     }
+            // }
         }
         return outRecipes;
     };
@@ -104,43 +110,138 @@ var cookBook = function(doneLoadingDelegate)
     return that;
 };
 
+// Model class for each recipe being viewed
+var RecipeModel = function ()
+{
+    var that = {};
+
+
+    return that;
+};
+
 // Model class for the overall page. Should contain a list of
 // submodels for each recipe being viewed.
-var pageModel = function ()
+var PageModel = function ()
 {
     // private:
     var that = {};
 
     // List of tags to show
     var selectedTags = {};
+    
+    // The slected Recipe(s) to display in tabs
+    var selectedRecipeModels = {};
 
-    // The slected Recipe(s) to display
-    var recipeModels = {};
+    // Function to show a list of visible recipes based on the filters
+    var updateVisibleRecipes = function(searchString)
+    {
+        // Make sure the data is loaded
+        if (!book) return;
 
+        var recipesToDisplay  = book.getTaggedRecipes(selectedTags);
+
+        $('#recipeList').empty();
+        
+        for (var i in recipesToDisplay)
+        {
+            $('#recipeList').append('<li>' + recipesToDisplay[i].title + '</li>');
+        }        
+    };
+
+    // Function to show a list of visible recipes based on the filters
+    var updateVisibleTags = function()
+    {
+        // Make sure the data is loaded
+        if (!book) return;
+        
+        $('#tagList').empty();
+
+        var tagsToDisplay = book.getTags();
+        
+        for (var i in tagsToDisplay)
+        {
+            $('#tagList').append('<label class="btn btn-primary" onclick="pageController.tagToggled(this);"> <input type="checkbox" autocomplete="off">' + i + ' </label>');
+        }        
+    };
+    
+    // Called when data is loaded from the database
     var dataLoadedDelegate = function()
     {
-        console.log(book.getTags());
+        updateVisibleRecipes("BLANK");
+        updateVisibleTags();
+        // console.log(book.getTags());
     };
     
     // recipe data:
-    var book = cookBook(dataLoadedDelegate);
+    var book = CookBook(dataLoadedDelegate);
     
     // public:
-    
 
+    // Add a selected tag
+    that.putSelectedTags = function(tags)
+    {
+        for (var i in tags)
+        {
+            selectedTags[i] = 1;
+        }
+
+        updateVisibleRecipes("crap");
+    };
+
+    that.deleteSelectedTags = function(tags)
+    {
+        for (var i in tags)
+        {
+            delete selectedTags[i];
+        }
+
+        updateVisibleRecipes("crap");
+    }
+
+    // Return:
     return that;
 };
 
-// Model class for each recipe being viewed
-var recipeModel = function ()
-{
+var PageController = function () {
+
+    // Return object
     var that = {};
+    
+    // Private:
+    
+    // Public:
+    
+    that.tagToggled = function(element)
+    {
 
+        console.log(element.className);
+        console.log(element.textContent);
+        var tags = {};
+        tags[element.textContent] = 1;
+        
+        if (element.className === "btn btn-primary")
+        {
+            pageModel.deleteSelectedTags(tags);
+        }
+        else
+        {
+            pageModel.putSelectedTags(tags);
+        }
 
+        
+        // console.log(elementString.class);
+        // var element = $(elementString);
+        // console.log(element.class);
+        
+    }
+    
+    // Return:
     return that;
-};
+}
 
-var page = pageModel();
+var pageModel = PageModel();
+
+var pageController = PageController();
 
 // var title = "Recipe One";
 // var tags = {"d" : 1, "e" : 1};
