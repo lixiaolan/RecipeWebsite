@@ -13,7 +13,6 @@ var CookBook = function(doneLoadingDelegate)
         url: "recipes.json",
         success : function (data)
         {
-            // console.log(jqxhr.responseText);
             recipes = JSON.parse(data);
             doneLoadingDelegate();
             return;
@@ -160,7 +159,7 @@ var PageModel = function ()
         
         for (var i in tagsToDisplay)
         {
-            $('#tagList').append('<label class="btn btn-primary" onclick="pageController.tagToggled(this);"> <input type="checkbox" autocomplete="off">' + i + ' </label>');
+            $('#tagList').append('<label class="btn btn-primary" onclick="pageController.tagToggled(this);"><input type="checkbox" autocomplete="off">' + i + '</label>');
         }        
     };
     
@@ -169,7 +168,6 @@ var PageModel = function ()
     {
         updateVisibleRecipes("BLANK");
         updateVisibleTags();
-        // console.log(book.getTags());
     };
     
     // recipe data:
@@ -214,24 +212,20 @@ var PageController = function () {
     that.tagToggled = function(element)
     {
 
-        console.log(element.className);
-        console.log(element.textContent);
         var tags = {};
         tags[element.textContent] = 1;
         
         if (element.className === "btn btn-primary")
         {
-            pageModel.deleteSelectedTags(tags);
+            pageModel.putSelectedTags(tags);
         }
         else
         {
-            pageModel.putSelectedTags(tags);
+            pageModel.deleteSelectedTags(tags);
         }
 
         
-        // console.log(elementString.class);
         // var element = $(elementString);
-        // console.log(element.class);
         
     }
     
@@ -248,10 +242,6 @@ var pageController = PageController();
 // var text = "this is the full text of the recipe";
 
 // test.modifyRecipe(test.newId(),title, tags, text);
-
-// console.log(test.getTags());
-// console.log(test.getRecipes({"a" : 1, "d" : 1}));
-
 
 // Not sure if I need this:
 
