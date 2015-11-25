@@ -72,7 +72,7 @@ var CookBook = function(doneLoadingDelegate)
 
             for (var tag in tags)
             {
-                set[tag] = 1;
+                set[tag] = null
             }
         }
         
@@ -87,7 +87,7 @@ var CookBook = function(doneLoadingDelegate)
             outRecipes[recipeId] = recipes[recipeId];
             for (var tagKey in inTags)
             {
-                if (recipes[recipeId].tags[tagKey] !== 1)
+                if (!recipes[recipeId].tags.hasOwnProperty(tagKey))
                 {
                     delete outRecipes[recipeId];
                     break;
@@ -113,7 +113,6 @@ var CookBook = function(doneLoadingDelegate)
 var RecipeModel = function ()
 {
     var that = {};
-
 
     return that;
 };
@@ -180,7 +179,7 @@ var PageModel = function ()
     {
         for (var i in tags)
         {
-            selectedTags[i] = 1;
+            selectedTags[i] = null;
         }
 
         updateVisibleRecipes("crap");
@@ -213,7 +212,7 @@ var PageController = function () {
     {
 
         var tags = {};
-        tags[element.textContent] = 1;
+        tags[element.textContent] = null;
         
         if (element.className === "btn btn-primary")
         {
@@ -236,22 +235,3 @@ var PageController = function () {
 var pageModel = PageModel();
 
 var pageController = PageController();
-
-// var title = "Recipe One";
-// var tags = {"d" : 1, "e" : 1};
-// var text = "this is the full text of the recipe";
-
-// test.modifyRecipe(test.newId(),title, tags, text);
-
-// Not sure if I need this:
-
-// "tags":
-// [
-//     {
-//         "id" : "<string name>",
-//         "recipes" : [
-//             "recipeId1",
-//             "recipeId2",
-//             "recipeId3"]
-//     }
-// ]
