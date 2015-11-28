@@ -1,12 +1,9 @@
 #include "HTTP_Server.hpp"
 #include "HTTP_Example_Handlers.hpp"
-#include "boost/filesystem.hpp"   // includes all needed Boost.Filesystem declarations
 #include <iostream>               // for std::cout
 #include <sys/wait.h>
 
 using namespace std;
-using namespace boost::filesystem;
-
 
 // Function to handle the fork exec process for a sytem command
 // specified by single string.
@@ -113,59 +110,59 @@ public:
   }
 };
 
-class IndexGetHandler : public HTTP_Handler {
-  string MakePage() {
-    string dir_path = "recipes/";
+// class IndexGetHandler : public HTTP_Handler {
+//   string MakePage() {
+//     string dir_path = "recipes/";
 
-    vector<string> fileNames;
+//     vector<string> fileNames;
     
-    directory_iterator end_itr; // default construction yields past-the-end
-    string temp;
-    for ( directory_iterator itr( dir_path );
-          itr != end_itr;
-          ++itr ) {
-      stringstream ss;
-      ss << itr->path().filename().string();
-      fileNames.push_back(ss.str());
-    }
+//     directory_iterator end_itr; // default construction yields past-the-end
+//     string temp;
+//     for ( directory_iterator itr( dir_path );
+//           itr != end_itr;
+//           ++itr ) {
+//       stringstream ss;
+//       ss << itr->path().filename().string();
+//       fileNames.push_back(ss.str());
+//     }
 
-    // Load index page file
-    // Insert GetCard xml
-    string cssStatic =  "<link rel=\"stylesheet\" href=\"main.css\">";
+//     // Load index page file
+//     // Insert GetCard xml
+//     string cssStatic =  "<link rel=\"stylesheet\" href=\"main.css\">";
 
-    string recipes = "";
-    for (string file : fileNames) {
-      recipes += "<a href=\"" + file + "\">" + file + "</a><br>";
-    }
+//     string recipes = "";
+//     for (string file : fileNames) {
+//       recipes += "<a href=\"" + file + "\">" + file + "</a><br>";
+//     }
 
-    string body;
-    body = body +
-      "<!DOCTYPE html> <html> <head> " +
-      cssStatic +
-      " </head> <body> " +
-      " <div> " +
-      recipes +
-      " </div> " + 
-      " </body> </html> ";
+//     string body;
+//     body = body +
+//       "<!DOCTYPE html> <html> <head> " +
+//       cssStatic +
+//       " </head> <body> " +
+//       " <div> " +
+//       recipes +
+//       " </div> " + 
+//       " </body> </html> ";
 
-    return body;
-  }
+//     return body;
+//   }
 
-public:
+// public:
 
-  bool Process(HTTP_Request* request, HTTP_Response* response) override {
+//   bool Process(HTTP_Request* request, HTTP_Response* response) override {
         
-    if (request->method != "GET") return false;
-    if (!(request->requestURI == "/recipes/")) return false;
+//     if (request->method != "GET") return false;
+//     if (!(request->requestURI == "/recipes/")) return false;
 
-    response->httpVersion = request->httpVersion;
-    response->statusCode = "200";
-    response->reasonPhrase = "OK";
-    response->body = MakePage();
+//     response->httpVersion = request->httpVersion;
+//     response->statusCode = "200";
+//     response->reasonPhrase = "OK";
+//     response->body = MakePage();
 
-    return true;
-  }
-};
+//     return true;
+//   }
+// };
 
 string CleanFilePath(string file)
 {

@@ -5,7 +5,7 @@ CFLAGS = -g -Wall
 
 #Define the rules in the dependancy tree :
 server : server.cpp
-	$(CC) -o $@ $^ -L. -lljjhttpserver -lboost_filesystem -lboost_system -Wl,-rpath,/usr/local/lib $(CFLAGS)
+	$(CC) -o $@ $^ -L. -lljjhttpserver -Wl,-rpath,/usr/local/lib $(CFLAGS)
 
 clean:
 	rm -f $(SRC)*.o
