@@ -434,59 +434,26 @@ void UpdateTagInfo(string recipe, string tagLine){
   }
 }
 
-class SaveHandler : public HTTP_Handler {
-
+class SaveRecipes : public HTTP_Handler
+{
 public:
-  bool Process(HTTP_Request* request, HTTP_Response* response) override {
-    string searchTokin = "?save=";
-
-    // Determine if this handler is a match
+  bool Process(HTTP_Request* request, HTTP_Response* response) override
+  {
+    
+    
+    if (request->method != "POST") return false;
+    string searchTokin = "recipes.json";
+    // Determine if this handler has 'recipes.json' in the uri
     if (request->requestURI.find(searchTokin) == string::npos) return false;
 
-    // Strip the filename from the URI body. The format will be:
-    // /remove/name of file
-    string file = request->requestURI;
-    size_t pos = file.find(searchTokin);
-    file.erase(0,pos + searchTokin.size());
-
     istringstream iss(request->body);
-    string line1;
-    string line2;
-    string oldFile = CleanFilePath(file);
-    string newFile;             // Not currently used. Eventually will be used to determine new file name
-    string titleLine;
-    string tagLine;
-    // string filePath = "recipes/all/" + CleanFilePath(file);
-    // ofstream ofs(filePath);
-  
-    // Toss out first 3 lines
-    getline(iss,line2);
-    getline(iss,line2);
-    getline(iss,line2);
-
-    // Starting at 4th line, get all lines exept the last one
-    getline(iss,titleLine);
-    line2 = titleLine;
-    getline(iss,tagLine);
-    line1 = tagLine;
-
-    // TODO: Eventually, the title line should determine the name of
-    // the acutal recipe file (so that the user can modify it
-    // easily). For now, we don't have that functaionality.
-
-    // Write to the file specified by the request
-    string filePath = "recipes/all/" + oldFile;
+    string filePath = "recipes.json";
     ofstream ofs(filePath);
-    while (iss) {
-      ofs << line2 << "\n";
-      line2 = line1;
-      getline(iss,line1);
+    string line;
+    while (getline(iss,line)) {
+      ofs << line << "\n";
     }
 
-    // Update all the symbolic links based on tagLine:
-    // UpdateTagInfo(oldFile, tagLine);
-    UpdateTagInfo(oldFile, "favorites,trash");
-    
     return true;
   }
 };
@@ -495,11 +462,13 @@ int main(int argc, char *argv[]) {
    
   // Create handlers:
   HTTP_File_Handler FH;
+  SaveRecipes SR;
   
   // Create server
   HTTP_Server server;
 
   // add handlers
+  server.handlers.push_back(&SR);
   server.handlers.push_back(&FH);
   
   server.Run();

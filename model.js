@@ -20,6 +20,29 @@ var CookBook = function(doneLoadingDelegate)
     });
     
     // Public:
+    that.saveRecipes = function(successDelegate) {
+        $.ajax({
+            type: "POST",
+            url: "recipes.json",
+            data : JSON.stringify(recipes),
+            success : successDelegate
+        });
+    };
+
+    that.getRecipeText = function(id,doneLoadingDelegate)
+    {
+        $.ajax({
+            type: "GET",
+            url: "recipes/"+id,
+            success : doneLoadingDelegate
+        });
+    };
+
+    that.getRecipe = function(id)
+    {
+        return recipes[id];
+    };
+    
     that.getAllRecipes = function()
     {
         return recipes;
@@ -110,10 +133,48 @@ var CookBook = function(doneLoadingDelegate)
 };
 
 // Model class for each recipe being viewed
-var RecipeModel = function ()
+var RecipeModel = function (recipeId, modelBook)
 {
+    var id = recipeId;
+
+    // We want a more descriptive dom Id.
+    var domId = "recipe" + id;
+    
+    var book = modelBook;
+
+    var recpieText;
+
+    // Do work when done loading
+    var doneLoadingDelegate = function (data)
+    {
+        recipeText = data;
+        $('div.active').removeClass('active').removeClass('in');
+        $('li.active').removeClass('active');
+
+        // Get recipe:
+        var recipe = book.getRecipe(id);
+        
+        $('#myTabsContents')
+            .append('<div class="tab-pane in active" id="'+domId+'">'+recipeText+'</div>');
+        $('#myTabs')
+            .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
+        
+        
+        $('#myTabs a:last').tab('show');
+  
+    };
+
+    // Make ajax call to get recipe text
+    book.getRecipeText(recipeId, doneLoadingDelegate);
+    
     var that = {};
 
+    // public:
+    that.getId = function()
+    {
+        return id;
+    };
+    
     return that;
 };
 
@@ -128,7 +189,7 @@ var PageModel = function ()
     var selectedTags = {};
     
     // The slected Recipe(s) to display in tabs
-    var selectedRecipeModels = {};
+    var selectedRecipeModels = [];
 
     // Function to show a list of visible recipes based on the filters
     var updateVisibleRecipes = function(searchString)
@@ -142,7 +203,7 @@ var PageModel = function ()
         
         for (var i in recipesToDisplay)
         {
-            $('#recipeList').append('<li>' + recipesToDisplay[i].title + '</li>');
+            $('#recipeList').append('<li><a onclick="pageController.openRecipe('+i+')">' + recipesToDisplay[i].title + '</a></li>');
         }        
     };
 
@@ -177,6 +238,7 @@ var PageModel = function ()
     // Add a selected tag
     that.putSelectedTags = function(tags)
     {
+        
         for (var i in tags)
         {
             selectedTags[i] = null;
@@ -193,8 +255,14 @@ var PageModel = function ()
         }
 
         updateVisibleRecipes("crap");
-    }
+    };
 
+    that.addSelectedRecipe = function(id)
+    {
+        var recipeModel = RecipeModel(id, book);
+        selectedRecipeModels.push(recipeModel);
+    };
+    
     // Return:
     return that;
 };
@@ -210,7 +278,6 @@ var PageController = function () {
     
     that.tagToggled = function(element)
     {
-
         var tags = {};
         tags[element.textContent] = null;
         
@@ -221,11 +288,12 @@ var PageController = function () {
         else
         {
             pageModel.deleteSelectedTags(tags);
-        }
+        }        
+    }
 
-        
-        // var element = $(elementString);
-        
+    that.openRecipe = function(id)
+    {
+        pageModel.addSelectedRecipe(id);
     }
     
     // Return:
