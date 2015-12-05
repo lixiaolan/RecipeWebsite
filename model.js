@@ -20,7 +20,7 @@ var CookBook = function(doneLoadingDelegate)
     });
     
     // Public:
-    that.saveRecipes = function(successDelegate) {
+    that.putRecipes = function(successDelegate) {
         $.ajax({
             type: "POST",
             url: "recipes.json",
@@ -35,6 +35,16 @@ var CookBook = function(doneLoadingDelegate)
             type: "GET",
             url: "recipes/"+id,
             success : doneLoadingDelegate
+        });
+    };
+
+    that.putRecipeText = function(id,text,doneSavingDelegate)
+    {
+        $.ajax({
+            type: "POST",
+            url: "recipes/"+id,
+            data : text,
+            success : doneSavingDelegate
         });
     };
 
@@ -144,7 +154,13 @@ var RecipeModel = function (recipeId, modelBook)
 
     var recpieText;
 
-    // Do work when done loading
+    // The internal state of the Recipe Model is either "view" or
+    // "edit".
+    var state; 
+    
+    // Do work when done loading. This loads all of the dom elemnts
+    // into the page. Then it sets the state of the the recipe model
+    // to "view" which hides the un-needed dom elemnts
     var doneLoadingDelegate = function (data)
     {
         recipeText = data;
@@ -155,13 +171,40 @@ var RecipeModel = function (recipeId, modelBook)
         var recipe = book.getRecipe(id);
         
         $('#myTabsContents')
-            .append('<div class="tab-pane in active" id="'+domId+'">'+recipeText+'</div>');
+            .append('<div class="tab-pane in active" id="'+domId+'"><div id="recipeView">'+recipeText+'</div><div><button type="button" id="EditBtn" class="btn btn-primary">Edit</button><button type="button" id="CloseBtn" class="btn btn-danger">Close</button><button type="button" id="SaveBtn" class="btn btn-primary">Save</button><button type="button" id="CancelBtn" class="btn btn-danger">Cancel</button></div><div class="row"><textarea class="col-md-6" id="recipeEdit">'+recipeText+'</textarea><div class="col-md-6"><div id="recipeTags" data-toggle="buttons"></div></div></div></div>');
         $('#myTabs')
             .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
+
+        // Make this tab clickable
+        $('#myTabs a[href="#'+domId+'"]').click(
+            function (e)
+            {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+        // Make the recipeView section mirror the text included in the
+        // recipeEdit textarea. Note I had to use .bind here because
+        // the element was created dynamically. For some reason, this
+        // matters.
+        $('#'+domId+' #recipeEdit').bind('change',function()
+                                      {
+                                          recipeText = $('#'+domId+' #recipeEdit').val();
+                                          $('#'+domId+' #recipeView').empty();
+                                          $('#'+domId+' #recipeView').append(recipeText);
+                                      });
+
+        $('#'+domId+' #SaveBtn').bind('click', function()
+                                      {
+                                          that.saveText();
+                                          return;
+                                      });
+
+        $('#'+domId+' #CloseBtn').bind('click', pageController.closeRecipeFunction(id))
+
         
-        
+        // Show the just added tab
         $('#myTabs a:last').tab('show');
-  
     };
 
     // Make ajax call to get recipe text
@@ -170,10 +213,21 @@ var RecipeModel = function (recipeId, modelBook)
     var that = {};
 
     // public:
+    that.saveText = function()
+    {
+        book.putRecipeText(id,recipeText,(function () {alert("saved");}));
+    }
+
     that.getId = function()
     {
         return id;
     };
+
+    that.remove = function()
+    {
+        $('#'+domId).remove();
+        $('#myTabs a[href="#'+domId+'"]').parent().remove();
+    }
     
     return that;
 };
@@ -235,6 +289,24 @@ var PageModel = function ()
     
     // public:
 
+    that.getRecipeModel = function(id)
+    {
+        var has = false;
+        
+        var funk = function (value)
+        {
+            if (value.getId() === id)
+            {
+                has = true;
+            }
+            return;
+        };
+        
+        selectedRecipeModels.map(funk);
+
+        return has;
+    }
+    
     // Add a selected tag
     that.putSelectedTags = function(tags)
     {
@@ -262,6 +334,18 @@ var PageModel = function ()
         var recipeModel = RecipeModel(id, book);
         selectedRecipeModels.push(recipeModel);
     };
+
+    that.removeRecipe = function(id)
+    {
+        for (var i = 0; i < selectedRecipeModels.length; i++)
+        {
+            if (selectedRecipeModels[i].getId() === id) break;
+        }
+
+        selectedRecipeModels[i].remove();
+        selectedRecipeModels.splice(i,1);
+        console.log(selectedRecipeModels);
+    }
     
     // Return:
     return that;
@@ -275,7 +359,9 @@ var PageController = function () {
     // Private:
     
     // Public:
-    
+
+    // Method to  handle a tag  being toggeled in the  recipe slection
+    // section of the website.
     that.tagToggled = function(element)
     {
         var tags = {};
@@ -291,9 +377,29 @@ var PageController = function () {
         }        
     }
 
+    // Method to handle when user wants to add a recipe.
     that.openRecipe = function(id)
     {
-        pageModel.addSelectedRecipe(id);
+        // First check that the recpie is not already open
+        if (!pageModel.getRecipeModel(id))
+        {
+            pageModel.addSelectedRecipe(id);
+        }
+    }
+
+    // Called when a recipe is closed
+    that.closeRecipe = function(id)
+    {        
+        pageModel.removeRecipe(id)
+    }
+
+    // Called when a recipe is closed
+    that.closeRecipeFunction = function(id)
+    {
+        return function()
+        {
+            that.closeRecipe(id);
+        }
     }
     
     // Return:
