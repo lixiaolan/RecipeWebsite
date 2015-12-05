@@ -171,7 +171,13 @@ var RecipeModel = function (recipeId, modelBook)
         var recipe = book.getRecipe(id);
         
         $('#myTabsContents')
-            .append('<div class="tab-pane in active" id="'+domId+'"><div id="recipeView">'+recipeText+'</div><div><button type="button" id="EditBtn" class="btn btn-primary">Edit</button><button type="button" id="CloseBtn" class="btn btn-danger">Close</button><button type="button" id="SaveBtn" class="btn btn-primary">Save</button><button type="button" id="CancelBtn" class="btn btn-danger">Cancel</button></div><div class="row"><textarea class="col-md-6" id="recipeEdit">'+recipeText+'</textarea><div class="col-md-6"><div id="recipeTags" data-toggle="buttons"></div></div></div></div>');
+            .append('<div class="tab-pane in active" id="'+domId+'"></div>');
+        var contents = $('#'+domId);
+        
+        contents.append('<div id="recipeView">'+recipeText+'</div>');
+        contents.append('<div class="row"><textarea class="col-md-5" id="recipeEdit">'+recipeText+'</textarea><div class="col-md-5"><div id="recipeTags" data-toggle="buttons">Buttons go here!!!</div></div>')
+        contents.append('<div class="row"><button type="button" id="CloseBtn" class="btn btn-danger">Close</button><button type="button" id="SaveBtn" class="btn btn-primary">Save</button></div>');
+        
         $('#myTabs')
             .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
 
@@ -344,7 +350,6 @@ var PageModel = function ()
 
         selectedRecipeModels[i].remove();
         selectedRecipeModels.splice(i,1);
-        console.log(selectedRecipeModels);
     }
     
     // Return:
