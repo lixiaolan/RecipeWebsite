@@ -88,6 +88,19 @@ var CookBook = function(doneLoadingDelegate)
         return true;
     };
 
+    // Change title of recipe.
+    that.setTitle = function(id, title)
+    {
+        recipes[id].title = title;
+    };
+
+    // Change title of recipe.
+    that.getTitle = function(id)
+    {
+        return recipes[id].title;
+    };
+
+    
     that.deleteRecipe = function(id)
     {
         delete recipes[id];
@@ -172,10 +185,16 @@ var RecipeModel = function (recipeId, modelBook)
         
         $('#myTabsContents')
             .append('<div class="tab-pane in active" id="'+domId+'"></div>');
+
         var contents = $('#'+domId);
-        
-        contents.append('<div id="recipeView">'+recipeText+'</div>');
+
+        // Add recipe View area
+        contents.append('<div class="row"><div class="col-md-5" id="recipeView">'+recipeText+'</div></div>');
+
+        // Add recipe text area
         contents.append('<div class="row"><textarea class="col-md-5" id="recipeEdit">'+recipeText+'</textarea><div class="col-md-5"><div id="recipeTags" data-toggle="buttons">Buttons go here!!!</div></div>')
+
+        // Add buttons
         contents.append('<div class="row"><button type="button" id="CloseBtn" class="btn btn-danger">Close</button><button type="button" id="SaveBtn" class="btn btn-primary">Save</button></div>');
         
         $('#myTabs')
@@ -200,28 +219,59 @@ var RecipeModel = function (recipeId, modelBook)
                                           $('#'+domId+' #recipeView').append(recipeText);
                                       });
 
-        $('#'+domId+' #SaveBtn').bind('click', function()
-                                      {
-                                          that.saveText();
-                                          return;
-                                      });
-
-        $('#'+domId+' #CloseBtn').bind('click', pageController.closeRecipeFunction(id))
-
+        // Behavior for the save button.
+        // TODO: Make this call the controller with an ID so that tags
+        // also get saved correctly
+        $('#'+domId+' #SaveBtn').bind('click', pageController.saveRecipeFunction(id));
+        
+        
+        // Close button behavior
+        $('#'+domId+' #CloseBtn').bind('click', pageController.closeRecipeFunction(id));
         
         // Show the just added tab
         $('#myTabs a:last').tab('show');
     };
 
+    // Method which defineds how we get a new title given the HTML
+    // content of the recipe. Right now this simply looks for the
+    // first h1 element in recipe.
+    var getTitleFromHTML = function()
+    {
+        return $('#'+domId+" #recipeView h1").text();
+    }
+    
     // Make ajax call to get recipe text
     book.getRecipeText(recipeId, doneLoadingDelegate);
     
     var that = {};
 
     // public:
-    that.saveText = function()
+
+
+    // Saves recipe text to the DB and saves new title and new title
+    // and tags to the database class "book".
+    that.save = function()
     {
+        // Since we sync up the recipe text with the recipe view, we
+        // should always save the recipe text:
         book.putRecipeText(id,recipeText,(function () {alert("saved");}));
+
+        // Update the title
+        var newTitle = getTitleFromHTML();
+        
+        // Make sure the title isn't blank
+        if (!newTitle)
+        {
+            newTitle = "No Title";
+        }
+        book.setTitle(id, newTitle);
+
+        // Update the tab text accordingly:
+        var tabText = $('#myTabs a[href="#'+domId+'"]');
+        tabText.empty();
+        tabText.append(newTitle);
+
+        // TODO: Update the tags
     }
 
     that.getId = function()
@@ -350,6 +400,23 @@ var PageModel = function ()
 
         selectedRecipeModels[i].remove();
         selectedRecipeModels.splice(i,1);
+
+        // Show the last remaining tab (if any):
+        $('#myTabs a:last').tab('show');
+    }
+
+    that.saveRecipe = function(id)
+    {
+        for (var i = 0; i < selectedRecipeModels.length; i++)
+        {
+            if (selectedRecipeModels[i].getId() === id) break;
+        }
+
+        
+        selectedRecipeModels[i].save();
+
+        // Save the book
+        book.putRecipes()
     }
     
     // Return:
@@ -395,7 +462,13 @@ var PageController = function () {
     // Called when a recipe is closed
     that.closeRecipe = function(id)
     {        
-        pageModel.removeRecipe(id)
+        pageModel.removeRecipe(id);
+    }
+
+    // Called when a recipe is saved
+    that.saveRecipe = function(id)
+    {        
+        pageModel.saveRecipe(id);
     }
 
     // Called when a recipe is closed
@@ -404,6 +477,15 @@ var PageController = function () {
         return function()
         {
             that.closeRecipe(id);
+        }
+    }
+
+    // Called when a recipe is saved
+    that.saveRecipeFunction = function(id)
+    {
+        return function()
+        {
+            that.saveRecipe(id);
         }
     }
     
