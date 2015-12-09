@@ -74,7 +74,7 @@ var CookBook = function(doneLoadingDelegate)
     };
 
     // Updates or creates recipe with given id.
-    that.modifyRecipe = function(id, title, tags, text)
+    that.modifyRecipe = function(id, title, tags)
     {
         // Create empty recipe if it does not exist:
         recipes[id] = recipes[id] || {};
@@ -345,7 +345,7 @@ var PageModel = function ()
     
     // public:
 
-    that.getRecipeModel = function(id)
+    that.hasRecipeModel = function(id)
     {
         var has = false;
         
@@ -357,7 +357,7 @@ var PageModel = function ()
             }
             return;
         };
-        
+
         selectedRecipeModels.map(funk);
 
         return has;
@@ -407,16 +407,26 @@ var PageModel = function ()
 
     that.saveRecipe = function(id)
     {
+        // Find and save the selected recipe
         for (var i = 0; i < selectedRecipeModels.length; i++)
         {
             if (selectedRecipeModels[i].getId() === id) break;
         }
-
-        
         selectedRecipeModels[i].save();
 
         // Save the book
         book.putRecipes()
+
+        // Since a title may have changed, we update visible recipes.
+        updateVisibleRecipes("crap");
+    }
+
+    // Method to add new recipe
+    that.newRecipe = function()
+    {
+        var newId = book.newId();
+        book.modifyRecipe(newId,"New Recipe",{})
+        that.addSelectedRecipe(newId);
     }
     
     // Return:
@@ -427,11 +437,19 @@ var PageController = function () {
 
     // Return object
     var that = {};
-    
+
+
     // Private:
+
     
     // Public:
 
+    that.newRecipe = function()
+    {
+        console.log("hello");
+        pageModel.newRecipe();
+    };
+    
     // Method to  handle a tag  being toggeled in the  recipe slection
     // section of the website.
     that.tagToggled = function(element)
@@ -452,8 +470,8 @@ var PageController = function () {
     // Method to handle when user wants to add a recipe.
     that.openRecipe = function(id)
     {
-        // First check that the recpie is not already open
-        if (!pageModel.getRecipeModel(id))
+        // First check that the recipe is not already open
+        if (!pageModel.hasRecipeModel(id))
         {
             pageModel.addSelectedRecipe(id);
         }
@@ -496,3 +514,8 @@ var PageController = function () {
 var pageModel = PageModel();
 
 var pageController = PageController();
+
+// Attach controller to static dom elements
+$(document).ready(function () {
+    $('#NewBtn').bind('click',pageController.newRecipe);    
+});
