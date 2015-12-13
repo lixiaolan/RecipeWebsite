@@ -1,2 +1,14 @@
-<h1>Kale Shakes</h1>
-Thing
+<h1>Creating new recipe with some tags</h1>
+
+<p>Put some text here in this paragraph</p>
+<h2>Ingredients</h2>
+<ul>
+<li> pepper</li>
+<li>salt</li>
+</ul>
+<h2>Instructions</h2>
+<ul>
+<li>do the first thing first</li>
+<li>Than do another ting</li>
+</ul>
+<p> Some other toughts about this thing</p>
