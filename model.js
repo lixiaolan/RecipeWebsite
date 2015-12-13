@@ -208,6 +208,8 @@ var PageModel = function ()
     // The slected Recipe(s) to display in tabs
     var selectedRecipeModels = [];
 
+    var defaultRecipeText = "<h1>Title</h1>\n\n<h2>Description</h2>\n<p>Text</p>\n\n<h2>Ingredients</h2>\n\n<ul>\n<li>Thing One</li>\n<li>Thing Two</li>\n</ul>\n\n<h2>Instructions</h2>\n\n<ul>\n<li>Step One</li>\n<li>Step Two</li>\n</ul>";
+    
     // Function to show a list of visible recipes based on the filters
     var updateVisibleRecipes = function(searchString)
     {
@@ -363,7 +365,10 @@ var PageModel = function ()
     {
         var newId = book.newId();
         book.modifyRecipe(newId,"New Recipe",{})
-        book.putRecipeText(newId,"",(function () {}));
+
+        
+
+        book.putRecipeText(newId,defaultRecipeText,(function () {}));
         that.addSelectedRecipe(newId);
     }
     
@@ -421,11 +426,11 @@ var RecipeModel = function (recipeId, modelBook)
 
         // Add recipe text area
         contents
-            .append('<div class="row"><textarea class="col-md-5" id="recipeEdit">'+recipeText+'</textarea><div class="col-md-5"><div id="recipeTags" data-toggle="buttons"></div></div>')
+            .append('<div class="row"><div class="col-md-5"><textarea class="form-control" rows="10" id="recipeEdit">'+recipeText+'</textarea></div><div class="col-md-5"><div class="btn-group-vertical" id="recipeTags" data-toggle="buttons"></div></div>')
 
         // Add buttons
         contents
-            .append('<div class="row"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button><button type="button" id="SaveBtn" class="btn btn-primary">Save</button><button type="button" id="DeleteBtn" class="btn btn-danger">Delete</button></div>');
+            .append('<div class="row"><div class="col-md-2"><button type="button" id="SaveBtn" class="btn btn-primary">Save</button></div><div class="col-md-2"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button></div><div class="col-md-2"><button type="button" id="DeleteBtn" class="btn btn-danger">Delete</button><div></div>');
         
         $('#myTabs')
             .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
@@ -517,7 +522,7 @@ var RecipeModel = function (recipeId, modelBook)
     {
         // Since we sync up the recipe text with the recipe view, we
         // should always save the recipe text:
-        book.putRecipeText(id,recipeText,(function () {alert("saved");}));
+        book.putRecipeText(id,recipeText,(function () {}));
 
         // Update the title
         var newTitle = getTitleFromHTML();
