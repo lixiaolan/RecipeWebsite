@@ -332,7 +332,7 @@ var PageModel = function ()
     {
         // Find and save the selected recipe
         var recipe = that.getRecipeById(id);
-        
+
         recipe.save();
 
         // Save the book
@@ -386,7 +386,7 @@ var RecipeModel = function (recipeId, modelBook)
     // Holds the recipe text. This information is not stored in the in
     // the book object directly. Instead it is saved directly to files
     // corresponding to individual recpies.
-    var recpieText;
+    var recipeText;
 
     // A local copy of the tags associated with the model. This is
     // only put into the data model when the recipe is saved.
