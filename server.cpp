@@ -495,8 +495,8 @@ public:
 
     // If requesting the security file, return if file matches the
     // Authentication (yes or no)
-    if ((request->method == "GET") && (request->requestURI == "/security")) {
-      if (request->headers["Authentication"] == password) {
+    if (request->requestURI == "/security") {
+      if (request->headers["Authorization"] == password) {
         response->body = "yes";
       }
       else {
@@ -511,7 +511,7 @@ public:
         (request->method != "PUT")) return false;
     
     // Compare authentication string to header
-    if (request->headers["Authentication"] != password)
+    if (request->headers["Authorization"] != password)
       return true;
 
     return false;
@@ -531,7 +531,7 @@ int main(int argc, char *argv[]) {
   HTTP_Server server;
 
   // add handlers
-  // server.handlers.push_back(&ST);
+  server.handlers.push_back(&ST);
   server.handlers.push_back(&SR);
   server.handlers.push_back(&SRT);
   server.handlers.push_back(&FH);
