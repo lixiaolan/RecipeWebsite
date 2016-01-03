@@ -383,7 +383,6 @@ string StrikeProcess (string filePath, map<string, StrikeValue> argToStrikeValue
 };
 
 class EditHandler : public HTTP_Handler {
-
 public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override {
     string searchTokin = "?edit=";
@@ -480,10 +479,50 @@ public:
   }
 };
 
+// This "handles" a POST or PUT if it does not match the security
+// string. "handling" the request prevents any other handler from
+// taking effect.
+class SecurityTest : public HTTP_Handler
+{
+public:
+  bool Process(HTTP_Request* request, HTTP_Response* response) override
+  {
+
+    // Get authentication string from security file:
+    ifstream ifs("./security");
+    string password;
+    getline(ifs, password);
+
+    // If requesting the security file, return if file matches the
+    // Authentication (yes or no)
+    if ((request->method == "GET") && (request->requestURI == "/security")) {
+      if (request->headers["Authentication"] == password) {
+        response->body = "yes";
+      }
+      else {
+        response->body = "no";
+      }
+      return true;
+    }
+
+    // Otherwise, if this is any POST or PUT, check security:
+    
+    if ((request->method != "POST") &&
+        (request->method != "PUT")) return false;
+    
+    // Compare authentication string to header
+    if (request->headers["Authentication"] != password)
+      return true;
+
+    return false;
+  }
+};
+
 
 int main(int argc, char *argv[]) {
    
   // Create handlers:
+  SecurityTest ST;
   HTTP_File_Handler FH;
   SaveRecipeText SRT;
   SaveRecipes SR;
@@ -492,6 +531,7 @@ int main(int argc, char *argv[]) {
   HTTP_Server server;
 
   // add handlers
+  // server.handlers.push_back(&ST);
   server.handlers.push_back(&SR);
   server.handlers.push_back(&SRT);
   server.handlers.push_back(&FH);

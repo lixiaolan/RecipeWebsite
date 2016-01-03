@@ -7,6 +7,12 @@ var CookBook = function(doneLoadingDelegate)
     // Private:
     var recipes = {};
 
+    // Password
+    var password;
+
+    // Delegate used during password checking
+    var passedDelegate;
+    
     // Load the data from the server.
     $.ajax({
         type: "GET",
@@ -18,36 +24,73 @@ var CookBook = function(doneLoadingDelegate)
             return;
         },
     });
-    
+
+    var onTestSecurity = function(body)
+    {
+        if (body==="yes")
+        {
+            passedDelegate(true);
+        }
+        else
+        {
+            passedDelegate(false);
+        }
+    }
+
     // Public:
+    that.getRecipeText = function(id,successDelegate)
+    {
+        $.ajax({
+            type: "GET",
+            url: "recipes/"+id,
+            success : successDelegate
+        });
+    };
+
+    that.testSecurity = function(delegate, password)
+    {
+        // Store the delegate to be called in the onTestSecurity
+        // callback:
+        passedDelegate = delegate;
+        
+        $.ajax({
+            type: "GET",
+            url: "security",
+            beforeSend: function (xhr)
+            {
+                xhr.setRequestHeader('Authorization', password);
+            },
+            success : onTestSecurity
+        });
+    };
+
     that.putRecipes = function(successDelegate) {
         $.ajax({
             type: "POST",
             url: "recipes.json",
+            beforeSend: function (xhr)
+            {
+                xhr.setRequestHeader('Authorization', password);
+            },
             data : JSON.stringify(recipes),
             success : successDelegate
         });
     };
 
-    that.getRecipeText = function(id,doneLoadingDelegate)
-    {
-        $.ajax({
-            type: "GET",
-            url: "recipes/"+id,
-            success : doneLoadingDelegate
-        });
-    };
-
-    that.putRecipeText = function(id,text,doneSavingDelegate)
+    that.putRecipeText = function(id,text,successDelegate)
     {
         $.ajax({
             type: "POST",
             url: "recipes/"+id,
+            beforeSend: function (xhr)
+            {
+                xhr.setRequestHeader('Authorization', password);
+            },
             data : text,
-            success : doneSavingDelegate
+            success : successDelegate
         });
     };
-
+    
     that.getRecipe = function(id)
     {
         return recipes[id];
@@ -155,13 +198,13 @@ var CookBook = function(doneLoadingDelegate)
         // Right now we just hard code this into the model:
         return {"appetizer" : null,
                 "breakfast" : null,
-                "lunch" : null,
-                "dinner" : null,
-                "dessert" : null,
-                "crockpot" : null,
-                "no cook" : null,
-                "salad" : null,
-                "favorite" : null };
+                "lunch"     : null,
+                "dinner"    : null,
+                "dessert"   : null,
+                "crockpot"  : null,
+                "no cook"   : null,
+                "salad"     : null,
+                "favorite"  : null };
     };
 
     that.getTaggedRecipes = function(inTags)
@@ -190,10 +233,14 @@ var CookBook = function(doneLoadingDelegate)
         }
         return outRecipes;
     };
+
+    that.setPassword = function(input)
+    {
+        password = input;
+    };
     
     return that;
 };
-
 
 // Model class for the overall page. Should contain a list of
 // submodels for each recipe being viewed.
@@ -202,9 +249,12 @@ var PageModel = function ()
     // private:
     var that = {};
 
+    // login state boolean
+    var loginState = false;
+    
     // List of tags to show
     var selectedTags = {};
-    
+
     // The slected Recipe(s) to display in tabs
     var selectedRecipeModels = [];
 
@@ -251,9 +301,44 @@ var PageModel = function ()
     
     // recipe data:
     var book = CookBook(dataLoadedDelegate);
+
+    // Switch to current loginstate
+    var switchToLoginState = function()
+    {
+        selectedRecipeModels.map(
+            function(recipe) {
+                recipe.setEditMode(loginState);
+            });
+    }
+
+    var passedSecurity = function(successBool)
+    {
+        if (successBool)
+        {
+            loginState = true;
+        }
+        {
+            loginState = false;
+        }
+        switchToLoginState();
+    }
     
     // public:
 
+    // Method to handle the login
+    that.login = function (password)
+    {
+        // Check security and specify callback of "passedSecurity"
+        book.testSecurity(passedSecurity, password);
+    }        
+
+    // Method to handle the logout
+    that.logout = function ()
+    {
+        loginState = false;
+        switchToLoginState();
+    }
+    
     // Method to get a recipe object given an id
     that.getRecipeById = function(id)
     {
@@ -312,11 +397,14 @@ var PageModel = function ()
 
     that.addSelectedRecipe = function(id)
     {
-        var recipeModel = RecipeModel(id, book);
+        // Pass the the doneLoadingDelegate of "switchToLoginState" so
+        // that the state of the newly created recipe model is set
+        // correctly upon loading
+        var recipeModel = RecipeModel(id, book, switchToLoginState);
         selectedRecipeModels.push(recipeModel);
     };
 
-    that.removeRecipe = function(id)
+    that.removeSelectedRecipe = function(id)
     {
         for (var i = 0; i < selectedRecipeModels.length; i++)
         {
@@ -348,7 +436,7 @@ var PageModel = function ()
     that.deleteRecipe = function(id)
     {
         // First remove the recipe (if applicable)
-        that.removeRecipe(id);
+        that.removeSelectedRecipe(id);
 
         // Delete the recipe from the book
         book.deleteRecipe(id);
@@ -366,8 +454,6 @@ var PageModel = function ()
         var newId = book.newId();
         book.modifyRecipe(newId,"New Recipe",{})
 
-        
-
         book.putRecipeText(newId,defaultRecipeText,(function () {}));
         that.addSelectedRecipe(newId);
     }
@@ -376,8 +462,11 @@ var PageModel = function ()
     return that;
 };
 
-// Model class for each recipe being viewed
-var RecipeModel = function (recipeId, modelBook)
+// Model class for each recipe being viewed. The constructor takes the
+// recipe id, the cook book from the model (to make db calls when
+// needed), and an onLoadedDelegate to be caled when the constructor
+// finishes running.
+var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
 {
     // The id of the recipe
     var id = recipeId;
@@ -424,13 +513,12 @@ var RecipeModel = function (recipeId, modelBook)
         contents
             .append('<div class="row"><div class="col-md-5" id="recipeView">'+recipeText+'</div></div>');
 
-        // Add recipe text area
         contents
-            .append('<div class="row"><div class="col-md-5"><textarea class="form-control" rows="10" id="recipeEdit">'+recipeText+'</textarea></div><div class="col-md-5"><div class="btn-group-vertical" id="recipeTags" data-toggle="buttons"></div></div>')
-
-        // Add buttons
+            .append('<div class="row"><div class="col-md-2"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button></div></div>');
+        
+        // Add recipe text area and edit buttons
         contents
-            .append('<div class="row"><div class="col-md-2"><button type="button" id="SaveBtn" class="btn btn-primary">Save</button></div><div class="col-md-2"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button></div><div class="col-md-2"><button type="button" id="DeleteBtn" class="btn btn-danger">Delete</button><div></div>');
+            .append('<div id="editComponents"><div class="row"><div class="col-md-5"><textarea class="form-control" rows="10" id="recipeEdit">'+recipeText+'</textarea></div><div class="col-md-5"><div class="btn-group-vertical" id="recipeTags" data-toggle="buttons"></div></div><div class="row"><div class="col-md-3"><button type="button" id="SaveBtn" class="btn btn-primary">Save</button></div><div class="col-md-3"><button type="button" id="DeleteBtn" class="btn btn-danger">Delete</button><div></div></div>')
         
         $('#myTabs')
             .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
@@ -481,8 +569,11 @@ var RecipeModel = function (recipeId, modelBook)
         
         // Show the just added tab
         $('#myTabs a:last').tab('show');
-    };
 
+        // Make external doneLoading function call
+        onLoadedDelegate();
+    };
+        
     // Method which defineds how we get a new title given the HTML
     // content of the recipe. Right now this simply looks for the
     // first h1 element in recipe.
@@ -498,6 +589,21 @@ var RecipeModel = function (recipeId, modelBook)
 
     // public:
 
+    // Method to toggle edit mode
+    that.setEditMode = function(isEditMode)
+    {
+        if (isEditMode)
+        {
+            $('#'+domId+' #editComponents')
+                .removeClass('hidden');
+        }
+        else
+        {
+            $('#'+domId+' #editComponents')
+                .addClass('hidden');
+        }
+    }
+    
     // Method to add tags to local recipe model
     that.putTags = function(inTags)
     {
@@ -559,7 +665,9 @@ var RecipeModel = function (recipeId, modelBook)
     return that;
 };
 
-var PageController = function () {
+// 
+var PageController = function ()
+{
 
     // Return object
     var that = {};
@@ -571,6 +679,17 @@ var PageController = function () {
     {
         pageModel.newRecipe();
     };
+
+    that.login = function ()
+    {
+        var password = $('#passwordConfirmButton').val();
+        pageModel.login(password);
+    }
+
+    that.logout = function ()
+    {
+        pageModel.logout();
+    }
     
     // Method to  handle a tag  being toggeled in the  recipe slection
     // section of the website.
@@ -621,7 +740,7 @@ var PageController = function () {
     // Called when a recipe is closed
     that.closeRecipe = function(id)
     {        
-        pageModel.removeRecipe(id);
+        pageModel.removeSelectedRecipe(id);
     }
 
     // Called when a recipe is saved
@@ -662,7 +781,6 @@ var PageController = function () {
             that.deleteRecipe(id);
         }
     }
-
     
     // Return:
     return that;
@@ -674,5 +792,8 @@ var pageController = PageController();
 
 // Attach controller to static dom elements
 $(document).ready(function () {
-    $('#NewBtn').bind('click',pageController.newRecipe);    
+    $('#NewBtn').bind('click',pageController.newRecipe);
+    // TODO: RE-bind to something else
+    $('#LogoutBtn').bind('click',pageController.logout);
+    $('#passwordConfirmButton').bind('click', pageController.login);
 });

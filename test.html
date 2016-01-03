@@ -11,6 +11,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="test.css"/>
+    
     <!-- Model logic -->
     <script type="text/javascript" src="model.js"> </script>
   </head>
@@ -33,6 +35,8 @@
             </li>
             <li>
               <button id="NewBtn" class="btn btn-primary">New</button>
+              <button id="LoginBtn" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Log in</button>
+              <button id="LogoutBtn" class="btn btn-primary">Log out</button>
             </li>
           </ul>
           <!-- <form class="navbar-form navbar-left" role="search"> -->
@@ -56,6 +60,24 @@
         <ul class="nav nav-tabs" id="myTabs">
         </ul>
         <div class="tab-content" id="myTabsContents">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal popup for password entry -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Password Entry:</h4>
+          </div>
+          <div class="modal-body">
+            <input id="passwordInput" type="password" class="form-control" placeholder="Search">
+          </div>
+          <div class="modal-footer">
+            <button id="passwordConfirmButton" type="button" class="btn btn-primary">OK</button>
+          </div>
         </div>
       </div>
     </div>
