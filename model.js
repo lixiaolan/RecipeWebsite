@@ -669,7 +669,6 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
 // 
 var PageController = function ()
 {
-
     // Return object
     var that = {};
 
