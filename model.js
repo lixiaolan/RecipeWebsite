@@ -27,6 +27,7 @@ var CookBook = function(doneLoadingDelegate)
 
     var onTestSecurity = function(body)
     {
+        console.log("response from server: " + body);
         if (body==="yes")
         {
             passedDelegate(true);
@@ -52,6 +53,8 @@ var CookBook = function(doneLoadingDelegate)
         // Store the delegate to be called in the onTestSecurity
         // callback:
         passedDelegate = delegate;
+
+        console.log("password entered: " + password);
         
         $.ajax({
             type: "GET",
@@ -682,7 +685,7 @@ var PageController = function ()
 
     that.login = function ()
     {
-        var password = $('#passwordConfirmButton').val();
+        var password = $('#passwordInput').val();
         pageModel.login(password);
     }
 

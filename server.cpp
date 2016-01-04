@@ -428,7 +428,6 @@ void UpdateTagInfo(string recipe, string tagLine){
   while (1) {
     getline(iss,line,',');
     if (!iss) break;
-    cout << "UpdateTagInfo: " << line << endl;
     SystemCall("sh addSymbolicLinks.sh " + recipe + " " + line);
   }
 }
@@ -493,10 +492,14 @@ public:
     string password;
     getline(ifs, password);
 
+    // Get authorization header string;
+    string authorizationHeader = request->headers["Authorization"];
+
+    
     // If requesting the security file, return if file matches the
     // Authentication (yes or no)
     if (request->requestURI == "/security") {
-      if (request->headers["Authorization"] == password) {
+      if (request->headers["Authorization"].compare(password) == 0) {
         response->body = "yes";
       }
       else {
