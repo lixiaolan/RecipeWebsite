@@ -474,6 +474,7 @@ public:
       ofs << line << "\n";
     }
 
+    cout << "Handled in SaveRecipeText" << endl;
     return true;
   }
 };
@@ -486,7 +487,6 @@ class SecurityTest : public HTTP_Handler
 public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override
   {
-
     // Get authentication string from security file:
     ifstream ifs("./security");
     string password;
@@ -495,7 +495,6 @@ public:
     // Get authorization header string;
     string authorizationHeader = request->headers["Authorization"];
 
-    
     // If requesting the security file, return if file matches the
     // Authentication (yes or no)
     if (request->requestURI == "/security") {
@@ -505,17 +504,20 @@ public:
       else {
         response->body = "no";
       }
+      cout << "Handled in SecurityTest" << endl;
       return true;
     }
 
-    // Otherwise, if this is any POST or PUT, check security:
-    
+    // Otherwise, if this is any POST or PUT, check security:    
     if ((request->method != "POST") &&
         (request->method != "PUT")) return false;
     
     // Compare authentication string to header
-    if (request->headers["Authorization"] != password)
+    if (request->headers["Authorization"].compare(password) != 0) {
+      response->body = "no";
+      cout << "Handled in SecurityTest" << endl;
       return true;
+    }
 
     return false;
   }

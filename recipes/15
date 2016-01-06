@@ -1,4 +1,18 @@
-<h1>I just added a recipe</h1>
+<h1>Title</h1>
 
-<p> here is a paragraph </p>
-<p> and another one </p>
+<h2>Description</h2>
+<p>Text</p>
+
+<h2>Ingredients</h2>
+
+<ul>
+<li>Thing One</li>
+<li>Thing Two</li>
+</ul>
+
+<h2>Instructions</h2>
+
+<ul>
+<li>Step One</li>
+<li>Step Two</li>
+</ul>
