@@ -474,6 +474,8 @@ public:
       ofs << line << "\n";
     }
 
+    response->body = "saved!";
+    
     cout << "Handled in SaveRecipeText" << endl;
     return true;
   }

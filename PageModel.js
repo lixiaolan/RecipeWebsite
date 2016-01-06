@@ -93,6 +93,7 @@ var PageModel = function ()
     // Method to handle the logout
     that.logout = function ()
     {
+        book.setPassword("");
         loginState = false;
         switchToLoginState();
     }
