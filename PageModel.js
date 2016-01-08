@@ -219,8 +219,9 @@ var PageModel = function ()
                                console.log(newId);
                                if (body !== "no")
                                {
-                                   book.modifyRecipe(newId,"New Recipe",{})
+                                   book.modifyRecipe(newId,"Title",{})
                                    that.addSelectedRecipe(newId);
+                                   updateVisibleRecipes("crap");
                                }
                            }
                           );
