@@ -15,6 +15,7 @@ var PageController = function ()
     that.login = function ()
     {
         var password = $('#passwordInput').val();
+        $('#passwordInput').val("");
         pageModel.login(password);
     }
 

@@ -5,58 +5,6 @@
 
 using namespace std;
 
-
-class SaveRecipes : public HTTP_Handler
-{
-public:
-  bool Process(HTTP_Request* request, HTTP_Response* response) override
-  {
-    if (request->method != "POST") return false;
-    string searchTokin = "recipes.json";
-    // Determine if this handler has 'recipes.json' in the uri
-    if (request->requestURI.find(searchTokin) == string::npos) return false;
-
-    istringstream iss(request->body);
-    string filePath = "recipes.json";
-    ofstream ofs(filePath);
-    string line;
-    while (getline(iss,line)) {
-      ofs << line << "\n";
-    }
-
-    response->body = "Saved!";
-    
-    return true;
-  }
-};
-
-class SaveRecipeText : public HTTP_Handler
-{
-public:
-  bool Process(HTTP_Request* request, HTTP_Response* response) override
-  {
-    if (request->method != "POST") return false;
-    string searchTokin = "recipes/";
-    // Determine if this handler has 'recipes.json' in the uri
-    if (request->requestURI.find(searchTokin) == string::npos) return false;
-
-    istringstream iss(request->body);
-
-    // Need the . to keep file path local
-    string filePath = "." + request->requestURI;
-    ofstream ofs(filePath);
-    string line;
-    while (getline(iss,line)) {
-      ofs << line << "\n";
-    }
-
-    response->body = "Saved!";
-    
-    cout << "Handled in SaveRecipeText" << endl;
-    return true;
-  }
-};
-
 // This "handles" a POST or PUT if it does not match the security
 // string. "handling" the request prevents any other handler from
 // taking effect.
@@ -107,16 +55,12 @@ int main(int argc, char *argv[]) {
   // Create handlers:
   SecurityTest ST;
   HTTP_File_Handler FH;
-  SaveRecipeText SRT;
-  SaveRecipes SR;
   
   // Create server
   HTTP_Server server;
 
   // add handlers
   server.handlers.push_back(&ST);
-  server.handlers.push_back(&SR);
-  server.handlers.push_back(&SRT);
   server.handlers.push_back(&FH);
   
   server.Run();
