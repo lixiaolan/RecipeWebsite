@@ -1,18 +1,18 @@
-<h1>This is the title</h1>
+<h1>The new title of my recipe</h1>
 
 <h2>Description</h2>
-<p>Text</p>
+<p>Some thing goes here</p>
 
 <h2>Ingredients</h2>
 
 <ul>
-<li>Thing One</li>
-<li>Thing Two</li>
+<li>Cabbage</li>
+<li>Milk</li>
 </ul>
 
 <h2>Instructions</h2>
 
 <ul>
-<li>Step One</li>
-<li>Step Two</li>
+<li>Cook the thing</li>
+<li>make sure it tastes good</li>
 </ul>
