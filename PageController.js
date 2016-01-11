@@ -23,6 +23,16 @@ var PageController = function ()
     {
         pageModel.logout();
     }
+
+    that.showTags = function ()
+    {
+        pageModel.setTagsShowing(true);
+    }
+
+    that.hideTags = function ()
+    {
+        pageModel.setTagsShowing(false);
+    }
     
     // Method to  handle a tag  being toggeled in the  recipe slection
     // section of the website.

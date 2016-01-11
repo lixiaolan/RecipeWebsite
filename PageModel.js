@@ -7,6 +7,9 @@ var PageModel = function ()
 
     // login state boolean
     var loginState = false;
+
+    // boolean to indicate if the tags are showing
+    var tagsShowing = false;
     
     // List of tags to show
     var selectedTags = {};
@@ -54,6 +57,7 @@ var PageModel = function ()
         updateVisibleRecipes("BLANK");
         updateVisibleTags();
         switchToLoginState();
+        updateTagsShowing();
     };
     
     // recipe data:
@@ -96,8 +100,36 @@ var PageModel = function ()
         switchToLoginState();
     }
 
+    var updateTagsShowing = function()
+    {
+        if (tagsShowing)
+        {
+            // Show correct button
+            $('#HideTagsBtn').removeClass('hidden');
+            $('#ShowTagsBtn').addClass('hidden');
+
+            // Show the tags div
+            $('#tagListDiv').removeClass('hidden');
+        }
+        else
+        {
+            // Show correct button
+            $('#HideTagsBtn').addClass('hidden');
+            $('#ShowTagsBtn').removeClass('hidden');
+
+            // Hide the tags div
+            $('#tagListDiv').addClass('hidden');
+        }
+    }
+    
     // public:
 
+    that.setTagsShowing = function(inputBool)
+    {
+        tagsShowing = inputBool;
+        updateTagsShowing();
+    }
+    
     // Method to handle the login
     that.login = function (password)
     {
@@ -232,7 +264,6 @@ var PageModel = function ()
                            defaultRecipeText,
                            function (body)
                            {
-                               console.log(newId);
                                if (body !== "no")
                                {
                                    book.modifyRecipe(newId,"Title",{})
