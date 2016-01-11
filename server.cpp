@@ -62,6 +62,10 @@ int main(int argc, char *argv[]) {
   // add handlers
   server.handlers.push_back(&ST);
   server.handlers.push_back(&FH);
+
+  // Set to 8000 instead of 80
+  // char socket[5] = "8000";
+  // strcpy(server.socket, socket);
   
   server.Run();
   

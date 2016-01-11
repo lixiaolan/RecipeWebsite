@@ -53,6 +53,7 @@ var PageModel = function ()
     {
         updateVisibleRecipes("BLANK");
         updateVisibleTags();
+        switchToLoginState();
     };
     
     // recipe data:
@@ -61,10 +62,25 @@ var PageModel = function ()
     // Switch to current loginstate
     var switchToLoginState = function()
     {
+        // Update all recipe models
         selectedRecipeModels.map(
             function(recipe) {
                 recipe.setEditMode(loginState);
             });
+
+        // Update page model
+        if (loginState)
+        {
+            $('#NewBtn').removeClass('hidden');
+            $('#LogoutBtn').removeClass('hidden');
+            $('#LoginBtn').addClass('hidden');
+        }
+        else
+        {
+            $('#NewBtn').addClass('hidden');
+            $('#LogoutBtn').addClass('hidden');
+            $('#LoginBtn').removeClass('hidden');            
+        }
     }
 
     var passedSecurity = function(successBool)
