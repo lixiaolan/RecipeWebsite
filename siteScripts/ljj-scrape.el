@@ -45,6 +45,28 @@
   (save-excursion
     (replace-regexp "[[:space:]]+" " " nil (point) (mark))))
 
+;; create sting processing version
+(defun ljj-remove-html-in-string (string)
+  "remove all html tags in string"
+  (replace-regexp-in-string "<.*?>" "" string))
+
+(defun ljj-remove-newlines-in-string (string)
+  "remove all newlines in string"
+  (replace-regexp-in-string "\n" "" string))
+
+(defun ljj-remove-excess-whitespace-in-string (string)
+  "remove all newlines in string"
+  (replace-regexp-in-string "[[:space:]]+" " " string))
+
+
 ;; This defines a structure to hold a single recipe. name should be a
 ;; string, ingredients and directions should be lists of strings.
 ;; (cl-defstruct recipe name ingredients directions)
+(cl-defstruct
+    recipe
+  name
+  description
+  ingredients
+  directions)
+
+

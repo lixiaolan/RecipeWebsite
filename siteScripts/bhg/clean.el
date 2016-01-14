@@ -8,7 +8,9 @@
 (load-file "../ljj-scrape.el")
 
 ;; Title
-(ljj-get-between "<meta property=\"og:title\" content=\"" "\">")
+(ljj-get-between
+ "<meta property=\"og:title\" content=\""
+ "\">")
 
 ;; Ingredients
 (while (ljj-kill-up-to "<li class=\"ingredient\"" )
