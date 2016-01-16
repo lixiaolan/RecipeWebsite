@@ -21,6 +21,16 @@
       (goto-char savePoint)
       nil)))
 
+(defun ljj-get-between-string (start end)
+  "Get text between start and end search strings (not
+  including). Delete stuff from mark to start and add a new line
+  right after content. Leave point before end"
+
+  (search-forward start nil t)
+  (set-mark (point))
+  (search-forward end nil t)
+  (buffer-substring (mark) (match-beginning 0)))
+
 (defun ljj-kill-up-to (string)
   "Kill everything up to but not including string"
   (if (search-forward string nil t)
@@ -58,15 +68,42 @@
   "remove all newlines in string"
   (replace-regexp-in-string "[[:space:]]+" " " string))
 
+(defun ljj-recipe-string (name description ingredients directions)
+  "method returns html formatted recipe based on the input"
+  (setq stringList (list "<h1>" name "</h1>\n\n"))
 
-;; This defines a structure to hold a single recipe. name should be a
-;; string, ingredients and directions should be lists of strings.
-;; (cl-defstruct recipe name ingredients directions)
-(cl-defstruct
-    recipe
-  name
-  description
-  ingredients
-  directions)
+  (if description (progn 
+                    (setq stringList (append stringList (list "<h2>Description</h2>\n\n")))
+                    
+                    (mapcar (lambda (element)
+                              (setq tempList (list "<p>" element "</p>\n"))
+                              (setq stringList (append stringList tempList)))
+                            description)
+                    ))
+
+  (if ingredients (progn
+                    (setq stringList (append stringList (list "<h2>Ingredients</h2>\n\n<ul>\n")))
+                    
+                    (mapcar (lambda (element)
+                              (setq tempList (list "<li>" element "</li>\n"))
+                              (setq stringList (append stringList tempList)))
+                            ingredients)
+
+                    (setq stringList (append stringList (list "</ul>\n\n")))))
 
 
+  (if directions (progn
+                   (setq stringList (append stringList (list "<h2>Directions</h2>\n\n")))
+                   
+                   (mapcar (lambda (element)
+                             (setq tempList (list "<p>" element "</p>\n\n"))
+                             (setq stringList (append stringList tempList)))
+                           directions)))
+
+  (setq returnString "")
+  
+  (mapcar (lambda (element)
+            (setq returnString (concat returnString element)))
+          stringList)
+
+  returnString)

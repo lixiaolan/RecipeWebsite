@@ -4,35 +4,45 @@
 ;; Open the buffer containing the file
 (find-file path)
 
-;; ljj-get-between
 (load-file "../ljj-scrape.el")
 
-;; Title
-(ljj-get-between
- "<meta property=\"og:title\" content=\""
- "\">")
+(setq name nil)
+(setq description '())
+(setq ingredients '())
+(setq directions '())
+
+;; name
+(setq name
+ (ljj-get-between-string
+  "<meta property=\"og:title\" content=\""
+  "\">"))
 
 ;; Ingredients
-(while (ljj-kill-up-to "<li class=\"ingredient\"" )
-  (set-mark (point))
+(while (search-forward "<li class=\"ingredient\"" nil t )
+  (set-mark (match-beginning 0))
   (search-forward "</li>" nil t)
-  (ljj-remove-html)
-  (ljj-remove-newlines)
-  (ljj-remove-excess-whitespace)
-  (insert "\n")
-  (set-mark (point)))
+  (setq ingredient
+        (ljj-remove-excess-whitespace-in-string
+         (ljj-remove-newlines-in-string
+          (ljj-remove-html-in-string 
+           (buffer-substring (mark) (point))))))
+  (setf ingredients (append ingredients (list ingredient))))
+
+(search-forward "<ol class=\"directions\"" nil t)
 
 ;; Directions
-(while (ljj-kill-up-to "<span itemprop=\"recipeInstructions\">" )
-  (set-mark (point))
-  (search-forward "</span>" nil t)
-  (ljj-remove-html)
-  (ljj-remove-newlines)
-  (ljj-remove-excess-whitespace)
-  (insert "\n")
-  (set-mark (point)))
+(while (search-forward "<li itemprop=\"itemListElement\">" nil t )
+  (set-mark (match-beginning 0))
+  (search-forward "</li>" nil t)
+  (setq direction
+        (ljj-remove-excess-whitespace-in-string
+         (ljj-remove-newlines-in-string
+          (ljj-remove-html-in-string 
+           (buffer-substring (mark) (point))))))
+  (setf directions (append directions (list direction))))
 
-;; Kill the rest
-(delete-region (point) (point-max))
+(delete-region (point-min) (point-max))
+
+(insert (ljj-recipe-string name description ingredients directions))
 
 (save-buffer)

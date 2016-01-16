@@ -14,6 +14,6 @@ SITE=$(echo $URI | sed 's/http:\/\/[w\.]*\(.*\)\.com.*/\1/')
 cd siteScripts/$SITE
 curl $URI > $OUTFILE
 emacs --script clean.el $OUTFILE
-mv $OUTFILE ../../recipes/all/
+mv $OUTFILE ../../import.html
 
 IFS=$SAVEIFS
