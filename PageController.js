@@ -19,6 +19,13 @@ var PageController = function ()
         pageModel.login(password);
     }
 
+    that.importRecipe = function()
+    {
+        var importURL = $('#importURL').val();
+        $('#importURL').val("");
+        pageModel.importRecipe();
+    }
+    
     that.logout = function ()
     {
         pageModel.logout();

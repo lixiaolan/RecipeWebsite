@@ -47,6 +47,15 @@ var CookBook = function(doneLoadingDelegate)
         });
     };
 
+    that.importRecipe = function(url, successDelegate)
+    {
+        $.ajax({
+            type: "GET",
+            url: rul,
+            success: successDelegate
+        });
+    };
+    
     that.testSecurity = function(delegate)
     {
         // Store the delegate to be called in the onTestSecurity

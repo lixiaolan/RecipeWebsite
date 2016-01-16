@@ -129,6 +129,11 @@ var PageModel = function ()
         tagsShowing = inputBool;
         updateTagsShowing();
     }
+
+    that.importRecipe = function(importURL)
+    {
+        book.importRecipe(importURL, function (body) {alert(body);});
+    }
     
     // Method to handle the login
     that.login = function (password)
