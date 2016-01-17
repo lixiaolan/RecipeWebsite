@@ -22,14 +22,21 @@
       nil)))
 
 (defun ljj-get-between-string (start end)
-  "Get text between start and end search strings (not
-  including). Delete stuff from mark to start and add a new line
-  right after content. Leave point before end"
+  "Get the string between start and end an put it in the string
+variable. Return nil if no string is found"
 
-  (search-forward start nil t)
   (set-mark (point))
-  (search-forward end nil t)
-  (buffer-substring (mark) (match-beginning 0)))
+  
+  (let (savePoint firstBool secondBool firstPos)
+    (setq savePoint (point))
+    (setq firstBool (search-forward start nil t))
+    (setq firstPos (point))
+    (setq secondBool (search-forward end nil t))
+
+    (if (and firstBool secondBool)
+        (buffer-substring firstPos (match-beginning 0))
+      (goto-char savePoint)
+      nil)))
 
 (defun ljj-kill-up-to (string)
   "Kill everything up to but not including string"

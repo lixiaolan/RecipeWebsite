@@ -59,10 +59,16 @@ class ImportHandler : public HTTP_Handler
 public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override
   {
-    if (request->method != "GET") return false;
-    if (request->requestURI.find("http") == string::npos) return false;
 
-    SystemCall("sh get.sh " + request->requestURI + " import.html");
+    
+    if (request->method != "GET") return false;
+    if (request->requestURI.find("import") == string::npos) return false;
+
+    string searchString = "import?";
+    int p = request->requestURI.find(searchString) + searchString.length();
+    string url = request->requestURI.substr(p);
+    
+    SystemCall("sh get.sh " + url + " import.html");
 
     string file = "./import.html";
     string line;
@@ -104,7 +110,6 @@ public:
       else {
         response->body = "no";
       }
-      cout << "Handled in SecurityTest" << endl;
       return true;
     }
 
@@ -115,7 +120,6 @@ public:
     // Compare authentication string to header
     if (request->headers["Authorization"].compare(password) != 0) {
       response->body = "no";
-      cout << "Handled in SecurityTest" << endl;
       return true;
     }
 

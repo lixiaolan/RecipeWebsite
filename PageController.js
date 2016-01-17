@@ -23,7 +23,7 @@ var PageController = function ()
     {
         var importURL = $('#importURL').val();
         $('#importURL').val("");
-        pageModel.importRecipe();
+        pageModel.importRecipe(importURL);
     }
     
     that.logout = function ()

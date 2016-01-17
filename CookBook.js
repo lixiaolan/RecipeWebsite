@@ -49,10 +49,12 @@ var CookBook = function(doneLoadingDelegate)
 
     that.importRecipe = function(url, successDelegate)
     {
+        console.log("Recipe book");
         $.ajax({
             type: "GET",
-            url: rul,
-            success: successDelegate
+            url: "import",
+            success: successDelegate,
+            data: url,
         });
     };
     

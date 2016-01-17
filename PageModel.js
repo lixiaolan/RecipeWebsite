@@ -132,7 +132,9 @@ var PageModel = function ()
 
     that.importRecipe = function(importURL)
     {
-        book.importRecipe(importURL, function (body) {alert(body);});
+        book.importRecipe(importURL, function (body) {
+            that.newRecipe(body);
+        });
     }
     
     // Method to handle the login
@@ -261,12 +263,12 @@ var PageModel = function ()
     }
 
     // Method to add new recipe
-    that.newRecipe = function()
+    that.newRecipe = function(recipeText)
     {
         var newId = book.newId();
 
         book.putRecipeText(newId,
-                           defaultRecipeText,
+                           recipeText || defaultRecipeText,
                            function (body)
                            {
                                if (body !== "no")

@@ -7,34 +7,48 @@
 ;; ljj-get-between
 (load-file "../ljj-scrape.el")
 
+;; Define variables
+(setq name nil)
+(setq description '())
+(setq ingredients '())
+(setq directions '())
+
 ;; Title
-(ljj-get-between "<meta property=\"og:title\" content=\"" "\" />")
+(setq name (ljj-get-between-string "<meta property=\"og:title\" content=\"" "\" />"))
 
 ;; Ingredients
-(while (ljj-kill-up-to "<span class=\"ingredient-amt\">" )
-  (set-mark (point))
-  (search-forward "</span>" nil t 2)
-  (ljj-remove-html)
-  (ljj-remove-newlines)
-  (ljj-remove-excess-whitespace)
-  (insert "\n")
-  (set-mark (point)))
+(while (setq ingredient (ljj-get-between-string "<span class=\"ingredient-amt\">" "</span>"))
+  (setq ingredient (concat ingredient " " (ljj-get-between-string "<span itemprop=\"ingredients\">" "</span>")))
+  (setq ingredient
+        (ljj-remove-excess-whitespace-in-string
+         (ljj-remove-newlines-in-string
+          (ljj-remove-html-in-string 
+           ingredient))))
+  (setq ingredients (append ingredients (list ingredient))))
 
 ;; Directions
-(ljj-kill-up-to "<section class=\"directions")
-(search-forward "<section class=\"directions")
-(set-mark (point))
-(ljj-get-between "<ol>" "</ol>")
+(while (setq direction (ljj-get-between-string "<span class=\"recipe-directions__list--item\">" "</span>"))
+  (setq direction
+        (ljj-remove-excess-whitespace-in-string
+         (ljj-remove-newlines-in-string
+          (ljj-remove-html-in-string 
+           direction))))
+  (setq directions (append directions (list direction))))
 
-(delete-region (point) (point-max))
 
-(goto-char (point-min))
-(search-forward "<section class=\"directions")
-(goto-char (match-beginning 0))
-(set-mark (point))
+;; Directions
+(search-forward "<section class=\"directions" nil t)
 
-(while (ljj-get-between "<li>" "</li>"))
+(while (setq direction (ljj-get-between-string "<li>" "</li>"))
+  (setq direction
+        (ljj-remove-excess-whitespace-in-string
+         (ljj-remove-newlines-in-string
+          (ljj-remove-html-in-string 
+           direction))))
+  (setq directions (append directions (list direction))))
 
-(delete-region (point) (point-max))
+(delete-region (point-min) (point-max))
+
+(insert (ljj-recipe-string name description ingredients directions))
 
 (save-buffer)
