@@ -85,6 +85,25 @@ public:
   }
 };
 
+// Class to handle the case where the input from POST or PUT is
+// blank. This handles the request to prevent the file handler for
+// overwriting good files and returns "fail" in the response body.
+class BlankHandler : public HTTP_Handler
+{
+public:
+  bool Process(HTTP_Request* request, HTTP_Response* response) override
+  {
+    if ((request->method == "PUT") || (request->method == "POST")) {
+      if (request->body == "") {
+        response->body = "fail";
+        return true;
+      }
+    }
+    return false;
+  }
+};
+
+
 // This "handles" a POST or PUT if it does not match the security
 // string. "handling" the request prevents any other handler from
 // taking effect.
@@ -133,12 +152,14 @@ int main(int argc, char *argv[]) {
   // Create handlers:
   SecurityTest ST;
   HTTP_File_Handler FH;
-  ImportHandler IH;  
+  ImportHandler IH;
+  BlankHandler BH;
   // Create server
   HTTP_Server server;
 
   // add handlers
   server.handlers.push_back(&ST);
+  server.handlers.push_back(&BH);
   server.handlers.push_back(&FH);
   server.handlers.push_back(&IH);
 
