@@ -16,7 +16,7 @@ var CookBook = function(doneLoadingDelegate)
     // Load the data from the server.
     $.ajax({
         type: "GET",
-        url: "recipes.json",
+        url: "recipes/recipes.json",
         success : function (data)
         {
             recipes = JSON.parse(data);
@@ -49,7 +49,6 @@ var CookBook = function(doneLoadingDelegate)
 
     that.importRecipe = function(url, successDelegate)
     {
-        console.log("Recipe book");
         $.ajax({
             type: "GET",
             url: "import",
@@ -78,7 +77,7 @@ var CookBook = function(doneLoadingDelegate)
     that.putRecipes = function(successDelegate) {
         $.ajax({
             type: "POST",
-            url: "recipes.json",
+            url: "recipes/recipes.json",
             beforeSend: function (xhr)
             {
                 xhr.setRequestHeader('Authorization', password);
