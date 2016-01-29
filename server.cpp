@@ -166,8 +166,10 @@ int main(int argc, char *argv[]) {
   // Set to 8000 instead of 80
   // char socket[5] = "8000";
   // strcpy(server.socket, socket);
-  
-  server.Run();
+
+  while(1) {
+    server.Run();
+  }
   
   return 1;
 }
