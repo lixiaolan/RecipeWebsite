@@ -148,28 +148,31 @@ public:
 
 
 int main(int argc, char *argv[]) {
-   
-  // Create handlers:
-  SecurityTest ST;
-  HTTP_File_Handler FH;
-  ImportHandler IH;
-  BlankHandler BH;
-  // Create server
-  HTTP_Server server;
-
-  // add handlers
-  server.handlers.push_back(&ST);
-  server.handlers.push_back(&BH);
-  server.handlers.push_back(&FH);
-  server.handlers.push_back(&IH);
-
-  // Set to 8000 instead of 80
-  // char socket[5] = "8000";
-  // strcpy(server.socket, socket);
-
   while(1) {
-    server.Run();
+    try {
+      // Create handlers:
+      SecurityTest ST;
+      HTTP_File_Handler FH;
+      ImportHandler IH;
+      BlankHandler BH;
+      // Create server
+      HTTP_Server server;
+      
+      // add handlers
+      server.handlers.push_back(&ST);
+      server.handlers.push_back(&BH);
+      server.handlers.push_back(&FH);
+      server.handlers.push_back(&IH);
+      
+      // Set to 8000 instead of 80
+      // char socket[5] = "8000";
+      // strcpy(server.socket, socket);
+      
+      server.Run();
+    }
+    catch(...) {
+
+    }
   }
-  
   return 1;
 }
