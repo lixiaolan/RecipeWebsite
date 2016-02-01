@@ -168,11 +168,13 @@ int main(int argc, char *argv[]) {
       // char socket[5] = "8000";
       // strcpy(server.socket, socket);
       
+      cout << "SERVER IS RUNNING" << endl;
       server.Run();
     }
     catch(...) {
-
+      cout << "IN THE CATCH BLOCK" << endl;
     }
   }
+  cout << "RETURNING OUT OF WHILE LOOP" << endl;
   return 1;
 }
