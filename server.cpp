@@ -59,7 +59,6 @@ class ImportHandler : public HTTP_Handler
 public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override
   {
-
     
     if (request->method != "GET") return false;
     if (request->requestURI.find("import") == string::npos) return false;
@@ -94,6 +93,17 @@ public:
   bool Process(HTTP_Request* request, HTTP_Response* response) override
   {
     if ((request->method == "PUT") || (request->method == "POST")) {
+      istringstream iss(request->headers["Content-Length"]);
+      int contentLenght;
+      iss >> contentLenght;
+
+      cout << "body length:    " << request->body.length() << endl;
+      cout << "Content-Length: " << contentLenght << endl;
+      
+      if (request->body.length() < contentLenght) {
+        response->body = "fail";
+        return true;
+      }
       if (request->body == "") {
         response->body = "fail";
         return true;
