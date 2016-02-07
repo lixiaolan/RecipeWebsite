@@ -181,8 +181,8 @@ int main(int argc, char *argv[]) {
       cout << "SERVER IS RUNNING" << endl;
       server.Run();
     }
-    catch(...) {
-      cout << "IN THE CATCH BLOCK" << endl;
+    catch(exception& e) {
+      cout << e.what() << endl;
     }
   }
   cout << "RETURNING OUT OF WHILE LOOP" << endl;
