@@ -170,7 +170,7 @@ int main(int argc, char *argv[]) {
       
       // add handlers
       server.handlers.push_back(&ST);
-      server.handlers.push_back(&BH);
+      //server.handlers.push_back(&BH);
       server.handlers.push_back(&FH);
       server.handlers.push_back(&IH);
       
