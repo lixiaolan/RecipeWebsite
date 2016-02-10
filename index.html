@@ -31,13 +31,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="#">Katie's Recipes</a>
+          <a class="navbar-brand">Katie's Recipes</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <button id="ShowTagsBtn" class="btn btn-success navbar-btn">Show Tags</button>
-              <button id="HideTagsBtn" class="btn btn-danger navbar-btn">Hide Tags</button>
+              <button id="hideShowTagsBtn" class="btn btn-success navbar-btn" data-toggle="collapse" data-target="#tagListCollapsable">Toggle Tags</button>
               <button id="LoginBtn" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Enter Edit Mode</button>
               <button id="LogoutBtn" class="btn btn-danger navbar-btn">Back To View Mode</button>
               <button id="NewBtn" class="btn btn-success navbar-btn">New Recipe</button>
@@ -51,17 +50,19 @@
       </div>
     </nav>
     
-    <div id="tagListDiv" class="row">
-      <div class="col-xs-12">
-        <div id="tagList" class="btn-group" data-toggle="buttons"></div>
+    <div id="tagListCollapsable" class="collapse" style="float: left;>
+      <div id="tagListDiv" class="row">
+        <div class="col-xs-12">
+          <div id="tagList" class="btn-group-vertical" data-toggle="buttons"></div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-2">
+    <div class="row" style="float: left;>
+      <div class="col-xs-3">
         <ul id="recipeList">
         </ul>
       </div>
-      <div class="col-xs-10">
+      <div class="col-xs-9">
         <!-- Tab related stuff -->
         <ul class="nav nav-tabs" id="myTabs">
         </ul>
