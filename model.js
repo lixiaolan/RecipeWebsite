@@ -7,5 +7,6 @@ $(document).ready(function () {
     $('#NewBtn').bind('click', pageController.newRecipe);
     $('#LogoutBtn').bind('click', pageController.logout);
     $('#passwordConfirmButton').bind('click', pageController.login);
-    $('#importButton').bind('click', pageController.importRecipe); 
+    $('#importButton').bind('click', pageController.importRecipe);
+    $('#searchString').bind('change', pageController.searchStringChanged);
 });

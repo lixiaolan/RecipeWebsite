@@ -7,6 +7,12 @@ var PageController = function ()
     // Private:
 
     // Public:
+    that.searchStringChanged = function()
+    {
+        var searchString = $('#searchString').val();
+        pageModel.setSearchString(searchString);
+    };
+
     that.newRecipe = function()
     {
         pageModel.newRecipe();

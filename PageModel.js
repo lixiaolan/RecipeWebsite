@@ -20,17 +20,25 @@ var PageModel = function ()
     var defaultRecipeText = "<h1>Title</h1>\n\n<h2>Description</h2>\n<p>Text</p>\n\n<h2>Ingredients</h2>\n\n<ul>\n<li>Thing One</li>\n<li>Thing Two</li>\n</ul>\n\n<h2>Instructions</h2>\n\n<ul>\n<li>Step One</li>\n<li>Step Two</li>\n</ul>";
     
     // Function to show a list of visible recipes based on the filters
-    var updateVisibleRecipes = function(searchString)
+    var updateVisibleRecipes = function()
     {
+        var lowerSearchString = searchString.toLowerCase();
+        
         // Make sure the data is loaded
         if (!book) return;
 
+        // Get tagged recpies
         var recipesToDisplay  = book.getTaggedRecipes(selectedTags);
-
+        
         $('#recipeList').empty();
         
         for (var i in recipesToDisplay)
         {
+            // Filter by search text here:
+            var title = recipesToDisplay[i].title.toLowerCase();
+
+            if (lowerSearchString !== "" && title.search(lowerSearchString) === -1) { continue; }
+            
             $('#recipeList').append('<li><a onclick="pageController.openRecipe('+i+')">' + recipesToDisplay[i].title + '</a></li>');
         }        
     };
@@ -54,7 +62,7 @@ var PageModel = function ()
     // Called when data is loaded from the database
     var dataLoadedDelegate = function()
     {
-        updateVisibleRecipes("BLANK");
+        updateVisibleRecipes();
         updateVisibleTags();
         switchToLoginState();
     };
@@ -98,9 +106,17 @@ var PageModel = function ()
         }
         switchToLoginState();
     }
+
+    var searchString = "";
     
     // public:
 
+    that.setSearchString = function(string)
+    {
+        searchString = string;
+        updateVisibleRecipes();
+    }
+    
     that.importRecipe = function(importURL)
     {
         book.importRecipe(importURL, function (body) {
@@ -152,7 +168,7 @@ var PageModel = function ()
             selectedTags[i] = null;
         }
 
-        updateVisibleRecipes("crap");
+        updateVisibleRecipes();
     };
 
     that.deleteSelectedTags = function(tags)
@@ -162,7 +178,7 @@ var PageModel = function ()
             delete selectedTags[i];
         }
 
-        updateVisibleRecipes("crap");
+        updateVisibleRecipes();
     };
     
     // Add a selected tag
@@ -214,7 +230,7 @@ var PageModel = function ()
         book.putRecipes();
 
         // Since a title may have changed, we update visible recipes.
-        updateVisibleRecipes("crap");
+        updateVisibleRecipes();
     }
 
     // Delete recipe from the model.
@@ -230,7 +246,7 @@ var PageModel = function ()
         book.putRecipes();
 
         // Update the view:
-        updateVisibleRecipes("crap");
+        updateVisibleRecipes();
     }
 
     // Method to add new recipe
@@ -246,7 +262,7 @@ var PageModel = function ()
                                {
                                    book.modifyRecipe(newId,"Title",{})
                                    that.addSelectedRecipe(newId);
-                                   updateVisibleRecipes("crap");
+                                   updateVisibleRecipes();
                                }
                            }
                           );
