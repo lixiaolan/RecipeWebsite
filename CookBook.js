@@ -40,6 +40,7 @@ var CookBook = function(doneLoadingDelegate)
     // Public:
     that.getRecipeText = function(id,successDelegate)
     {
+        console.log("HELLO!!!!!!!!!!");
         $.ajax({
             type: "GET",
             url: "recipes/"+id,

@@ -201,8 +201,11 @@ var PageModel = function ()
         // Pass the the doneLoadingDelegate of "switchToLoginState" so
         // that the state of the newly created recipe model is set
         // correctly upon loading
-        var recipeModel = RecipeModel(id, book, switchToLoginState);
-        selectedRecipeModels.push(recipeModel);
+        var recipeModel = RecipeModel(id, book, function ()
+                                      {
+                                          selectedRecipeModels.push(recipeModel);
+                                          switchToLoginState();
+                                      });
     };
 
     that.removeSelectedRecipe = function(id)
