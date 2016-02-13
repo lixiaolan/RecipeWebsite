@@ -54,6 +54,18 @@ void SystemCall(string command) {
   }
 }
 
+class StatusLine : public HTTP_Handler
+{
+public:
+  bool Process(HTTP_Request* request, HTTP_Response* response) override
+  {
+    response->httpVersion = request->httpVersion;
+    response->statusCode = "200";
+    response->reasonPhrase = "OK";
+    return false;
+  }
+};
+
 class ImportHandler : public HTTP_Handler
 {
 public:
@@ -61,11 +73,11 @@ public:
   {
     
     if (request->method != "GET") return false;
-    if (request->requestURI.find("import") == string::npos) return false;
+    if (request->URI.find("import") == string::npos) return false;
 
     string searchString = "import?";
-    int p = request->requestURI.find(searchString) + searchString.length();
-    string url = request->requestURI.substr(p);
+    int p = request->URI.find(searchString) + searchString.length();
+    string url = request->URI.substr(p);
     
     SystemCall("sh get.sh " + url + " import.html");
 
@@ -132,7 +144,7 @@ public:
 
     // If requesting the security file, return if file matches the
     // Authentication (yes or no)
-    if (request->requestURI == "/security") {
+    if (request->URI == "/security") {
       if (request->headers["Authorization"].compare(password) == 0) {
         response->body = "yes";
       }
@@ -161,6 +173,7 @@ int main(int argc, char *argv[]) {
   while(1) {
     try {
       // Create handlers:
+      StatusLine SL;
       SecurityTest ST;
       HTTP_File_Handler FH;
       ImportHandler IH;
@@ -169,6 +182,7 @@ int main(int argc, char *argv[]) {
       HTTP_Server server;
       
       // add handlers
+      server.handlers.push_back(&SL);
       server.handlers.push_back(&ST);
       //server.handlers.push_back(&BH);
       server.handlers.push_back(&FH);

@@ -27,7 +27,7 @@ var CookBook = function(doneLoadingDelegate)
 
     var onTestSecurity = function(body)
     {
-        if (body==="yes")
+        if (body === "yes")
         {
             passedDelegate(true);
         }
@@ -40,7 +40,6 @@ var CookBook = function(doneLoadingDelegate)
     // Public:
     that.getRecipeText = function(id,successDelegate)
     {
-        console.log("HELLO!!!!!!!!!!");
         $.ajax({
             type: "GET",
             url: "recipes/"+id,
