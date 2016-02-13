@@ -39,7 +39,7 @@ var PageModel = function ()
 
             if (lowerSearchString !== "" && title.search(lowerSearchString) === -1) { continue; }
             
-            $('#recipeList').append('<li><a onclick="pageController.openRecipe('+i+')">' + recipesToDisplay[i].title + '</a></li>');
+            $('#recipeList').append('<button type="button" class="list-group-item" onclick="pageController.openRecipe('+i+')">'+recipesToDisplay[i].title+'</button>');
         }        
     };
 
