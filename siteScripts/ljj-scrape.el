@@ -38,6 +38,10 @@ variable. Return nil if no string is found"
       (goto-char savePoint)
       nil)))
 
+(defun ljj-get-between-string-and-endpoints (start end)
+  "include start an end in the returned string"
+  (concat start (ljj-get-between-string start end) end))
+
 (defun ljj-kill-up-to (string)
   "Kill everything up to but not including string"
   (if (search-forward string nil t)
