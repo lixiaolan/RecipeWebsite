@@ -22,7 +22,7 @@
 (save-excursion
   (setq endPoint (search-forward "<ul>")))
 
-(while (re-search-forward "<p>\\(.*\\)</p>" endPoint t)
+(while (re-search-forward "<p>\\([[:unibyte:]]*\\)</p>" endPoint t)
   (setq temp (ljj-remove-html-in-string (match-string 1)))
   (unless (string= temp "Ingredients:")
     (setq description (append description (list temp)))))
@@ -30,13 +30,13 @@
 (save-excursion
   (setq endPoint (search-forward "</ul>")))
 
-(while (re-search-forward "<li>\\(.*\\)</li>" endPoint t)
+(while (re-search-forward "<li>\\([[:unibyte:]]*\\)</li>" endPoint t)
   (setq ingredients (append ingredients (list (ljj-remove-html-in-string (match-string 1))))))
 
 (save-excursion
   (setq endPoint (search-forward "<div")))
 
-(while (re-search-forward "<li>\\(.*\\)</li>" endPoint t)
+(while (re-search-forward "<li>\\([[:unibyte:]]*\\)</li>" endPoint t)
   (setq directions (append directions (list (ljj-remove-html-in-string (match-string 1))))))
 
 ;; Kill the rest
