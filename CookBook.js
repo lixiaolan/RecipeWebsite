@@ -214,7 +214,10 @@ var CookBook = function(doneLoadingDelegate)
                 "crockpot"  : null,
                 "no cook"   : null,
                 "salad"     : null,
-                "favorite"  : null };
+                "favorite"  : null,
+                "katie"     : null,
+                "leland"    : null,
+                "lalit"     : null};
     };
 
     that.getTaggedRecipes = function(inTags)
