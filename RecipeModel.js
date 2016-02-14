@@ -46,8 +46,8 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         var contents = $('#'+domId);
         
         // Add the close button
-        // contents
-        //     .append('<div class="row"><div class="col-md-2"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button></div></div>');
+        contents
+            .append('<div class="row"><div class="col-md-2"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button></div></div>');
 
 
         // Add recipe text area and edit buttons
@@ -60,7 +60,7 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         
         
         $('#myTabs')
-            .append('<li><a href="#'+domId+'">'+'<button type="button" id="CloseBtn" class="btn btn-warning">X</button>'+recipe.title+'</a></li>');
+            .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
 
         // Make this tab clickable
         $('#myTabs a[href="#'+domId+'"]').click(
@@ -85,7 +85,7 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         $('#'+domId+' #SaveBtn').bind('click', pageController.saveRecipeFunction(id));
         
         // Close button behavior
-        $('#myTabs a[href="#'+domId+'"] #CloseBtn').bind('click', pageController.closeRecipeFunction(id));
+        $('#'+domId+' #CloseBtn').bind('click', pageController.closeRecipeFunction(id));
 
         // Behavior for the close button
         $('#'+domId+' #DeleteBtn').bind('click', pageController.deleteRecipeFunction(id));
