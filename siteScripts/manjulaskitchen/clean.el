@@ -16,8 +16,9 @@
 ;; Title
 (setq name
       (ljj-remove-excess-whitespace-in-string
-       (ljj-get-between-string "<h1 class=\"entry-title
-						\">" "</h1>")))
+       (ljj-remove-html-in-string
+        (ljj-get-between-string-and-endpoints "<h1 class=\"entry-title" "</h1>"))))
+
 (save-excursion
   (setq endPoint (search-forward "<ul>")))
 

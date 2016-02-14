@@ -69,7 +69,7 @@ variable. Return nil if no string is found"
 ;; create sting processing version
 (defun ljj-remove-html-in-string (string)
   "remove all html tags in string"
-  (replace-regexp-in-string "<.*?>" "" string))
+  (replace-regexp-in-string "<[[:unibyte:]]*??>" "" string))
 
 (defun ljj-remove-newlines-in-string (string)
   "remove all newlines in string"
