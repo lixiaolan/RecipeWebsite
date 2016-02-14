@@ -9,4 +9,7 @@ $(document).ready(function () {
     $('#passwordConfirmButton').bind('click', pageController.login);
     $('#importButton').bind('click', pageController.importRecipe);
     $('#searchString').bind('change', pageController.searchStringChanged);
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#passwordInput').focus();
+    })
 });
