@@ -36,10 +36,10 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <button id="hideShowTagsBtn" class="btn btn-success navbar-btn" data-toggle="collapse" data-target="#tagListCollapsable">Toggle Tags</button>
-              <button id="LoginBtn" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Enter Edit Mode</button>
-              <button id="LogoutBtn" class="btn btn-danger navbar-btn">Back To View Mode</button>
-              <button id="NewBtn" class="btn btn-success navbar-btn">New Recipe</button>
+              <button id="toggleViewBtn" class="btn btn-success navbar-btn">Toggle</button>
+              <button id="LoginBtn" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Edit</button>
+              <button id="LogoutBtn" class="btn btn-danger navbar-btn">View</button>
+              <button id="NewBtn" class="btn btn-success navbar-btn">New</button>
             </li>
           </ul>
           <div class="navbar-form navbar-left">
@@ -51,16 +51,12 @@
       </div>
     </nav>
 
-    <div id="tagListCollapsable" class="collapse">
-      <div id="tagListDiv" class="row">
-        <div>
-          <div id="tagList" class="btn-group" data-toggle="buttons"></div>
-        </div>
-      </div>
-    </div>
-
     <div class="row">
-      <div class="col-lg-2 col-md-3 col-xs-12">
+      <div id="tagListCollapsable" class="col-lg-12 col-md-12 col-xs-12 collapse">
+        <div id="tagList" class="btn-group" data-toggle="buttons"></div>
+      </div>
+
+      <div id="recipeListCollapsable" class="col-lg-2 col-md-3 col-xs-12 collapse in">
         <div id="recipeList" class="list-group">
           <ul id="recipeList">
           </ul>
@@ -91,7 +87,6 @@
         </div>
       </div>
     </div>
-    
     
   </body>
 </html>

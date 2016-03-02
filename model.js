@@ -12,4 +12,5 @@ $(document).ready(function () {
     $('#myModal').on('shown.bs.modal', function () {
         $('#passwordInput').focus();
     })
+    $('#toggleViewBtn').bind('click', pageController.toggleView);
 });

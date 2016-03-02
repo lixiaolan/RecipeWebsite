@@ -5,7 +5,8 @@ var PageController = function ()
     var that = {};
 
     // Private:
-
+    var viewState = 0;
+    
     // Public:
     that.searchStringChanged = function()
     {
@@ -125,6 +126,29 @@ var PageController = function ()
         return function()
         {
             that.deleteRecipe(id);
+        }
+    }
+
+    that.toggleView = function()
+    {
+        viewState = ((viewState + 1) % 3);
+        if (viewState == 0)
+        {
+            $('#recipeListCollapsable').collapse("show");
+            $('#tagListCollapsable').collapse("hide");
+            return;
+        }
+        if (viewState == 1)
+        {
+            $('#recipeListCollapsable').collapse("show");
+            $('#tagListCollapsable').collapse("show");
+            return;
+        }
+        if (viewState == 2)
+        {
+            $('#recipeListCollapsable').collapse("hide");
+            $('#tagListCollapsable').collapse("hide");
+            return;
         }
     }
     
