@@ -47,16 +47,16 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         
         // Add the close button
         contents
-            .append('<div class="row"><div class="col-md-2"><button type="button" id="CloseBtn" class="btn btn-warning">Close</button></div></div>');
-
+            .append(' <div> <button type="button" id="CloseBtn" class="btn btn-warning">Close</button> </div>');
+        
 
         // Add recipe text area and edit buttons
         contents
-            .append('<div id="editComponents"><div class="row"><div class="col-md-5"><textarea class="form-control" rows="10" id="recipeEdit">'+recipeText+'</textarea></div><div class="col-md-5"><div class="btn-group-vertical" id="recipeTags" data-toggle="buttons"></div></div></div><div class="row"><div class="col-md-3"><button type="button" id="SaveBtn" class="btn btn-primary">Save</button></div><div class="col-md-3"><button type="button" id="DeleteBtn" class="btn btn-danger">Delete</button></div></div></div>')
+            .append(' <div id="editComponents"> <div class="btn-group" id="recipeTags" data-toggle="buttons"></div> <div> <textarea class="form-control" rows="10" id="recipeEdit">'+recipeText+'</textarea> </div> <div class="row"> <div class="col-lg-6 col-md-6 col-xs-6"> <button type="button" id="SaveBtn" class="btn btn-primary">Save</button> </div> <div class="col-lg-6 col-md-6 col-xs-6"> <button type="button" id="DeleteBtn" class="btn btn-danger">Delete</button> </div> </div> </div>')
 
         // Add recipe View area
         contents
-            .append('<div class="row"><div class="col-md-5" id="recipeView">'+recipeText+'</div></div>');
+            .append('<div id="recipeView">'+recipeText+'</div>');
         
         
         $('#myTabs')
