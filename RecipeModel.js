@@ -68,6 +68,7 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
             {
                 e.preventDefault();
                 $(this).tab('show');
+                window.location.hash = recipeId;
             });
 
         // Make the recipeView section mirror the text included in the
