@@ -218,8 +218,14 @@ var PageModel = function ()
         selectedRecipeModels[i].remove();
         selectedRecipeModels.splice(i,1);
 
-        // Show the last remaining tab (if any):
-        $('#myTabs a:last').tab('show');
+        if (i < selectedRecipeModels.length)
+        {
+            selectedRecipeModels[i].show();
+        }
+        else if ((selectedRecipeModels.length > 0) && (i > 0))
+        {
+            selectedRecipeModels[i-1].show();
+        }
     }
 
     that.saveRecipe = function(id)

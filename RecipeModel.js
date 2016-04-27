@@ -113,7 +113,7 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         // Make external doneLoading function call
         onLoadedDelegate();
     };
-        
+    
     // Method which defineds how we get a new title given the HTML
     // content of the recipe. Right now this simply looks for the
     // first h1 element in recipe.
@@ -129,6 +129,19 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
 
     // public:
 
+    // Method to set the window hash to match this recipe. eg the/sweet/url/path#recipeId
+    that.setHash = function()
+    {
+        window.location.hash = recipeId;
+    }
+
+    // Method to show the tab corresponding to this recipe.
+    that.show = function()
+    {
+        $('#myTabs a[href="#'+domId+'"]').tab('show');
+        that.setHash();
+    }
+    
     // Method to toggle edit mode
     that.setEditMode = function(isEditMode)
     {
