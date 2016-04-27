@@ -108,7 +108,8 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         }
         
         // Show the just added tab
-        $('#myTabs a:last').tab('show');
+        //$('#myTabs a:last').tab('show');
+        that.show();
 
         // Make external doneLoading function call
         onLoadedDelegate();
