@@ -65,7 +65,7 @@ var PageModel = function ()
         updateVisibleRecipes();
         updateVisibleTags();
         switchToLoginState();
-        that.addSelectedRecipe(window.location.hash);
+        that.addSelectedRecipe(0 + window.location.hash.substring(1));
     };
     
     // recipe data:
