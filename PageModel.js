@@ -70,7 +70,7 @@ var PageModel = function ()
 
     var loadHashedRecipe()
     {
-        addSelectedRecipe(window.location.hash);
+        that.addSelectedRecipe(window.location.hash);
     };
     
     // recipe data:
