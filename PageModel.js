@@ -65,7 +65,12 @@ var PageModel = function ()
         updateVisibleRecipes();
         updateVisibleTags();
         switchToLoginState();
-        that.addSelectedRecipe(0 + window.location.hash.substring(1));
+
+        // Get the hash of the format #<number>, take substring to get
+        // <number> and convert to an actual number type. Finally load
+        // the recipe corresponding to the number (which is a recipe
+        // id).
+        that.addSelectedRecipe(parseInt(window.location.hash.substring(1)));
     };
     
     // recipe data:
