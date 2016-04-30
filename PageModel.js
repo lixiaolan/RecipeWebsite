@@ -54,7 +54,7 @@ var PageModel = function ()
             if (lowerSearchString === "" || title.search(lowerSearchString) !== -1) {
                 $('#recipeList').append('<button type="button" class="list-group-item" onclick="pageController.openRecipe('+recipe.Id+')">'+recipe.title+'</button>');
             }
-        }        
+        });
     };
 
     // Function to show a list of visible recipes based on the filters
