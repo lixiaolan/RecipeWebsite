@@ -65,12 +65,25 @@ var PageModel = function ()
         updateVisibleRecipes();
         updateVisibleTags();
         switchToLoginState();
+        loadRecipesFromHash();
+    };
 
-        // Get the hash of the format #<number>, take substring to get
-        // <number> and convert to an actual number type. Finally load
-        // the recipe corresponding to the number (which is a recipe
-        // id).
-        that.addSelectedRecipe(parseInt(window.location.hash.substring(1)));
+    var setHash = function() {
+
+        var idArray = [];
+        selectedRecipeModels.forEach(function(recipe) {
+            idArray.push(recipe.getId());
+        });
+        
+        window.location.hash = idArray.join(",");
+    };
+
+    var loadRecipesFromHash = function() {
+        var idArray = window.location.hash.substring(1).split(",");
+
+        idArray.forEach(function(idString) {
+            that.addSelectedRecipe(parseInt(idString));
+        });
     };
     
     // recipe data:
@@ -211,6 +224,7 @@ var PageModel = function ()
                                       {
                                           selectedRecipeModels.push(recipeModel);
                                           switchToLoginState();
+                                          setHash();
                                       });
     };
 
@@ -232,6 +246,8 @@ var PageModel = function ()
         {
             selectedRecipeModels[i-1].show();
         }
+
+        setHash();
     }
 
     that.saveRecipe = function(id)

@@ -57,8 +57,7 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
         // Add recipe View area
         contents
             .append('<div id="recipeView">'+recipeText+'</div>');
-        
-        
+                
         $('#myTabs')
             .append('<li><a href="#'+domId+'">'+recipe.title+'</a></li>');
 
@@ -68,7 +67,6 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
             {
                 e.preventDefault();
                 $(this).tab('show');
-                window.location.hash = recipeId;
             });
 
         // Make the recipeView section mirror the text included in the
@@ -130,17 +128,10 @@ var RecipeModel = function (recipeId, modelBook, onLoadedDelegate)
 
     // public:
 
-    // Method to set the window hash to match this recipe. eg the/sweet/url/path#recipeId
-    that.setHash = function()
-    {
-        window.location.hash = recipeId;
-    }
-
     // Method to show the tab corresponding to this recipe.
     that.show = function()
     {
         $('#myTabs a[href="#'+domId+'"]').tab('show');
-        that.setHash();
     }
     
     // Method to toggle edit mode
