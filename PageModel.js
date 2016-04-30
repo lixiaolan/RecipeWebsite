@@ -51,9 +51,9 @@ var PageModel = function ()
             // Filter by search text here:
             var title = recipe.title.toLowerCase();
             
-            if (lowerSearchString !== "" && title.search(lowerSearchString) === -1) { continue; }
-            
-            $('#recipeList').append('<button type="button" class="list-group-item" onclick="pageController.openRecipe('+recipe.Id+')">'+recipe.title+'</button>');
+            if (lowerSearchString === "" || title.search(lowerSearchString) !== -1) {
+                $('#recipeList').append('<button type="button" class="list-group-item" onclick="pageController.openRecipe('+recipe.Id+')">'+recipe.title+'</button>');
+            }
         }        
     };
 
