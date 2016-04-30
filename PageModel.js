@@ -33,10 +33,11 @@ var PageModel = function ()
         // desing (I think) since it makes sorting very difficult. We
         // make up for this here with a manual process.
         var recipesToDisplay  = book.getTaggedRecipes(selectedTags);
+
         recipeArray = [];
         for (var i in recipesToDisplay) {
-            var recipe = recipesToDisplay[i];
-            recipe.Id = i;
+            var recipe = {"title" : recipesToDisplay[i].title,
+                          "Id" : i};
             recipeArray.push(recipe);
         }
 
