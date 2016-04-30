@@ -27,19 +27,33 @@ var PageModel = function ()
         // Make sure the data is loaded
         if (!book) return;
 
-        // Get tagged recpies
+        // Get tagged recpies and put them into a proper array. Note
+        // tha the internal data structure storing the recipes is an
+        // object instead of an array. This appraoch was a mistake in
+        // desing (I think) since it makes sorting very difficult. We
+        // make up for this here with a manual process.
         var recipesToDisplay  = book.getTaggedRecipes(selectedTags);
+        recipeArray = [];
+        for (var i in recipesToDisplay) {
+            var recipe = recipesToDisplay[i];
+            recipe.Id = i;
+            recipeArray.push(recipe);
+        }
+
+        // Sort the recipe.
+        recipeArray.sort(function(lhs,rhs) {
+            return lhs.title.localeCompare(rhs.title);
+        });
         
         $('#recipeList').empty();
         
-        for (var i in recipesToDisplay)
-        {
+        recipeArray.forEach(function (recipe) {
             // Filter by search text here:
-            var title = recipesToDisplay[i].title.toLowerCase();
-
+            var title = recipe.title.toLowerCase();
+            
             if (lowerSearchString !== "" && title.search(lowerSearchString) === -1) { continue; }
             
-            $('#recipeList').append('<button type="button" class="list-group-item" onclick="pageController.openRecipe('+i+')">'+recipesToDisplay[i].title+'</button>');
+            $('#recipeList').append('<button type="button" class="list-group-item" onclick="pageController.openRecipe('+recipe.Id+')">'+recipe.title+'</button>');
         }        
     };
 

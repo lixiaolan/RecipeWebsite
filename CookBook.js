@@ -234,15 +234,6 @@ var CookBook = function(doneLoadingDelegate)
                     break;
                 }
             }
-            
-            // for (var tagKey in recipes[recipeId].tags)
-            // {   
-            //     if (inTags[tagKey] !== 1)
-            //     {
-            //         delete outRecipes[recipeId];
-            //         break;
-            //     }
-            // }
         }
         return outRecipes;
     };
