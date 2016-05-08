@@ -215,6 +215,7 @@ var CookBook = function(doneLoadingDelegate)
                 "no cook"   : null,
                 "salad"     : null,
                 "favorite"  : null,
+                "cocktails" : null,
                 "katie"     : null,
                 "leland"    : null,
                 "lalit"     : null};
