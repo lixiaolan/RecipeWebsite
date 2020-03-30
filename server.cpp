@@ -170,35 +170,24 @@ public:
 
 
 int main(int argc, char *argv[]) {
-  while(1) {
-    try {
-      // Create handlers:
-      StatusLine SL;
-      SecurityTest ST;
-      HTTP_File_Handler FH;
-      ImportHandler IH;
-      BlankHandler BH;
-      // Create server
-      HTTP_Server server;
+
+  // Create handlers:
+  StatusLine SL;
+  SecurityTest ST;
+  HTTP_File_Handler FH("/home/qile/Documents/programming/projects/Recipe/");
+  ImportHandler IH;
+  BlankHandler BH;
+
+  // Create server
+  HTTP_Server server;
+
+  // add handlers
+  server.handlers.push_back(&SL);
+  server.handlers.push_back(&ST);
+  // server.handlers.push_back(&BH);
+  server.handlers.push_back(&FH);
+  server.handlers.push_back(&IH);
       
-      // add handlers
-      server.handlers.push_back(&SL);
-      server.handlers.push_back(&ST);
-      //server.handlers.push_back(&BH);
-      server.handlers.push_back(&FH);
-      server.handlers.push_back(&IH);
-      
-      // Set to 8000 instead of 80
-      // char socket[5] = "8000";
-      // strcpy(server.socket, socket);
-      
-      cout << "SERVER IS RUNNING" << endl;
-      server.Run();
-    }
-    catch(exception& e) {
-      cout << e.what() << endl;
-    }
-  }
-  cout << "RETURNING OUT OF WHILE LOOP" << endl;
-  return 1;
+  server.Run();
+  return 0;
 }
